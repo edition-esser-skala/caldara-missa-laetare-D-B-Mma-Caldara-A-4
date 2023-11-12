@@ -1,0 +1,19 @@
+composer:
+  last: Caldara
+  first: Antonio
+title: Missa Lætare
+genre: mass
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (C), 2 tr (C), timp (C–G), [2 trb], 2 vl, [2 vla], b, org
+license: cc-by-sa-4.0
+sources:
+  A1:
+    siglum: D-B
+    shelfmark: Mus.ms.autogr. Caldara, A. 4
+    date: 1729-01-24
+    rism: 464110020
+    url: https://resolver.staatsbibliothek-berlin.de/SBB000286D300000000
+    license: public domain
+    principal: true
+imslp:
+parts:
+  ottoni: Clarino I, II in C\\Tromba I, II in C\\Timpani in C–G
