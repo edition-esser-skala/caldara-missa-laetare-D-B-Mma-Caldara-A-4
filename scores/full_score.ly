@@ -6,13 +6,14 @@
 \book {
   \bookpart {
     \section "1" "Kyrie"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score { %\articulate
       <<
         \new StaffGroup <<
           \new Staff <<
             \set Staff.instrumentName = \transposedName "Clarino I, II" "C" ""
+            \set Staff.soloText = ##f
             \partCombine #'(0 . 10) \KyrieClarinoI \KyrieClarinoII
           >>
           \new Staff <<
@@ -72,7 +73,7 @@
         \new FiguredBass { \KyrieBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }
