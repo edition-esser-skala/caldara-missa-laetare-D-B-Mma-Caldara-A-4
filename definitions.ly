@@ -6,7 +6,11 @@
 \include "ees_articulate.ly"
 
 
+markCritnote = \mark \markup { \normalsize \critnote }
+
+
 tempoKyrie = \tempoMarkup "Andante"
+  tempoChriste = \tempoMarkup "Allegretto"
 
 
 \include "notes/clno1.ly"

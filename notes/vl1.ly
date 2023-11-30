@@ -37,3 +37,52 @@ KyrieViolinoI = {
     c1\fermata \bar "||" %36 finis
   }
 }
+
+ChristeViolinoI = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \tempoChriste
+      \set Score.currentBarNumber = #37
+    r8 e'\fE f e f8. e16 e4~
+    e8 d16 c d8 e a,4 r
+    R1
+    r8 e' e a f2~ %40
+    f16 d h( g) g'8 f e8 g4 e16( g)
+    f8 e d4 c8 c16 d e fis g8
+    r d16 e fis gis a8 r e16 fis gis a h8~
+    h16 gis a4 h8 gis4 r8 f
+    h,-! h-! h-! h-! h4~ h16 c d e %45
+    c h c d h4 a r
+    R1*2
+    r2 r8 e'\fE e a
+    f2~ f16( d) h( g) g'8 f %50
+    e4 r r2
+    R1*3
+    r8 g\fE a g a8. g16 g4~ %55
+    g8 f16 e f8 g c,4 r
+    r8 d16 e f g a8 r c,16 d e f g8
+    r h,16 c d e f8~ f16 d e4 f8
+    \appoggiatura e8 d4\trill r8 a' d,-! d-! d-! d-!
+    d4~ d16 e f g e d e f d4 %60
+    c r8 h16\p c d e f8 r c16 d
+    e fis gis8 r8 fis,16 gis a h c8 r4
+    R1*5 %67
+    r2 r4 r8 e\pE
+    f! e f8. e16 e4 r
+    R1 %70
+    r2 r8 gis,16\fE a h c d8
+    c c, r4 r8 d16\p e f g a8
+    r e'16 fis g a h8 r f16 g a h a8
+    R1*2
+    r8 e\fE f e \markCritnote f8. e16 e4~
+    e8 d16 c d8 e a,4 r
+    R1
+    r8 e' e a f2~
+    f16 d h( g) g'8 f e8 g4 e16( g)
+    f8 e d4 c8 c16 d e fis g8
+    r d16 e fis gis a8 r e16 fis gis a h8~
+    h16 gis a4 h8 gis4 r8 f
+    h,-! h-! h-! h-! h4~ h16 c d e
+    c h c d h4 a r\fermata \bar "||"
+  }
+}

@@ -46,3 +46,67 @@ KyrieBassoLyrics = \lyricmode {
   son, e -- le -- i -- son, e -- lei -- %35
   son. %36 finis
 }
+
+ChristeBasso = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 4/4 \autoBeamOff \tempoChriste
+      \set Score.currentBarNumber = #37
+    R1*11 %47
+    r8 \mvTr a'\pE^\soloE b a b8. a16 a4~
+    a8 a16([ gis)] a8 h e,4 r
+    R1 %50
+    r8 g! g c a2~
+    a16 f([ d h)] h'8 a g2~
+    g16 e([ c a)] a'8 g f2~
+    f16 d([ h g)] g'8 f e c' f, g
+    c,4 r r2 %55
+    R1*5 %60
+    r8 c16([ d)] e([ fis)] g8 r d16([ e)] fis([ gis)] a8
+    r e16([ fis)] gis([ a)] h8 r2
+    r8 a c h c8. h16 h4
+    r r8 a16.[ g!32] fis8[ g16. a32] d,8[ e16. fis32]
+    g4~ g16[ a g fis] e8[ fis16. g32] a4~ %65
+    a8[ g16. fis32] g8 a h4 r
+    r8 h g dis e a h8. h16
+    e,4 r r2
+    r r8 e f! e
+    f e16([ d)] e4. d16([ c]) d8 e %70
+    a, a16([ h)] c8 d e4 r
+    r8 a,16([ h)] c([ d)] e8 r h16([ cis)] d([ e)] f8
+    r c16([ d)] e([ fis)] g8 r d16([ e)] fis([ gis)] a8
+    r e a4. a8 a a
+    a([ gis16 fis] gis8) e( a[ f)] d([ e)] %75
+    a,4 r \markCritnote r2
+    R1*8 %84
+    R1\fermata \bar "||" %85 finis
+  }
+}
+
+ChristeBassoLyrics = \lyricmode {
+  Chri -- ste e -- le -- i -- son, __ %48
+  e -- le -- i -- son,
+  %50
+  e -- le -- i -- son, __
+  e -- le -- i -- son, __
+  e -- le -- i -- son, __
+  e -- le -- i -- son, e -- le -- i --
+  son. %55
+
+  E -- lei -- son, e -- lei -- son, %61
+  e -- lei -- son,
+  Chri -- ste e -- le -- i -- son,
+  e -- _ _
+  _ _ _ %65
+  le -- i -- son,
+  e -- le -- i -- son, e -- le -- i --
+  son.
+  Chri -- ste e --
+  le -- i -- son, e -- le -- i -- %70
+  son, e -- le -- i -- son,
+  e -- lei -- son, e -- lei -- son,
+  e -- lei -- son, e -- lei -- son,
+  Chri -- ste e -- le -- i --
+  son, __ e -- lei -- %75
+  son. %76 finis
+}
