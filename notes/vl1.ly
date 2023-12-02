@@ -86,3 +86,42 @@ ChristeViolinoI = {
     c h c d h4 a r\fermata \bar "||"
   }
 }
+
+KyrieFugaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoKyrieFuga
+      \set Score.currentBarNumber = #86
+    R1*5 %90
+    c'4.\fE c8 h4 h
+    c8 g c4. h16 a h8 a16 g
+    a2 g8 g a h
+    r c d e r a, g f
+    g a16 h c2 h4 %95
+    c8 e d c d h c d
+    r g f e d4. e8~
+    e c a d h g a h
+    r a h c r h c d
+    r c d e~ e d16 c d4 %100
+    e4. e8 cis4 cis
+    d8 a d4. c16 h c8 h16 a
+    h4 h4. a16 gis a8 g
+    fis h4 a16 g fis2
+    e8 g a h r a h c %105
+    r h a2 gis4
+    a r r e'~
+    e d2 c4
+    h8 g a h r c d e
+    r a, g f g a16 h c4~ %110
+    c h r8 e f g
+    r h, c d r c d e
+    d4. c16 h c2
+    h8 g' f! e r f e d
+    e c4 c8 h4 h %115
+    c8 g c2 h4
+    c r r2
+    r8 c b a r b a g
+    \tempoKyrieFugaB a2. a4
+    g1\fermata \bar "|." %120 finis
+  }
+}

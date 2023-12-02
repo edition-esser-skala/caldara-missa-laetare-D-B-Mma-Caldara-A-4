@@ -56,3 +56,71 @@ KyrieAltoLyrics = \lyricmode {
   son, e -- le -- i -- son, e -- lei -- %35
   son. %36 finis
 }
+
+KyrieFugaAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoKyrieFuga
+      \set Score.currentBarNumber = #86
+    R1*7 %92
+    r2 \mvTr g'4.\fE^\tuttiE g8
+    e4 e f8[ c] f4~
+    f8[ e16 d] e8[ d16 c] d2 %95
+    c8 c[ d e] r g[ a h]
+    r e,[ d c] d[ e16 fis] g4~
+    g fis g r8 f?
+    g[ a] r g a[ h] r a
+    h c r4 a4. a8 %100
+    gis4 gis a8[ e] a[ f16 e]
+    f4. e16([ d)] e2~
+    e r8 e[ fis e]
+    h2 h
+    h4 r8 d! e[ fis] r e %105
+    fis[ gis] r e f?4 e
+    e a2( g4)
+    f2 e4 r
+    g4. g8 e4 e
+    f8[ c] f4. e16[ d] e8([ d16 c)] %110
+    d2 r8 c[ d e]
+    r g[ a h] r e,[ d c]
+    d[ e16 fis] g2 fis4
+    g r8 c h[ a] r h
+    a[ g] r a g[ f!] r g %115
+    e4. d16[ c] d2
+    e8 c'[ b a] r b[ a g]
+    r a[ g f] r g[ f e]
+    \tempoKyrieFugaB f2. f4
+    e1\fermata \bar "|." %120 finis
+  }
+}
+
+KyrieFugaAltoLyrics = \lyricmode {
+  Ky -- ri -- %93
+  e e -- _ _
+  _ lei -- %95
+  son, e -- _
+  _ _ le --
+  i -- son, e --
+  _ _ _ _
+  lei -- son, Ky -- ri -- %100
+  e e -- _ _
+  le -- i -- son, __
+  e --
+  _ lei --
+  son, e -- _ _ %105
+  _ _ le -- i --
+  son, e --
+  lei -- son,
+  Ky -- ri -- e e --
+  _ _ _ lei -- %110
+  son, e --
+  _ _
+  _ le -- i --
+  son, e -- _ _
+  _ _ _ _ %115
+  _ _ lei --
+  son, e -- _
+  _ _
+  le -- i --
+  son. %120 finis
+}

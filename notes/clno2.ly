@@ -21,3 +21,32 @@ KyrieClarinoII = {
     c1\fermata \bar "||" %36 finis
   }
 }
+
+KyrieFugaClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoKyrieFuga
+      \set Score.currentBarNumber = #86
+    R1*10 %95
+    r8 e'\fE d c d4. d8
+    e e d c r4 r8 e
+    e4 d d r
+    r8 c d e r d e f
+    r e f g c,4 r %100
+    R1*6 %106
+    r2 r4 e~
+    e d c g'
+    g r r2
+    R1 %110
+    d4. d8 e4 e
+    d2 r8 c d e
+    d2 c
+    g8 e' d c r d e f
+    g4 r r2 %115
+    c,8 g c4 g4. g8
+    g4 r c, r
+    c r c r
+    \tempoKyrieFugaB c c c2
+    c1\fermata \bar "|." %120 finis
+  }
+}

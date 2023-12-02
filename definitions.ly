@@ -10,7 +10,9 @@ markCritnote = \mark \markup { \normalsize \critnote }
 
 
 tempoKyrie = \tempoMarkup "Andante"
-  tempoChriste = \tempoMarkup "Allegretto"
+tempoChriste = \tempoMarkup "Allegretto"
+tempoKyrieFuga = \tempoMarkup "Allegro"
+  tempoKyrieFugaB = \tempoMarkup "Adagio"
 
 
 \include "notes/clno1.ly"

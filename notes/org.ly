@@ -190,3 +190,100 @@ ChristeBassFigures = \figuremode {
   <6 5 [_+]>2 <5 4>4 <\t _+>
   r <6 5>2. %85 finis
 }
+
+KyrieFugaOrgano = {
+  \relative c {
+    \clef "treble_8"
+    \key c \major \time 4/4 \tempoKyrieFuga
+      \set Score.currentBarNumber = #86
+    \mvTr c'4.\fE-\tuttiE c8 h4 h
+    c8 g c4. h16 a h8 a16 g
+    a2 \clef bass << {
+      g4 a8 h
+      r c d e r a, g f
+      g a16 h c2 h4 %90
+    } \\ {
+      g4. g8
+      e4 e f8 c f4~
+      f8 e16 d e8 d16 c d2 %90
+    } >>
+    c8 c d e r g a h
+    r e, d c d e16 fis g4~
+    g fis g8 e f g
+    r a h c r f, e d
+    e4. a8 f4 g %95
+    c, r g'4. g8
+    e2 fis4 h,8 e
+    c a d4 g, r8 d'
+    e f! r e f g r f
+    g a r g f2 %100
+    e \clef treble << {
+      cis''4 cis
+      d8 a d4
+    } \\ {
+      a8 e a f16 e
+      f4. e16 d
+    } >> \clef bass a4. a8
+    gis4 gis a8 e a4~
+    a8 g16 fis g8 fis16 e h2
+    e8 e fis g r fis gis a %105
+    r e f c d4 e
+    a,2 e'4. c8
+    a4 h c2
+    g \clef treble << {
+      r8 c'' d e
+      r a, g f g a16 h c4 %110
+    } \\ {
+      e,4 e
+      f8 c f4. e16 d e8 d16 c %110
+    } >>
+    \clef "treble_8" g2 \clef bass c,4. c8
+    h2 c8 g c4~
+    c8 h16 a h8 a16 g a2
+    g1~-\tasto
+    g~ %115
+    g
+    c~-\tasto
+    c
+    \tempoKyrieFugaB f,2.-\markup \remark "accompagnato" f4
+    c'1\fermata \bar "|." %120 finis
+  }
+}
+
+KyrieFugaBassFigures = \figuremode {
+  r1 %86
+  r
+  r
+  r
+  r %90
+  r
+  r8 <6>4. <7 _+>4 <5>8 <6>
+  <2>4 <[6]>2.
+  r1
+  <10 9>4 <\t 8> <6 5>2 %95
+  r1
+  <6>2 <6 5>4 <6>
+  <6 5> <_+>2 r8 <_!>
+  r1
+  r4. <6>8 <7>4 <6> %100
+  <_+>1
+  r2 <5 4>4 <\t 3[!]>
+  \bo <[6]>2 <9 _+>4 <8 6\\>8 \bc <[7] 5>
+  <[6\\] 4\+>4 \bo <[6]> <5\+ 4> \bc <[\t] _+>
+  r1 %105
+  r8 <_+> <5> <[6]> <6 5>4 <[_+]>
+  <_!>2 <5 4>4 <\t 3[!]>
+  <6 5> <5> <9> <8>
+  r1
+  r %110
+  <5 4>4 <\t 3>2.
+  <[6]>2. <6>4
+  <4\+> <[6]> <7> <6\\>
+  r1
+  r %115
+  <6 4>2 <5 \t>4 <\t 3>
+  r1
+  r
+  r
+  r %120 finis
+}

@@ -46,3 +46,82 @@ KyrieTenoreLyrics = \lyricmode {
   son, e -- le -- i -- son, e -- lei -- %35
   son. %36 finis
 }
+
+KyrieFugaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoKyrieFuga
+      \set Score.currentBarNumber = #86
+    \mvTr c4.\fE^\tuttiE c8 h4 h
+    c8[ g] c4. h16[ a] h8[ a16 g]
+    a2 g8 g[ a h]
+    r c[ d e] r a,[ g f]
+    g[ a16 h] c2 h4 %90
+    c8 e,[ f g] r h[ c d]
+    r g,[ fis e] fis d'4 e8
+    c4 d h r
+    R1*2 %95
+    c4. c8 h4 h
+    c8[ g] c4. h16[ a] h8[ a16 g]
+    a2 g8 h[ c d]
+    r c[ d e] r d[ e f]
+    r e[ f g] c,4 a %100
+    h2 r
+    R1
+    e4. e8 cis4 cis(
+    dis8[ h]) e2 dis4
+    e r8 h c![ d] r c %105
+    d[ e] r c h2
+    a4 c h4. e8
+    c4 h8[ a] g4 e'
+    d2 r
+    R1 %110
+    g,4. g8 e4 e
+    g8[ d] g2 a4
+    fis8[ g16 a] g8 e'4 d8 c4
+    d8 e8[ d c] r d[ c h]
+    r c[ h a] r f'![ e d] %115
+    g,2 g
+    g4 r8 f' e[ d] r e
+    d[ c] r d c[ b] c4
+    \tempoKyrieFugaB c2. c4
+    c1\fermata \bar "|." %120 finis
+  }
+}
+
+KyrieFugaTenoreLyrics = \lyricmode {
+  Ky -- ri -- e e -- %86
+  _ _ _ _
+  lei -- son, e --
+  _ _
+  _ le -- i -- %90
+  son, e -- _
+  _ _ _ _
+  le -- i -- son,
+
+  Ky -- ri -- e e -- %96
+  _ _ _ _
+  lei -- son, e --
+  _ _
+  _ le -- i -- %100
+  son,
+
+  Ky -- ri -- e e --
+  le -- i --
+  son, e -- _ _ %105
+  _ _ lei --
+  son, e -- _ _
+  _ _ le -- i --
+  son,
+  %110
+  Ky -- ri -- e e --
+  _ _ _
+  _ _ _ _ lei --
+  son, e -- _
+  _ _ %115
+  _ lei --
+  son, e -- _ _
+  _ _ _ _
+  le -- i --
+  son. %120 finis
+}
