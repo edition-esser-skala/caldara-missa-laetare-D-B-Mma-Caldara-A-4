@@ -65,3 +65,54 @@ KyrieFugaClarinoI = {
     c1\fermata \bar "|." %120 finis
   }
 }
+
+GloriaClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    e'4\fE r8 e g e r g
+    c g r e c g e e'
+    f r \pao d r e c16 c c c c c
+    c4 r r2
+    R1*2 %6
+    g'4\fE r8 g h g r g
+    g4 r8 d g d r g
+    a4 fis g8 g16 g g g g g
+    g4 r r2 %10
+    R1*3
+    r2 r8 g\fE g4
+    r8 g g16 d g f e8 e g e %15
+    e8. e16 g4 \pao c,, r
+    \pao c r \pao c r
+    \pao c r \pao c r8 e'
+    f4 d e8 e g e
+    r g a g r g g d16 g %20
+    e4 r r2
+    R1*10 %31
+    r4 \tempoAdoramus r r2
+    R1*5 \noBreak %37
+    R1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus
+      \mvTr c4\pE-\solo d e \noBreak
+    d e8 f g f %40
+    e4. d8 c4
+    R2.*2
+    c4 f8 e d c
+    d e16 f g8 f e d %45
+    e fis16 g a8 g fis e
+    fis g16 a h8 a g fis
+    g a a2
+    g4 r r
+    R2.*6 %55
+    \mvTr g4\fE-\tuttiE r r
+    g r r
+    R2.*2
+    r8 g g g g g %60
+    g4 g g
+    g g4. f8
+    e g g e e c
+    c e e c c g
+    g c c g g e %65
+    e4 r r\fermata \bar "||" %66 finis
+  }
+}

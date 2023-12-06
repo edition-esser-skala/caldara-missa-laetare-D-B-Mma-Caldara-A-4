@@ -125,3 +125,97 @@ KyrieFugaTenoreLyrics = \lyricmode {
   le -- i --
   son. %120 finis
 }
+
+GloriaTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    r4 \mvTr e2\fE^\tuttiE e4~
+    e e2 e8 e
+    f4 d e r
+    R1*3 %6
+    r4 \mvTr d2\fE^\tuttiE d4~
+    d d2 d8 d
+    e4 d d r
+    R1*3 %12
+    r2 r4 r8 \mvTr c\fE^\tuttiE
+    d d, r4 d' r8 d
+    d h r d e e e e %15
+    e8. e16 d4 c2
+    c c
+    c c
+    d e4 r8 c
+    g c r4 r8 c c h %20
+    c4 r r2
+    \mvTr e4\pE^\soloE f8 gis, a4 r
+    r8 e' d[ c16 h] c8[ h16 a] h8[ cis]
+    d[ d] c[ h16 a] h8[ a16 g] a8[ h]
+    c16.[ d32] e4 d16[ c] d16.[ e32] f4 e16[( d]) %25
+    e8 e16.([ d32] c8) h a16 gis a4 c8~
+    c[ h16 a] h8 a g[ a16 h] c8[ h16 a]
+    h2~ h8[ a16 g] fis8. e16
+    e4 r r2
+    R1*2 %31
+    r4 \tempoAdoramus \mvTr e'2\fE^\tuttiE e4~
+    e d2 c4~
+    c8[ h!] a4 h c~
+    c h cis d~ %35
+    d c8[ h] c4 c~
+    c h8([ a)] h4. h8 \noBreak
+    h1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*18 %56
+    r8 \mvTr g'\fE^\tutti g([ e)] e([ c)]
+    c2.
+    d8 a4 f' e8
+    d[ c] d4 r %60
+    d d d
+    e d2
+    e r4
+    R2.*2 %65
+    R2.\fermata \bar "||" %66 finis
+  }
+}
+
+GloriaTenoreLyrics = \lyricmode {
+  Et in __
+  ter -- ra, in
+  ter -- ra pax,
+
+  et in __ %7
+  ter -- ra, in
+  ter -- ra pax,
+
+  in %13
+  ter -- ra pax, in
+  ter -- ra, in ter -- ra pax ho -- %15
+  mi -- ni -- bus bo --
+  nae vo --
+  lun -- ta --
+  _ tis, in
+  ter -- ra, in ter -- ra %20
+  pax.
+  Lau -- da -- mus te,
+  lau -- da -- _ _
+  _ _ _ _
+  _ _ _ _ _ mus %25
+  te, be -- ne -- di -- ci -- mus, be --
+  _ ne -- di -- _
+  _ ci -- mus
+  te,
+
+  ad -- o -- %32
+  ra -- _
+  _ _ _
+  _ _ _ %35
+  _ mus, ad --
+  o -- ra -- mus
+  te,
+
+  glo -- ri -- fi -- %57
+  ca --
+  _ _ _ _
+  _ mus, %60
+  glo -- ri -- fi --
+  ca -- mus
+  te. %63 finis
+}

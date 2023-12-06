@@ -124,3 +124,109 @@ KyrieFugaAltoLyrics = \lyricmode {
   le -- i --
   son. %120 finis
 }
+
+GloriaAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    r4 \mvTr g'2\fE^\tuttiE g4~
+    g g2 g8 a
+    a4 g g r
+    R1*3 %6
+    r4 \mvTr g2\fE^\tuttiE g4~
+    g g2 g8 g
+    a4 fis g r
+    r8 \mvTr g\pE^\soloE h a16([ g)] a8 d, g8. fis16 %10
+    fis4 fis8 gis a h16([ c!)] h8 a
+    gis[ a]~ a16[ fis g8]~ g16[ e f d] e4~
+    e8[ d16 c] h4 a r8 \mvTr e'\fE^\tuttiE
+    fis a r4 g r8 g
+    h g r g g g g g %15
+    g8. g16 g4 r2
+    c8 c h h a4 g
+    a8 a g f e8.[ f16] g4
+    f16[ g a8] g4 g r8 e
+    g e r4 r8 e d8. d16 %20
+    e4 r r2
+    R1*10 %31
+    r4 \tempoAdoramus \mvTr g2\fE^\tuttiE g4
+    f!2. e4~
+    e d2 e4
+    d4. g8 e4 f! %35
+    e2 e
+    fis4 fis fis4. fis8 \noBreak
+    e1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*2 %40
+    \mvTr c4\pE^\soloE d e
+    d e8[ f g f]
+    e4. d8 c4
+    R2.*5 %48
+    d4 g8([ f!)] e([ d)]
+    e[ fis16 g] a8[ g fis e] %50
+    fis[ g16 a] h8[ a g fis]
+    g[ a16 h] c8[ h a g]
+    fis[ e d c' h a]
+    h4 a2
+    g r4 %55
+    r8 \mvTr h\fE^\tuttiE h[( g)] g([ e)]
+    e2.~
+    e8[ c' c a a f]
+    f4 a8.[ g16] a4
+    g8[ f] g4 r %60
+    g g g
+    g g2
+    g r4
+    R2.*2 %65
+    R2.\fermata \bar "||" %66 finis
+  }
+}
+
+GloriaAltoLyrics = \lyricmode {
+  Et in __
+  ter -- ra, in
+  ter -- ra pax,
+
+  et in __ %7
+  ter -- ra, in
+  ter -- ra pax,
+  in ter -- ra pax ho -- mi -- ni -- %10
+  bus bo -- nae, bo -- nae vo -- lun --
+  ta -- _
+  _ tis, in
+  ter -- ra pax, in
+  ter -- ra, in ter -- ra pax ho -- %15
+  mi -- ni -- bus
+  bo -- nae vo -- lun -- ta -- tis,
+  bo -- nae vo -- lun -- ta -- _
+  _ _ tis, in
+  ter -- ra, in ter -- ra %20
+  pax.
+
+  Ad -- o -- %32
+  ra -- _
+  _ _
+  _ _ _ _ %35
+  _ mus,
+  ad -- o -- ra -- mus
+  te,
+
+  glo -- ri -- fi -- %41
+  ca -- _
+  _ _ mus,
+
+  glo -- ri -- fi -- %49
+  ca -- _ %50
+  _ _
+  _ _
+  _
+  _ mus
+  te, %55
+  glo -- ri -- fi --
+  ca --
+
+  _ _ _
+  _ mus, %60
+  glo -- ri -- fi --
+  ca -- mus
+  te. %63 finis
+}

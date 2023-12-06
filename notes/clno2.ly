@@ -50,3 +50,43 @@ KyrieFugaClarinoII = {
     c1\fermata \bar "|." %120 finis
   }
 }
+
+GloriaClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    c'4\fE r8 c e c r e
+    g e r c g e c c'
+    d r d r c g16 g g g g g
+    g4 r r2
+    R1*2 %6
+    d'4\fE r8 d g d r d
+    d4 r8 g, d' g, r d'
+    e4 d d8 d16 d d d d d
+    d4 r r2 %10
+    R1*3
+    r2 r8 d\fE d4
+    r8 d d d c c e c %15
+    c8. c16 d4 c, r
+    c r c r
+    c r c r8 c'
+    d2 c8 c e c
+    r e f e r c d4 %20
+    c r r2
+    R1*10 %31
+    r4 \tempoAdoramus r r2
+    R1*5 \noBreak %37
+    R1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*17 %55
+    d4\fE r r
+    e r r
+    R2.*2
+    r8 d d d d d %60
+    d4 d d
+    e d2
+    c8 e e c c g
+    g c c g g e
+    e g g e e c %65
+    c4 r r\fermata \bar "||" %66 finis
+  }
+}

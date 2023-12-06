@@ -46,3 +46,43 @@ KyrieFugaTimpani = {
     c1\fermata \bar "|." %120 finis
   }
 }
+
+GloriaTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoGloria
+    c4\fE r8 c c4 r8 c
+    c4 r8 c c c c c
+    c r g r c c16 c c8 c
+    c4 r r2
+    R1*2 %6
+    g4\fE r8 g g4 r8 g
+    g4 r8 g g4 r8 g
+    c4 r g8 g16 g g8 g
+    g4 r r2 %10
+    R1*3
+    r2 r8 g\fE g4
+    r8 g g g c c c c %15
+    g8. g16 g4 c r
+    c r c r
+    c r c r
+    r g8 g c c c4
+    r8 c c4 r8 c g g %20
+    c4 r r2
+    R1*10 %31
+    r4 \tempoAdoramus r r2
+    R1*5 \noBreak %37
+    R1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*17 %55
+    g4\fE r r
+    c r r
+    R2.*2
+    r8 g g g g g %60
+    g4 g g
+    c g g
+    c r r
+    c r r
+    c8 c c c c c %65
+    c4 r r\fermata \bar "||" %66 finis
+  }
+}

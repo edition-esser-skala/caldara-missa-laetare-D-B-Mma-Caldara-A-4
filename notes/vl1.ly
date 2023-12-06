@@ -125,3 +125,52 @@ KyrieFugaViolinoI = {
     g1\fermata \bar "|." %120 finis
   }
 }
+
+GloriaViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    r8 c'\fE e c r e g e
+    r g c g r e g e
+    f r d r e c, e g
+    c,4 r r2
+    R1*2 %6
+    r8 d\fE g d r g h g
+    r h d h r d g d
+    r c' a d h g, d h
+    g4 r r2 %10
+    R1*2
+    r2 r8 a''\fE a16 e a g
+    fis8 fis a fis g g,, r g''
+    h g r g e e g e %15
+    e8. e16 d4 c8 c h h
+    a a g g f f e e
+    f f g g a a e e
+    f f g g c, r r g''
+    e g r e g e d4 %20
+    c8 e, f d c4 r
+    R1*7 %28
+    r8 h''\fE a g16 fis g8 fis16 e fis8 gis
+    a a g fis16 e fis8 e16 d e8 fis %30
+    g a16 g fis8 e dis e4 dis8
+    e4 \tempoAdoramus g2 g4
+    f!2. e4~
+    e d8 c h4 c~
+    c h cis d~ %35
+    d c8 h c4 c~
+    c h8 a h2 \noBreak
+    h1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*16 %54
+    r8 d\fE d h h g %55
+    g2.~
+    g8 e' e c c a
+    a2.~
+    a8 f' f d d c
+    h g g h h d %60
+    d h h d d g
+    e c' d,^\critnote c' d, h'
+    c4 c, r
+    R2.*2
+    R2.\fermata \bar "||" %66 finis
+  }
+}

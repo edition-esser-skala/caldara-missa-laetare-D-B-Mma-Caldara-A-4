@@ -46,3 +46,43 @@ KyrieFugaTrombaI = {
     c1\fermata \bar "|." %120 finis
   }
 }
+
+GloriaTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoGloria
+    g'4\fE r8 g g4 r8 g
+    g4 r8 g \pa e c e g \pd
+    r4 r8 g g e16 e e e e e
+    e4 r r2
+    R1*2 %6
+    g4\fE r8 g g4 r8 g
+    g4 r8 g g4 r8 g
+    e4 r g8 g16 g g g g g
+    g4 r r2 %10
+    R1*3
+    r2 r8 g\fE g4
+    r8 g g g g g g g %15
+    g8. g16 g4 \pao c, r
+    \pao c r \pao c r
+    \pao c r \pao c r
+    r g'8 g \pa g g c g \pd
+    r g g4 r8 g g g %20
+    g4 r r2
+    R1*10 %31
+    r4 \tempoAdoramus r r2
+    R1*5 \noBreak %37
+    R1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*17 %55
+    g4\fE r r
+    g r r
+    R2.*2
+    r8 g g g g g %60
+    g4 g g
+    g g2
+    g4 r r
+    e r r
+    g8 e e g g g %65
+    g4 r r\fermata \bar "||" %66 finis
+  }
+}

@@ -188,3 +188,99 @@ KyrieFugaBassoLyrics = \lyricmode {
   le -- i --
   son. %120 finis
 }
+
+GloriaBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoGloria
+    \mvTr c'2\fE^\tuttiE c
+    c c,4 r8 a'
+    f4 g c, r
+    R1*3 %6
+    \mvTr g'2\fE^\tuttiE g
+    g g,4 r8 g'
+    c,4 d g, r
+    R1*3 %12
+    r2 r8 \mvTr a'\fE^\tuttiE c a
+    r d, fis d g g h g
+    r g, h g c4 c8 c %15
+    g'8. g16 g,4 c'2
+    c c
+    c c
+    f,8[ d] g4 c, r8 c
+    e c r4 r8 c g' g, %20
+    c4 r r2
+    r2 \mvTr a'4\pE^\soloE c8 dis,
+    e4 r r8 a g![ f16. e32]
+    f8[ e16 d] e8[ fis] g[ g] f[ e16 d]
+    e16.[ f32] g4 f16[ e] f16.[ g32] a4 h8 %25
+    c4 r r8 a16.([ g32] fis8) e
+    dis16 cis dis8 dis h e8. d16 c4
+    g'8([ fis)] e([ dis)] e([ a,]) h8. h16
+    e,4 r r2
+    R1*2 %31
+    r4 \tempoAdoramus \mvTr cis'2\fE^\tuttiE cis4
+    d!2 e
+    f2. e4
+    fis g2 f4 %35
+    gis2 a
+    dis,4. dis8 dis4 dis \noBreak
+    e1\fermata \bar "||"
+    \time 3/4 \tempoGlorificamus R2.*17 %55
+    r8 \mvTr g\fE^\tuttiE g([ e)] e([ c)]
+    c2.~
+    c8[ a' a f f d]
+    d4. e8 f4
+    g g, r %60
+    g' h g
+    c8([ c,] g'4.) g8
+    c,2 r4
+    R2.*2 %65
+    R2.\fermata \bar "||" %66 finis
+  }
+}
+
+GloriaBassoLyrics = \lyricmode {
+  Et in
+  ter -- ra, in
+  ter -- ra pax,
+
+  et in %7
+  ter -- ra, in
+  ter -- ra pax,
+
+  in ter -- ra, %13
+  in ter -- ra pax, in ter -- ra,
+  in ter -- ra pax, pax ho -- %15
+  mi -- ni -- bus bo --
+  nae vo --
+  lun -- ta --
+  _ _ tis, in
+  ter -- ra, in ter -- ra %20
+  pax.
+  Lau -- da -- mus
+  te, lau -- da --
+  _ _ _ _
+  _ _ _ _ _ mus %25
+  te, be -- ne --
+  di -- ci -- mus, be -- ne -- di -- ci -- mus,
+  be -- ne -- di -- ci -- mus
+  te,
+
+  ad -- o -- %32
+  ra -- _
+  _ _
+  _ _ _ %35
+  _ mus,
+  ad -- o -- ra -- mus
+  te,
+
+  glo -- ri -- fi -- %56
+  ca --
+
+  _ _ _
+  _ mus, %60
+  glo -- ri -- fi --
+  ca -- mus
+  te. %63 finis
+}
