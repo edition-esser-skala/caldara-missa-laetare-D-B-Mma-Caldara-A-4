@@ -359,3 +359,49 @@ DomineDeusAltoLyrics = \lyricmode {
   _ o -- mni -- po --
   tens. %193 finis
 }
+
+DomineFiliAlto = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    r1 \mvTr a'2.\fE^\tuttiE g4
+    f1 g4( a g f) %220
+    e2 fis4 gis a2. a4
+    a1 h2.( a4
+    gis fis) e2 r1
+    a2. g4 fis2 gis4 a
+    h a gis2 a1 %225
+    gis r
+    a f
+    d2 e d1
+    e r2 f~
+    f4 f d1 g2~ %230
+    g e e a~
+    a f1 f2~
+    f e2. e4 e2
+    e\breve
+    e\fermata \markDaCapo \bar "||" %235 finis
+  }
+}
+
+DomineFiliAltoLyrics = \lyricmode {
+  Do -- mi -- %219
+  ne Fi -- %220
+  li u -- ni -- ge -- ni --
+  te, Je --
+  su,
+  Je -- _ _ _ _
+  _ _ su Chri -- %225
+  ste,
+  Je -- su,
+  Je -- su Chri --
+  ste, Do --
+  mi -- ne De -- %230
+  us, A -- gnus __
+  De -- i, __
+  Fi -- li -- us
+  Pa --
+  tris. %235 finis
+}

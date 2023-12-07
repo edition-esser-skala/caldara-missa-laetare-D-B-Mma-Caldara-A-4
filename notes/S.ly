@@ -331,12 +331,53 @@ GratiasSopranoLyrics = \lyricmode {
   am. %96 finis
 }
 
+DomineFiliSoprano = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    \mvTr e'2.\fE^\tuttiE d4 c1
+    d4( e d c) h2 c4 d %220
+    e2. e4 e1
+    f2.( e4 d c) h2
+    r e2. d4 c h
+    a h c2 d1
+    e1.( d2) %225
+    e1 e
+    c2 a1 a2
+    g!\breve
+    g2 c2. c4 a2~
+    a d1 h2 %230
+    h e1 c2
+    a a1 h4 a
+    gis a h1 a4 gis
+    a\breve
+    gis\fermata \markDaCapo \bar "||" %235 finis
+  }
+}
+
+DomineFiliSopranoLyrics = \lyricmode {
+  Do -- mi -- ne %219
+  Fi -- li u -- ni -- %220
+  ge -- ni -- te,
+  Je -- su,
+  Je -- _ _ _
+  _ _ _ su
+  Chri -- %225
+  ste, Je --
+  su, Je -- su
+  Chri --
+  ste, Do -- mi -- ne __
+  De -- us, %230
+  A -- gnus De --
+  i, Fi -- li -- us
+  Pa -- _ _ _ _
+  _
+  tris. %235 finis
+}
 
 
-
-
-% Do -- mi -- ne Fi -- li u -- ni -- ge -- ni -- te, Je -- su Chri -- ste,
-% Do -- mi -- ne De -- us, A -- gnus De -- i, Fi -- li -- us Pa -- tris.
 % Qui tol -- lis pec -- ca -- ta mun -- di:
 % Mi -- se -- re -- re no -- bis.
 % Qui tol -- lis pec -- ca -- ta mun -- di:

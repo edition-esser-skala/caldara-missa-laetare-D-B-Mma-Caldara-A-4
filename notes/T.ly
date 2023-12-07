@@ -219,3 +219,46 @@ GloriaTenoreLyrics = \lyricmode {
   ca -- mus
   te. %63 finis
 }
+
+DomineFiliTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key a \minor \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*2 %220
+    \mvTr e2.\fE^\tuttiE d4 c1
+    d4( e d c) h2 c4 d
+    e2. e4 e1
+    f!2.( e4 d c) h2~
+    h c4 h a1 %225
+    h2 e1 c2
+    a2. h8[ c] d4 e d c
+    h g c1 h2
+    c2. c4 a1
+    d h %230
+    e2 h c1
+    c d4( e) d c
+    h a gis2 c1
+    c2 c c1
+    h\breve\fermata \markDaCapo \bar "||" %235 finis
+  }
+}
+
+DomineFiliTenoreLyrics = \lyricmode {
+  Do -- mi -- ne %221
+  Fi -- li u -- ni --
+  ge -- ni -- te,
+  Je -- su, __
+  Je -- su Chri -- %225
+  ste, Je -- su,
+  Je -- _ _ _ _ _
+  _ su Chri -- ste,
+  Do -- mi -- ne
+  De -- us, %230
+  A -- gnus De --
+  i, Fi -- li -- us,
+  Fi -- li -- us, Fi --
+  li -- us Pa --
+  tris. %235 finis
+}

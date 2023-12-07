@@ -214,3 +214,29 @@ GratiasViolinoI = {
     e8 f4 e8 f4 r\fermata \bar "|." %103 finis
   }
 }
+
+DomineFiliViolinoI = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/2 \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    e'2.\fE d4 c1
+    d4 e d c h2 c4 d %220
+    e2. e4 e1
+    f2. e4 d c h2
+    r e2. d4 c h
+    a h c2 d1
+    e1. d2 %225
+    e1 e
+    c2 a1 a2
+    g!\breve
+    g2 c2. c4 a2~
+    a d1 h2 %230
+    h e1 c2
+    a a1 h4 a
+    gis a h1 a4 gis
+    a\breve
+    gis\fermata \markDaCapo \bar "||" %235 finis
+  }
+}

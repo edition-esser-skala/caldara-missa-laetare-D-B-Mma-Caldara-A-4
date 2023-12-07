@@ -751,3 +751,54 @@ DomineDeusBassFigures = \figuremode {
   r8 \bc <[6]> r2
   r2. %218 finis
 }
+
+DomineFiliOrgano = {
+  \relative c {
+    \clef treble
+    \key a \minor \time 4/2 \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    << {
+      e''2. d4 c1
+      d4 e d c h2 c4 d %220
+    } \\ {
+      \mvTr r1\fE-\tuttiE a2. g4
+      f1 g4 a g f %220
+    } >>
+    \clef "treble_8" e2. d4 \clef bass a2. g!4
+    f!1 g4 a g f
+    e2 fis4 gis a1~
+    a h2. a4
+    gis fis e2 f?1 %225
+    e r2 a~
+    a f d1
+    g!\breve
+    c,1 f
+    d g %230
+    e a
+    f d
+    e a,~
+    a\breve
+    e'\fermata \markDaCapo \bar "||" %235 finis
+  }
+}
+
+DomineFiliBassFigures = \figuremode {
+  r\breve %219
+  r %220
+  <_+>
+  <6>
+  <_+>
+  <6[!]>1 <5\+>
+  \bo <[6 _]>2 <6 _+>4 \bc <[5 \t]> <7>2 <6> %225
+  <[_+]>\breve
+  r
+  <5 [3]>2 <6 4> <5 \t> <\t 3>
+  r\breve
+  <_!> %230
+  q1 q
+  r <5>2 <6>4 <[5]>
+  <10+ 9>2 <\t 8> <9> <8>4 <7\\>
+  <8>\breve
+  <_+> %235 finis
+}

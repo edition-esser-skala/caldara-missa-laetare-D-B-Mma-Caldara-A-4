@@ -336,3 +336,46 @@ GratiasBassoLyrics = \lyricmode {
   _ _ _ ri -- am tu -- %95
   am. %96 finis
 }
+
+DomineFiliBasso = {
+  \relative c {
+    \clef bass
+    \key a \minor \time 4/2 \autoBeamOff \tempoDomineFili
+      \set Score.currentBarNumber = #219
+      \set Staff.timeSignatureFraction = 2/2
+    R\breve*2 %220
+    r1 \mvTr a'2.\fE^\tuttiE g!4
+    f1 g4( a g f)
+    e2 fis4 gis a2. a4
+    a1 h2.( a4
+    gis fis) e2 f?1 %225
+    e r2 a~
+    a f d d
+    g!\breve
+    c,1 f2. f4
+    d1 g %230
+    e a
+    f d
+    e a,2 a4 a
+    a\breve
+    e'\fermata \markDaCapo \bar "||" %235 finis
+  }
+}
+
+DomineFiliBassoLyrics = \lyricmode {
+  Do -- mi -- %221
+  ne Fi --
+  li u -- ni -- ge -- ni --
+  te, Je --
+  su Chri -- %225
+  ste, Je --
+  su, Je -- su
+  Chri --
+  ste, Do -- mi --
+  ne De -- %230
+  us, A --
+  gnus De --
+  i, Fi -- li -- us
+  Pa --
+  tris. %235 finis
+}
