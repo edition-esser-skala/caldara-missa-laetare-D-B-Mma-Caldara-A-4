@@ -116,3 +116,106 @@ GloriaClarinoI = {
     e4 r r\fermata \bar "||" %66 finis
   }
 }
+
+DomineDeusClarinoSolo = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoDomineDeus
+      \set Score.currentBarNumber = #104
+    R2.*5 %108
+    r8 g''\fE e f g4~
+    g8 a16 h c8 h16 a g4~ %110
+    g8 a16 h c8 h16 a g8 f16 e
+    f8. e16 f8 g a h
+    c8. c,16 c4 r
+    e~\trill e16 d c d e fis g a
+    fis4~\trill fis16 e d e fis g a h %115
+    g4~\trill g16 fis e fis g a h c
+    a4~\trill a16 g fis g a h c d
+    h8 d16 c h8 a16 g a4\trill
+    g r r
+    r8 g g f! e d %120
+    c4~\trill c16 e g e c e g e
+    c4~\trill c16 e g e c e g e
+    c4\trill r r
+    r8 d d d d d
+    d4~\trill d16 fis a fis d fis a fis %125
+    d4~\trill d16 fis a fis d fis a fis
+    d4\trill r r
+    r8 g, c16 g d' g, e' g, f' d
+    g2.~\trill
+    g %130
+    r8 e f16 c g' c, a' f h! g
+    c2.~\trill
+    c8. d16 h2
+    c4 r r
+    R2.*3 %137
+    c,4~\trill c16 e g e c e g e
+    c4\trill r r
+    R2.*3 %142
+    g'8 e16 f g4. a8
+    f d16 e f4. g8
+    e c16 d e2\trill %145
+    d r4
+    R2.
+    r4 g g
+    g~\trill g16 h d h g h d h
+    g4\trill r r %150
+    R2.
+    r4 d d
+    d~\trill d16 fis a fis d fis a fis
+    d4\trill r r
+    R2.*3 %175
+    r4 d g
+    e4. fis16 g a h c a
+    fis4. g16 a h c d h %160
+    g8. a16 a2\trill
+    g4 r r
+    R2.*3 %165
+    e4~\trill\pE e16 g h g e g h g
+    e4~\trill e16 g h g e g h g
+    e4\trill r r
+    R2.*2 %170
+    g16\fE e fis g a4. h16 c
+    fis,4. fis16( g) a8 g16( fis)
+    g8. fis16 fis2\trillE
+    e r4
+    R2. %175
+    r4 fis8 g a g16 fis
+    g4 r r
+    R2.*4 %181
+    r4 g f!
+    e~\trill e16 c e f e g e c
+    f4~\trill f16 d f g f a f d
+    g4~\trill g16 e g a g b? g e %185
+    a4~\trill a16 f a b a c a f
+    g4 g, r
+    R2.*5 %192
+    r8 g' e f g4~
+    g8 a16 h c8 h16 a g4~
+    g8 a16 h c8 h16 a g8 f16 e %195
+    f8. e16 f8 g a h
+    c8. c,16 c4 r
+    e~\trill e16 d c d e fis g a
+    fis4~\trill fis16 e d e fis g a h
+    g4~\trill g16 fis e fis g a h c %200
+    a4~\trill a16 g fis g a h c d
+    h8 d16 c h8 a16 g a4\trill
+    g r r
+    r8 g g f! e d
+    c4~\trill c16 e g e c e g e %205
+    c4~\trill c16 e g e c e g e
+    c4\trill r r
+    r8 d d d d d
+    d4~\trill d16 fis a fis d fis a fis
+    d4~\trill d16 fis a fis d fis a fis %210
+    d4\trill r r
+    r8 g, c16 g d' g, e' g, f' d
+    g2.~\trill
+    g
+    r8 e f16 c g' c, a' f h! g %215
+    c2.~\trill
+    c8. d16 h2
+    c4 r r\fermata \bar "||" %218 finis
+  }
+}

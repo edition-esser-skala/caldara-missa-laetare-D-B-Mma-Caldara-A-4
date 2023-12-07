@@ -77,7 +77,7 @@ ChristeBasso = {
     r c16([ d)] e([ fis)] g8 r d16([ e)] fis([ gis)] a8
     r e a4. a8 a a
     a([ gis16 fis] gis8) e( a[ f)] d([ e)] %75
-    a,4 r \markCritnote r2
+    a,4 r r2
     R1*8 %84
     R1\fermata \bar "||" %85 finis
   }
@@ -283,4 +283,56 @@ GloriaBassoLyrics = \lyricmode {
   glo -- ri -- fi --
   ca -- mus
   te. %63 finis
+}
+
+GratiasBasso = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \autoBeamOff \tempoGratias
+      \set Score.currentBarNumber = #67
+    R1*7 %73
+    r2 \mvTr a'4.\pE^\soloE f16 g
+    a4. f16 g a8 b16 a g4 %75
+    f r r2
+    r2 f8 f f16([ es)] d([ c)]
+    d16.[( c32 d16. e32] f4.) e16 f g4
+    c, r r2
+    R1*4 %83
+    r2 g'8 a16 b c8 b!16 c
+    a8 a r4 b8 b b a %85
+    g4. f16.[ g32] a16.[ g32 a16. b32] a16.[ b32 a16. g32]
+    f4 fis8.[\trill e32( fis)] g16.[ fis32 g16. a32] g16.[ a32 g16. f?32]
+    e4. d16([ e)] f8[ f g a]
+    b! g16 g a4 d, r
+    R1*2 %91
+    r2 f8 f b f
+    g16([ f) g8]~ g16[ a f g] a8.[ f16] g8[ a]
+    b[ g a h] c c a[ g16 f]
+    b8[ g d e] f e16 f c4 %95
+    f, r r2
+    R1*6 %102
+    R1\fermata \bar "|." %103 finis
+  }
+}
+
+GratiasBassoLyrics = \lyricmode {
+  Gra -- ti -- as %74
+  a -- gi -- mus, a -- gi -- mus ti -- %75
+  bi
+  pro -- pter ma -- gnam
+  glo -- ri -- am tu --
+  am.
+
+  Gra -- ti -- as a -- gi -- mus %84
+  ti -- bi pro -- pter ma -- gnam %85
+  glo -- _ _ _
+  _ _ _ _
+  _ _ _
+  _ ri -- am tu -- am,
+
+  pro -- pter ma -- gnam %92
+  glo -- _ _
+  _ _ _
+  _ _ _ ri -- am tu -- %95
+  am. %96 finis
 }

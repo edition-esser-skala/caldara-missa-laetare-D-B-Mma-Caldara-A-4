@@ -72,7 +72,7 @@ ChristeViolinoII = {
     e f g8 r h,16 c d e f8 r c16 d
     e fis gis8 r4 r2
     R1 %75
-    \after 2 \markCritnote R
+    R
     r2 r8 a,\fE b a
     b8. a16 a4. a16 gis a8 h?
     e,4 r r8 a a d
@@ -167,5 +167,43 @@ GloriaViolinoII = {
     c4 c, r
     R2.*2
     R2.\fermata \bar "||" %66 finis
+  }
+}
+
+GratiasViolinoII = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #67
+    R1
+    r16 g'\fE c16. e32 d8 g, c d4 c16 b
+    a4 a~ a16 d h a g8 f
+    e d16 c d4 c r %70
+    r8 d' b! c f, b r4
+    r8 e! c d g, c r4
+    r8 d d e a,16 f' d c! b!4~
+    b16 g a f g4 f r
+    R1 %75
+    r8 f'4\fE e8 a,16. b32 c4 b16 a
+    \appoggiatura a8 g4 r r2
+    R1
+    r2 r16 g\fE c16. e32 d8 g,
+    c16. c32 d16. e32 d8 c h g c4~ %80
+    c8 f, b8.\trillE a32( b) a8 c16 b a8 b
+    g4 g8 a d, d'16 c h8 c
+    a4-\critnote a8 h e, a~ a16 f d'( c)
+    h8 c4 h8 c4 r
+    R1*5 %89
+    r16 a\fE d16. f32 e8 a, d g e f16 e %90
+    f8 a, b a16 g a8 c4 b16 a
+    g4 r r2
+    R1*4 %96
+    r16 g\fE c16. e32 d8 g, c d4 c16 b
+    a4 a~ a16 d h a g8 f
+    e d16 c d4 c r
+    r8 d' b! c f, b r4 %100
+    r8 e! c d g, c r4
+    r8 d d e a,16 f' d c! b!4~
+    b16 g a f g4 f r\fermata \bar "|." %103 finis
   }
 }

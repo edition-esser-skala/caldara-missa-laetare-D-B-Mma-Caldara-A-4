@@ -88,7 +88,7 @@ ChristeSoprano = {
     c([ d)] e8 r g,16([ a)] h([ cis)] d8 r a16([ h)]
     c([ d)] e8 r f h, h h h
     h4~ h16[ c] d([ e] c8[ h16 a)] h4 %75
-    a r \markCritnote r2
+    a r r2
     R1*8 %84
     R1\fermata \bar "||" %85 finis
   }
@@ -281,12 +281,60 @@ GloriaSopranoLyrics = \lyricmode {
   te. %63 finis
 }
 
+GratiasSoprano = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 4/4 \autoBeamOff \tempoGratias
+      \set Score.currentBarNumber = #67
+    R1*7 %73
+    r2 \mvTr c'4.\pE^\soloE a16 b
+    c4. a16 b c8 d16 c b4 %75
+    a r r2
+    c8 c c16([ b)] a([ g)] a16.[ g32 a16. b32] c4~
+    c8[ b] a[ d16 c] h8 c16 d h4
+    c r r2
+    R1*5 %84
+    c8 d16 e f8 es16 f d8 d r4 %85
+    es8 es es d cis4. h?16([ cis)]
+    d16.[ cis32 d16. e32] d16.[ es32 d16. c?32] b4 h8.[\trill a32( h])
+    c16.[ h32 c16. d32] c16.[ d32 c16. b?32] a8[ a h cis]
+    d e16 d cis4 d r
+    R1*2 %91
+    c8 c f c d16.([ c32) d8] d4~
+    d16[ e c d] e[ f d e] f8[ c] es4
+    d8[ c16 b] f'4 e8[ d16 c] c4~
+    c8[ b] d[ c16 b] a8 g16 f g4 %95
+    f r r2
+    R1*6 %102
+    R1\fermata \bar "|." %103 finis
+  }
+}
+
+GratiasSopranoLyrics = \lyricmode {
+  Gra -- ti -- as %74
+  a -- gi -- mus, a -- gi -- mus ti -- %75
+  bi
+  pro -- pter ma -- gnam glo -- _
+  _ _ ri -- am tu --
+  am.
+
+  Gra -- ti -- as a -- gi -- mus ti -- bi %85
+  pro -- pter ma -- gnam glo -- _
+  _ _ _ _
+  _ _ _
+  _ ri -- am tu -- am,
+
+  pro -- pter ma -- gnam glo -- _ %92
+  _ _ _
+  _ _ _ _
+  _ _ ri -- am tu -- %95
+  am. %96 finis
+}
 
 
-% Gra -- ti -- as a -- gi -- mus ti -- bi
-% pro -- pter ma -- gnam glo -- ri -- am tu -- am,
-% Do -- mi -- ne De -- us, Rex coe -- le -- stis,
-% De -- us Pa -- ter o -- mni -- po -- tens,
+
+
+
 % Do -- mi -- ne Fi -- li u -- ni -- ge -- ni -- te, Je -- su Chri -- ste,
 % Do -- mi -- ne De -- us, A -- gnus De -- i, Fi -- li -- us Pa -- tris.
 % Qui tol -- lis pec -- ca -- ta mun -- di:

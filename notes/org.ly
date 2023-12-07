@@ -126,7 +126,7 @@ ChristeOrgano = {
     r c16 d e fis g8 r d16 e fis gis a8
     r e a f dis2
     e4. e8 a f d e %75
-    a, a' gis a \markCritnote gis4 a8 h
+    a, a' gis a gis4 a8 h
     c a4 g8 f8. e16 d8 cis
     d4 cis8 a d8. e16 f8 d
     e e c a d e f d
@@ -424,4 +424,330 @@ GloriaBassFigures = \figuremode {
   r
   r4 <5 4> \bc <[\t 3]>
   r2.*4 %66 finis
+}
+
+GratiasOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 4/4 \tempoGratias
+      \set Score.currentBarNumber = #67
+    \mvTr f4.\fE-\soloE e8 d a b4
+    c4. b8 a b c4
+    f4. f8 g4. g8
+    c a f g c, c'16 b! a8 f %70
+    g g, g' a b d16 c b8 g
+    a a, a' h c e16 d cis8 a
+    h h, h' cis d b16 a g8 b
+    c f, c' c, f f16\pE g a4
+    r8 f16 g a4 r8 f g c, %75
+    f f\fE c4 d8 a b4
+    c8 d\pE e4 f16. e32 f16. g32 a8 a,
+    b16. c32 d16. e!32 f4. e16 f g8 g,
+    c c'4\fE h8 e c f, g
+    e4 f8 fis g g16 f e8 c %80
+    d d, d' e f a16 g f8 d
+    e e, e' fis g b16 a gis8 e
+    fis fis, fis' gis a a16 g f8 d
+    g c f, g c,4 e8\pE c
+    f4 a8 f b!4. a8 %85
+    g2 a16. g32 a16. b32 a16. b32 a16. g32
+    f4 fis g16. fis32 g16. a32 g8 f?
+    e2 f8 f g a
+    b! g a a, d4 a'8\fE g
+    f d g a b4 c! %90
+    f,8 f4 e8 d a b4
+    c8 b\pE a4 b2
+    g f8 f' g a
+    b g a h c4 a8 g16 f
+    b8 g d e f d c c, %95
+    f4\fE f'8 e d a b4
+    c4. b8 a b c4
+    f4. f8 g4. g8
+    c a f g c, c'16 b! a8 f
+    g g, g' a b d16 c b8 g %100
+    a a, a' h c e16 d cis8 a
+    h h, h' cis d b16 a g8 b
+    c f, c' c, f4 r\fermata \bar "|." %103 finis
+  }
+}
+
+GratiasBassFigures = \figuremode {
+  r4 <2>4. <[6]>8 <7> <6> %67
+  r4 <2>8 \bo <[6]> <6> \bc <[6]> <10 9>8 <\t 8>16 <\t 7>
+  <7>4 <6>8 <5> <10! 9>4 <\t 8>8 <\t 7>
+  r4 <6 5>8 <[_!]>4. <[6]>4 %70
+  <7> <6->2 <[6]>4
+  <7> <6> \bo <[_!]> <6>8 \bc <[_+]>
+  <7>4 <6>2.
+  <7>4 <4>8 <3> r2
+  r2. <7>8 q %75
+  r4 <5 4>8 <\t 3>4 <[6]>8 <9 7> <8 6>
+  \bo <[6 4]>8 \bc <[4 2]>2..
+  <9>8 <[6]> <5> <6> <4!> \bo <[6]>16 <6> \bc <[_!]>4
+  r4 <2>8 <[6]> <6>4 <6 5>8 <_!>
+  <[6]>4 <6>8 <7> \bo <[_!]>4 \bc <[6]> %80
+  <7> <6->2 \bo <[6]>8 \bc q
+  <7>4 <6> <_-> \bo <[6 _!]>8 \bc <[6 _+]>
+  <7>4 <6>8 \bo <[_! _]>4. <6>4
+  \bc <[7 _!]>4 <6 5>8 <[_!]> r2
+  r2.. <6>8 %85
+  <6->4. <5>8 <[5! _+]>2
+  <6>4 \bo <[\t]> <_-> <_!>
+  \bc <[6]>2. <_!>8 <_+>
+  r \bo <[6]> \bc <[_+]>2 <_+>4
+  <6> <6 5>8 <[_!]> <9> <8 6> <7>4 %90
+  r <4 2>8 <6>4 <6>8 <9 7> <8 6>
+  r4 <[6]>2.
+  <5>4 <6>2 <6->4
+  r <6> \bo <[_!]> \bc <[6]>
+  <9>8 <[5]> <6> \bc <[6]> r2 %95
+  r4 <2>4. <[6]>8 <7> <6>
+  r4 <2>8 \bo <[6]> <6> \bc <[6]> <10 9>8 <\t 8>16 <\t 7>
+  <7>4 <6>8 <5> <10! 9>4 <\t 8>8 <\t 7>
+  r4 <6 5>8 <[_!]>4. <[6]>4
+  <7> <6->2 <[6]>4 %100
+  <7> <6> \bo <[_!]> <6>8 \bc <[_+]>
+  <7>4 <6>2.
+  <7>4 <4>8 <3> r2 %103 finis
+}
+
+DomineDeusOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoDomineDeus
+      \set Score.currentBarNumber = #104
+    \mvTr c4\pE-\soloE r8 c' h g
+    c4 r8 c h g %105
+    c h a4 h8 c
+    d4 d,2
+    c4. d16 e f g a h
+    c8\fE c, r c' h g
+    c c, r c' h g %110
+    c4 a8 h c c,
+    d2.
+    c4. d16 e f g a h
+    c8 c, c4 r8 c'
+    d d, d4 r8 d' %115
+    e e, e4 r8 e
+    fis e d4 r8 fis
+    g fis g e c d
+    g, g' g f e d
+    c4 h2 %120
+    c8 d e4 r8 h
+    c d e4 r8 h
+    c c' c h a g
+    fis e d e fis d
+    g a h4 r8 fis %125
+    g a h4 r8 fis
+    g g, g' a g f
+    e4. h8 c d
+    e d c d e f
+    g a h a h g %130
+    c b a e f g
+    e f e d c h!
+    a f' g4 g,
+    c r8 c'\pE h g
+    c c, r c' h g %135
+    c h a h c c,
+    d2.
+    c4\fE r8 c e h
+    c4. d8\pE e c
+    d4. c8 d h %140
+    c4. d8 e fis
+    g h16 a g8 a g f
+    e4.\fE d8 e c
+    d4. c8 d h
+    c4. d8 e fis %145
+    g a g\pE fis e d
+    c c' h4 r8 fis
+    g a h\fE c h a
+    g a h4 r8 fis
+    g g fis\pE e d c %150
+    h c d4 r8 cis
+    d e fis\fE g fis e
+    d e fis4 r8 cis
+    d e d\pE c h g
+    c h a2 %155
+    d8 c h e c16 d e fis
+    g8 e c a d4
+    g,8 a h\fE a h g
+    c8 h a2
+    d8 c h2 %160
+    e4 c d
+    g, e'8\pE d c4
+    a8 g a4. h8
+    c h a4. c8
+    h h' h a g fis %165
+    e fis g4 r8 dis
+    e fis g4 r8 dis
+    e d c h a4
+    h8 a g fis' e dis
+    e a h a h h, %170
+    e\fE d! c h a4
+    h8 cis dis h cis dis
+    e a h a h h,
+    e d! c!\pE h c a
+    d4. e8 fis g %175
+    d d, d'4\fE c
+    h8 a g\pE a h g
+    c[ h] a r c r
+    d[ e] f r d r
+    e[ d] c r e r %180
+    f e d4. c8
+    h! a g\fE a h g
+    c r c' r c, r
+    d r d r d r
+    e r e r e r %185
+    f r f r f r
+    e f e\pE d c h
+    c d e4. f8
+    e d c4. f8
+    e a f d g e %190
+    a g f4 e8 d
+    c a' f4 g
+    c, r8 c'\fE h g
+    c c, r c' h g
+    c4 a8 h c c, %195
+    d2.
+    c4. d16 e f g a h
+    c8 c, c4 r8 c'
+    d d, d4 r8 d'
+    e e, e4 r8 e %200
+    fis e d4 r8 fis
+    g fis g e c d
+    g, g' g f e d
+    c4 h2
+    c8 d e4 r8 h %205
+    c d e4 r8 h
+    c c' c h a g
+    fis e d e fis d
+    g a h4 r8 fis
+    g a h4 r8 fis %210
+    g g, g' a g f
+    e4. h8 c d
+    e d c d e f
+    g a h a h g
+    c b a e f g %215
+    e f e d c h!
+    a f' g4 g,
+    c r r\fermata \bar "||" %218 finis
+  }
+}
+
+DomineDeusBassFigures = \figuremode {
+  r2 \bo <[6]>4 %104
+  r2 <6>4 %105
+  r2 \bc <[6]>4
+  r <5> <6>
+  r2.
+  r2 \bo <[6]>4
+  r2 <6>4 %110
+  r2 \bc <[6]>4
+  <5>2 <6>4
+  r2.
+  r
+  <_+> %115
+  r
+  \bo <[6]>4 <_+>4. <6>8
+  r q4. <6>8 <_+>
+  r2.
+  r4 <6>2 %120
+  r4 q4. q8
+  r4 q4. q8
+  r2.
+  q
+  r4 q4. q8 %125
+  r4 q4. q8
+  r2.
+  q4. q
+  q2.
+  r %130
+  r8 <2> <6> q4 <_!>8
+  <6>2.
+  r8 q r2
+  r2 q4
+  r2 \bc <[6]>4 %135
+  r2.
+  <5>2 <6>4
+  r2.
+  r2 r8 \bo <[6]>
+  r2 r8 <6> %140
+  r2 <6>8 <7>
+  r2.
+  <6>2 r8 q
+  r2 r8 q
+  r2 q8 <7> %145
+  r2.
+  r4 <6>4. q8
+  r2.
+  r4 q4. q8
+  r4 q <_+> %150
+  <6> <_+>4. <6>8
+  <_+>2.
+  r4 <6>4. q8
+  <_+>2 <6>4
+  r2. %155
+  <_+>4 <6>4. q8
+  r4 q <_+>
+  r2.
+  r
+  <_+>4 <5\+>2 %160
+  r4 <6> <_+>
+  r2 <5>8 \bc <[6]>
+  <6!>2.
+  r2 <6\\>8 <6>
+  \bo <[5\+ _+]>2. %165
+  r4 <6>4. <6 _+>8
+  r4 <6>4. <6 _+>8
+  r4 <6>2
+  <5\+ _+>4 <6>4. <6 _+>8
+  r4 <5\+ _+>2 %170
+  r4 <6>2
+  <5\+ _+>2 <6>8 <6 _+>
+  r4 \bc <[5\+ _+]>2
+  r4 <6>4. \bo <[7]>8
+  <_+>2 r8 \bc <[5]> %175
+  <6 4>4 <5 3[+]> \bo <[\t \t]>
+  \bc <[6 _]>2 <5!>4
+  r2.
+  r4 \bo <[6]>2
+  <6>2. %180
+  r
+  <6>2 <5>4
+  r2.
+  r
+  <6> %185
+  r
+  q
+  r
+  q
+  q4 q4. q8 %190
+  r2 q4
+  r4 q2
+  r \bo <[6]>4
+  r2 <6>4
+  r2 \bc <[6]>4 %195
+  <5>2 <6>4
+  r2.
+  r
+  <_+>
+  r %200
+  \bo <[6]>4 <_+>4. <6>8
+  r q4. <6>8 <_+>
+  r2.
+  r4 <6>2
+  r4 q4. q8 %205
+  r4 q4. q8
+  r2.
+  q
+  r4 q4. q8
+  r4 q4. q8 %210
+  r2.
+  q4. q
+  q2.
+  r
+  r8 <2> <6> q4 <_!>8 %215
+  <6>2.
+  r8 \bc <[6]> r2
+  r2. %218 finis
 }

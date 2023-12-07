@@ -230,3 +230,132 @@ GloriaAltoLyrics = \lyricmode {
   ca -- mus
   te. %63 finis
 }
+
+DomineDeusAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoDomineDeus
+      \set Score.currentBarNumber = #104
+    r8 \mvTr g'[\pE^\soloE e f] g4~
+    g8[ a16 h] c8[ h16 a] g4~ %105
+    g8[ a16 h] c8[ h16 a] g8[ f16 e]
+    f8.[ e16] f8[ g a h]
+    c4. c,8 c4
+    R2.*25 %133
+    r8 g'[ e f] g4~
+    g8[ a16 h] c8[ h16 a] g4~ %135
+    g8[ a16 h] c8[ h16 a] g8[ f16 e]
+    f8.[ e16] f8[ g a h]
+    c8. c,16 c4 r
+    g'8([ e16 f)] g4. a8
+    f d16([ e)] f4. g8 %140
+    e([ c16 d] e2)
+    d2.
+    R2.*3 %145
+    r4 g g
+    g~\trill g16[ h d h] g[ h d h]
+    g8.[ fis16] g4 r
+    R2.
+    r4 d d %150
+    d~\trill d16[ fis a fis] d[ fis a fis]
+    d4 d r
+    R2.
+    r4 d g
+    e4. fis16[ g] a[ h c a] %155
+    fis4 g4. c8
+    h([ a16 g] a4.) a8
+    g2 r4
+    R2.*3 %161
+    r4 g4. a8
+    f!4. a16[ g] f8[ e16 dis]
+    e4. fis16[ g] fis8[ e]
+    h'2. %165
+    h2 r4
+    h8 a g4. fis8
+    g16[ e fis g] a4. h16[ c]
+    dis,4 e4. h'8
+    g4( fis4.) e8 %170
+    e2 r4
+    R2.*2
+    e4 a4. g8
+    fis8 g a4. h8 %175
+    h4 a r
+    r g f!
+    e~\trill e16[ c e f] e[ g e c]
+    f4~\trill f16[ d f g] f[ a f d]
+    g4~\trill g16[ e g a] g[ b g e] %180
+    a4~\trill a16[ f a b] a[ c a f]
+    g4 g, r
+    R2.*4 %186
+    r4 g' g
+    g4. a16[ h] c8[ h16 a]
+    g4. a16[ h] c8[ h16 a]
+    g8 c d,4. c8 %190
+    c4~ c16[ d e f] g8[ a16 h]
+    c8 c, d4. d8
+    c2 r4
+    R2.*24 %217
+    R2.\fermata \bar "||" %218 finis
+  }
+}
+
+DomineDeusAltoLyrics = \lyricmode {
+  Do -- _ %104
+  _ _ %105
+  _ _
+  _ _
+  _ mi -- ne,
+
+  Do -- _ %134
+  _ _ %135
+  _ _
+  _ _
+  _ mi -- ne,
+  Do -- mi -- ne
+  De -- us, Rex coe -- %140
+  le --
+  stis,
+
+  De -- us %146
+  Pa -- _
+  _ ter,
+
+  De -- us %150
+  Pa -- _
+  _ ter,
+
+  De -- us
+  Pa -- _ _ %155
+  _ ter o --
+  mni -- po --
+  tens,
+
+  De -- us %162
+  Pa -- _ _
+  _ _ _
+  _ %165
+  ter,
+  De -- us Pa -- _
+  _ _ _
+  _ ter o --
+  mni -- po -- %170
+  tens.
+
+  Do -- mi -- ne %174
+  De -- us, Rex coe -- %175
+  le -- stis,
+  De -- us
+  Pa -- _
+  _ _
+  _ _ %180
+  _ _
+  _ ter,
+
+  De -- us %187
+  Pa -- _ _
+  _ _ _
+  ter o -- mni -- po -- %190
+  tens, __ _
+  _ o -- mni -- po --
+  tens. %193 finis
+}
