@@ -103,3 +103,32 @@ QuiTollisTrombaII = {
     R2.\fermata \bar "||" %310 finis
   }
 }
+
+CumSanctoTrombaII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    R2.*19 %374
+    g4\fE g g %375
+    c2 r4
+    R2.*2
+    g4 g g
+    c c c %3809
+    g4 r r
+    R2.*5 %386
+    g4 g g
+    c r r
+    R2.*22 %410
+    g4 g8 g g g
+    c4 r r
+    R2.*3 %415
+    g4 g g
+    c r r
+    R2.*6 %423
+    g4 g g
+    c8 c g4 g %425
+    c r g
+    c r r\fermata \bar "|." %427 finis
+  }
+}

@@ -1065,3 +1065,158 @@ QuoniamBassFigures = \figuremode {
   q <_+>4 <6>8 \bo <[_+ _]>4 <6 5>8 \bc <[_+ _]>
   r1 % 355 finis
 }
+
+CumSanctoOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    \mvTr c4\fE-\tuttiE c c
+    f2 f4
+    d2 d4
+    g g g
+    c,2 c'4 %360
+    h8 c h a g f
+    e4 a r
+    f8 e f g f e
+    d c d e d c
+    h a g4 h %365
+    c2.
+    d2 a4
+    b2.
+    h
+    c4. d8 e f %370
+    g a g f e d
+    c h a4 e'
+    f2.
+    fis
+    g2 h,4 %375
+    c c c
+    f!2 f4
+    d2 d4
+    g g8 g g g
+    c,4 c c' %380
+    h8 c h a g f
+    e4 a r
+    f8 e f g f e
+    d c d e d c
+    h a g4 h %385
+    c8 a d c d4
+    g8 a h a g f!
+    e4 a r
+    a8 h a g fis e
+    d4 h' r %390
+    h8 c h a g f!
+    e2.
+    a,4 a a
+    d2 d4
+    h2. %395
+    e
+    a,4 e' e,
+    a2 r4
+    a'8 h a g! fis e
+    d2. %400
+    g,
+    e
+    a
+    d2 d'8 c!
+    h c h a g fis %405
+    e4 a h8 a
+    gis a gis f! e d!
+    c h a4 a'8 g
+    fis g fis e d c
+    h a g2 %410
+    g2.
+    c
+    \clef treble << { c''2 c4 a2 } \\ { c,4 c c f2 } >>
+    \clef "treble_8" a,4
+    b2. %415
+    \clef bass g,4 g g
+    c2 c4
+    a2 a4
+    d2 d4
+    g,2. %420
+    c4 c c
+    f2 f4
+    d2 d4
+    g2.
+    c,4 g' g, %425
+    c r g
+    c r r\fermata \bar "|." %427 finis
+  }
+}
+
+CumSanctoBassFigures = \figuremode {
+  \bo <[1]>4 <1> q %356
+  \bc <[1]>2 <3>4
+  <6->2.
+  <_!>
+  r %360
+  <[6]>
+  <6>
+  r
+  <_+>
+  <[6]> %365
+  r
+  r2 <6>4
+  r2.
+  <[6]>
+  r %370
+  r
+  r2 <6>4
+  r2.
+  \bo <[6]>
+  r2 \bc q4 %375
+  r2.
+  r
+  <6->
+  <_!>
+  r %380
+  \bo <[6]>
+  \bc q
+  <5>4 <6>2
+  <_+>2.
+  <[6]> %385
+  <6 5>4 <[_+]>2
+  r2.
+  <6>
+  <_+>
+  <[_+]>4 <5\+>2 %390
+  <6>2.
+  <_+>
+  r
+  q
+  <6!> %395
+  <_+>
+  r4 <5 4> <\t _+>
+  r2.
+  <_+>
+  <[_+]> %400
+  r
+  <_+>
+  <9 _+>4 <8 \t>2
+  <9 _+>4 <8 \t>2
+  <[5\+] _+>2. %405
+  r4 <6\\ 5> \bo <[5\+ _+]>
+  <6>2.
+  q
+  q
+  \bc <[6 _]> %410
+  r
+  r
+  r
+  r
+  r %415
+  <_!>
+  r
+  <6>
+  <_+>
+  r %420
+  r
+  <5>4 <6>2
+  <6->2.
+  <_!>
+  r4 \bo <[4]> \bc <[3]> %425
+  r2.
+  r %427 finis
+}

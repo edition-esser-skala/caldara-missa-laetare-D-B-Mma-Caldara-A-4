@@ -525,3 +525,141 @@ QuoniamAltoLyrics = \lyricmode {
   _ su Chri -- %345
   ste. %346 finis
 }
+
+CumSanctoAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    R2.*6 %361
+    r4 r \mvTr e\fE^\tuttiE
+    f4. f8 f4
+    fis2 fis4
+    g g r %365
+    c, c c
+    f!2 f4
+    d2 d4
+    g g8 g g g
+    c,4 c c' %370
+    h8[ c h a g f]
+    e4 a r
+    f8[ e f g f e]
+    d[ c d e d c]
+    h[ a] g4 r %375
+    r c c
+    c f2
+    f4 d2
+    d4 d g8 g
+    g g g4 e %280
+    R2.
+    r4 r e
+    f4. f8 f4
+    fis2 fis4
+    g8([ a] h4) g~ %385
+    g fis8([ e] fis4)
+    g2 r4
+    R2.*2
+    r4 r fis %390
+    g4. g8 g4
+    gis2 gis4
+    a a r
+    R2.
+    h8[ c h a g f!] %395
+    e[ d e f e d]
+    c[ d] e4 e
+    c4. c8 c4
+    cis2 cis4
+    d d r %400
+    h h h
+    e2 e4
+    cis2 cis4
+    d4. d8 d4
+    dis2 dis4 %405
+    e2( dis4)
+    e2 e4
+    a a8 a a a
+    d,4 d r
+    R2.*3 %412
+    c4 c c
+    f2 f4
+    d2 d4 %415
+    d d8 d g g
+    e4 e e
+    f4. f8 f4
+    fis2 fis4
+    g g r %420
+    r c, c
+    c f!2
+    f4 d d
+    d d8 d g g
+    g g g2 %425
+    g4 r g
+    g r r\fermata \bar "|." %427 finis
+  }
+}
+
+CumSanctoAltoLyrics = \lyricmode {
+  In %362
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %365
+  cum San -- cto
+  Spi -- ri --
+  tu in
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- %370
+  _
+  _ men,
+  a --
+  _
+  _ men, %375
+  cum San --
+  cto Spi --
+  ri -- tu
+  in glo -- ri -- a
+  De -- i Pa -- tris, %380
+
+  in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, __ %385
+  a --
+  men,
+
+  in %390
+  glo -- ri -- a
+  De -- i
+  Pa -- tris,
+
+  a -- %395
+  _
+  _ men, in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %400
+  cum San -- cto
+  Spi -- ri --
+  tu in
+  glo -- ri -- a
+  De -- i %405
+  Pa --
+  tris, in
+  glo -- ri -- a De -- i
+  Pa -- tris,
+
+  cum San -- cto %413
+  Spi -- ri --
+  tu in %415
+  glo -- ri -- a De -- i
+  Pa -- tris, in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %420
+  cum San --
+  cto Spi --
+  ri -- tu in
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- %425
+  men, a --
+  men. %427 finis
+}

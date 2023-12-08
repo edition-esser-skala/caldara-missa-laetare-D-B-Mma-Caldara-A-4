@@ -6,9 +6,6 @@
 \include "ees_articulate.ly"
 
 
-% markCritnote = \mark \markup { \normalsize \critnote }
-
-
 tempoKyrie = \tempoMarkup "Andante"
 tempoChriste = \tempoMarkup "Allegretto"
 tempoKyrieFuga = \tempoMarkup "Allegro"
@@ -23,6 +20,7 @@ tempoDomineFili = \tempoMarkup "[Alla breve]"
 tempoQuiTollis = \tempoMarkup "Largo"
   tempoQuiSedes = \tempoMarkup "Grave"
 tempoQuoniam = \tempoMarkup "Allegro"
+tempoCumSancto = \tempoMarkup "[Allegro]"
 
 
 \include "notes/clno1.ly"

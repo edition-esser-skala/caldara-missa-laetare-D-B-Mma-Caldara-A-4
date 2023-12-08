@@ -236,3 +236,40 @@ QuiTollisClarinoI = {
     R2.\fermata \bar "||" %310 finis
   }
 }
+
+CumSanctoClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    R2.*19 %374
+    \pa g''8\fE f g a g f %375
+    e d c4 \pd r
+    R2.*2
+    g'4 g g
+    g8. f16 g8 a g a %380
+    g4 r r
+    R2.*5 %386
+    g4 g g
+    g r r
+    R2.*18 %406
+    e4 e e
+    e2.\trill
+    d~\trill
+    d %410
+    d4 d8 d d d
+    c4 r r
+    R2.*3 %415
+    g'4 g8 g g g
+    g4 c, r
+    R2.*2
+    r4 r g' %420
+    g g c~
+    c a8 a h c
+    d4 r r
+    h8 a h c h a
+    g4 g2 %425
+    e8 g16 f e8 c d4
+    c r r\fermata \bar "|." %427 finis
+  }
+}

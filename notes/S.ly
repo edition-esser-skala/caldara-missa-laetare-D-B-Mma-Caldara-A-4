@@ -577,9 +577,144 @@ QuoniamSopranoLyrics = \lyricmode {
   ste. %346 finis
 }
 
+CumSanctoSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    R2.
+    r4 r \mvTr a'\fE^\tuttiE
+    b4. b8 b4
+    h2 h4
+    c c r %360
+    R2.*10 %370
+    g4 g g
+    c2 c4
+    a2 a4
+    d d8 d d d
+    g,4 g g'8[ f!] %375
+    e[ f e d c b]
+    a4 d r
+    b8[ a b c b a]
+    g[ f g a g f]
+    e[ d] c4 r %380
+    R2.
+    e'8[ f e d c h!]
+    a4 d d8[ c]
+    d[ e d c d e]
+    d4. c8 h4 %385
+    a2.
+    g4 r h
+    c4. c8 c4
+    cis2 cis4
+    d d r %390
+    R2.
+    r4 r e8[ d]
+    c![ d c h a g!]
+    fis[ e] d4 fis
+    g4. g8 g4 %395
+    gis2 gis4
+    a8 a a4 gis
+    e e e
+    a2 a4
+    fis2 a4 %400
+    h h8 h h h
+    h4 e, h'~
+    h a e'~
+    e d fis8[ e]
+    dis[ e dis c! h a] %405
+    g4 fis2
+    e2.
+    R
+    r4 r a
+    d d8 d d d %410
+    g,4 g r
+    g g g
+    c2 c4
+    a2 a4
+    d d8 d d d %415
+    g,4 g r
+    R2.
+    f'8[ e f g f e]
+    d[ c d e d c]
+    h[ a] g4 g'8[ f!] %420
+    e[ f e d c b]
+    a4 d a
+    b4. b8 b4
+    h2 h4
+    c8 c c4( h) %425
+    c r d
+    e r r\fermata \bar "|." %427 finis
+  }
+}
+
+CumSanctoSopranoLyrics = \lyricmode {
+  In %357
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %360
+
+  cum San -- cto %371
+  Spi -- ri --
+  tu in
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- %375
+  _
+  _ men,
+  a --
+  _
+  _ men, %380
+
+  a --
+  _ men, a --
+  _
+  _ _ men, %385
+  a --
+  men, in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %390
+
+  a --
+  _
+  _ men, in
+  glo -- ri -- a %395
+  De -- i
+  Pa -- tris, a -- men,
+  cum San -- cto
+  Spi -- ri --
+  tu in %400
+  glo -- ri -- a De -- i
+  Pa -- tris, a --
+  _ _
+  _ _
+  _ %405
+  _ _
+  men,
+
+  in
+  glo -- ri -- a De -- i %410
+  Pa -- tris,
+  cum San -- cto
+  Spi -- ri --
+  tu in
+  glo -- ri -- a De -- i %415
+  Pa -- tris,
+
+  a --
+  _
+  _ men, a -- %420
+  _
+  _ men, in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, a -- %425
+  men, a --
+  men. %427 finis
+}
 
 
-% Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.
+
 
 
 % ## Credo

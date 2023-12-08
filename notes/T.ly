@@ -394,3 +394,139 @@ QuiTollisTenoreLyrics = \lyricmode {
   _
   bis. %310 finis
 }
+
+CumSanctoTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 3/4 \autoBeamOff \tempoCumSancto
+      \set Score.currentBarNumber = #356
+    R2.*5 %360
+    \mvTr g4\fE^\tuttiE g g
+    c2 c4
+    a2 a4
+    d d8 d d d
+    g,4 g g'8[ f!] %365
+    e[ f e d c b]
+    a4 d r
+    b8[ a b c b a]
+    g[ f g a g f]
+    e[ d] c4 r %370
+    R2.*6 %376
+    r4 r a'
+    b4. b8 b4
+    h2 h4
+    c c r %380
+    g g g
+    c2 c4~
+    c a a
+    d d8 d d d
+    g,4 g d' %385
+    e d2
+    d r4
+    e8[ f e d c h]
+    a4 e' r
+    d8[ e d c h a] %390
+    g4 d' r
+    e8[ f e d c h]
+    a4 e' r
+    a, a a
+    d2 d4 %395
+    h2 h4
+    c h2
+    a r4
+    R2.
+    r4 r fis %400
+    g4. g8 g4
+    gis2 gis4
+    a a a
+    fis4. fis8 fis4
+    fis'2 fis4 %405
+    h, c h
+    h2 r4
+    e8[ d! c d c h]
+    a[ h a g fis e]
+    d2 d'8[ c] %410
+    h[ c h a g f!]
+    e[ d] c4 r
+    R2.
+    r4 r a'
+    b4. b8 b4 %415
+    h2 h4
+    c c g
+    a4. a8 a4
+    a2 d4
+    d d h8[ a] %420
+    g[ a g f] e4
+    f8[ g] a4 d8[ c]
+    b[ a b c b a]
+    g[ f g a g f]
+    e e' d2 %425
+    e4 r h
+    c r r\fermata \bar "|." %427 finis
+  }
+}
+
+CumSanctoTenoreLyrics = \lyricmode {
+  Cum San -- cto %361
+  Spi -- ri --
+  tu in
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- %365
+  _
+  _ men,
+  a --
+  _
+  _ men, %370
+
+  in %377
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, %380
+  cum San -- cto
+  Spi -- ri --
+  tu in
+  glo -- ri -- a De -- i
+  Pa -- tris, a -- %385
+  _ _
+  men,
+  a --
+  _ men,
+  a -- %390
+  _ men,
+  a --
+  _ men,
+  cum San -- cto
+  Spi -- ri -- %395
+  tu in
+  glo -- ri --
+  a,
+
+  in %400
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, in
+  glo -- ri -- a
+  De -- i %405
+  Pa -- tris, a --
+  men,
+  a --
+  _
+  men, a -- %410
+  _
+  _ men,
+
+  in
+  glo -- ri -- a %415
+  De -- i
+  Pa -- tris, in
+  glo -- ri -- a
+  De -- i
+  Pa -- tris, a -- %420
+  _ _
+  _ men, a --
+  _
+  _
+  _ men, a -- %425
+  men, a --
+  men. %427 finis
+}
