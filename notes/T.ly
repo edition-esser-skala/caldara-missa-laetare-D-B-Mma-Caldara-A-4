@@ -262,3 +262,135 @@ DomineFiliTenoreLyrics = \lyricmode {
   li -- us Pa --
   tris. %235 finis
 }
+
+QuiTollisTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key e \minor \time 3/2 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    R1.*8 %243
+    \mvTr h2\pE^\soloE h1
+    c1. %245
+    c2 c c
+    h h r
+    R1.
+    c2( e) d4( c)
+    d( c) d1 %250
+    R1.
+    r2 e c
+    a a1
+    g2.( a4 fis2)
+    g1. %255
+    R
+    r2 e' c
+    a4 h8[ c] d4 e f2~
+    f e d
+    c( h1) %260
+    a1.
+    R
+    d2 f e4 f
+    d2 d r
+    c c4( d) e2 %265
+    e d r
+    R1.*2
+    d2 d4( e) f( d)
+    h4. a8 h2 r %270
+    r c4 h a h8([ c)]
+    fis,!2 dis'4 c! h a
+    g2 e'4 d c h
+    a g fis2 fis'~
+    fis4 h, e2( dis) %275
+    e1.
+    cis2. cis4 cis cis
+    fis,2( h2.) a!4
+    g2( fis1) \noBreak
+    e1. %280
+    R1.*7 \noBreak %287
+    R1.\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 \mvTr c'\fE^\tuttiE c2 \noBreak
+    c4 c c c8 c %290
+    cis2 a~
+    a8[ g fis e] dis4 e8[ fis]
+    e[ fis] gis4 a2 \noBreak
+    h1\fermata \bar "||"
+    \time 3/4 R2. \noBreak %295
+    c4( a) d
+    d2.~
+    d4 e8[ d c d]
+    e2 a,4
+    a2 a4~ %300
+    a d2
+    d4 h d~
+    d e2
+    e4 a,8([ h)] c!4
+    d2 c4 %305
+    h2.
+    e,
+    fis2 g!8.[ a16]
+    h2.
+    h\fermata \bar "||" %310 finis
+  }
+}
+
+QuiTollisTenoreLyrics = \lyricmode {
+  Qui tol -- %244
+  lis %245
+  pec -- ca -- ta
+  mun -- di:
+
+  Mi -- se --
+  re -- re, %250
+
+  mi -- se --
+  re -- re
+  no --
+  bis, %255
+
+  mi -- se --
+  re -- _ _ _ _
+  _ re
+  no -- %260
+  bis.
+
+  Qui tol -- lis pec --
+  ca -- ta,
+  pec -- ca -- ta %265
+  mun -- di:
+
+  Su -- sci -- pe, __ %269
+  su -- sci -- pe %270
+  de -- pre -- ca -- ti --
+  o -- _ _ _ _
+  _ _ _ _ _
+  _ _ _ _
+  nem no -- %275
+  stram,
+  de -- pre -- ca -- ti --
+  o -- nem
+  no --
+  stram. %280
+
+  Qui se -- %289
+  des ad dex -- te -- ram %290
+  Pa -- _
+  _ _
+  _ _ _
+  tris:
+  %295
+  Mi -- se --
+  re --
+  _
+  _ re,
+  mi -- se -- %300
+  re --
+  re, mi -- se --
+  re --
+  re, mi -- se --
+  re -- re %305
+  no --
+  _
+  _ _
+  _
+  bis. %310 finis
+}

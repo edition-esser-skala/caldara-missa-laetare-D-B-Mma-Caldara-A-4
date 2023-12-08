@@ -377,13 +377,142 @@ DomineFiliSopranoLyrics = \lyricmode {
   tris. %235 finis
 }
 
+QuiTollisSoprano = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 3/2 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    R1.*8 %243
+    \mvTr g'2\pE^\soloE g1
+    a1. %245
+    a2 a a
+    g4( fis) e2 r
+    gis( h) a4( gis)
+    a( gis) a2 r
+    R1. %250
+    r2 d h
+    g!4 a8[ h] c4 d e2~
+    e d c
+    h( a1)
+    g1. %255
+    R1.*2
+    r2 f' d
+    h1 h2
+    a1( gis2) %260
+    a1.
+    R
+    a2 d c4 d
+    h2 h r
+    g c c %265
+    c h r
+    c c4( d) e( c)
+    a4. gis8 a2 r
+    h h4( c) d( h)
+    gis4. fis8 gis2 r %270
+    r a4 g fis! e
+    dis2 h'4 a g fis
+    e2 c'4 h a g
+    fis2 h2. a4
+    g1( fis2) %275
+    e1.
+    ais2. ais4 ais ais
+    h2.( cis4) dis2
+    e1( dis2)
+    e1. %280
+    R1.*7 \noBreak %287
+    R1.\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 \mvTr g,4\fE^\tuttiE g2 \noBreak
+    g4 g g g8 g %290
+    g4 f8[ e] f2
+    fis8[ g] a2 gis8[ fis]
+    gis[ a h c] a2 \noBreak
+    gis1\fermata \bar "||"
+    \time 3/4 e'4( c) a \noBreak %295
+    f!2.~
+    f4 g8[ f g f]
+    e4 g c
+    b a8[ g a g]
+    f4 a d %300
+    c! d8[ c d c]
+    h4 d f!~
+    f e8[ d e d]
+    c4 d c
+    b2 a4 %305
+    gis2.
+    ais
+    a2 g!4
+    fis2.
+    gis\fermata \bar "||" %310 finis
+  }
+}
 
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Mi -- se -- re -- re no -- bis.
-% Qui tol -- lis pec -- ca -- ta mun -- di:
-% Su -- sci -- pe de -- pre -- ca -- ti -- o -- nem no -- stram.
-% Qui se -- des ad dex -- te -- ram Pa -- tris:
-% Mi -- se -- re -- re no -- bis.
+QuiTollisSopranoLyrics = \lyricmode {
+  Qui tol -- %244
+  lis %245
+  pec -- ca -- ta
+  mun -- di:
+  Mi -- se --
+  re -- re,
+  %250
+  mi -- se --
+  re -- _ _ _ _
+  _ re
+  no --
+  bis, %255
+
+  mi -- se -- %258
+  re -- re
+  no -- %260
+  bis.
+
+  Qui tol -- lis pec --
+  ca -- ta,
+  pec -- ca -- ta %265
+  mun -- di:
+  Su -- sci -- pe, __
+  su -- sci -- pe,
+  su -- sci -- pe, __
+  su -- sci -- pe %270
+  de -- pre -- ca -- ti --
+  o -- _ _ _ _
+  _ _ _ _ _
+  _ _ nem
+  no -- %275
+  stram,
+  de -- pre -- ca -- ti --
+  o -- nem
+  no --
+  stram. %280
+
+  Qui se -- %289
+  des ad dex -- te -- ram %290
+  Pa -- _ _
+  _ _ _
+  _ _
+  tris:
+  Mi -- se -- %295
+  re --
+  _
+  _ _ _
+  _ _
+  _ _ _ %300
+  _ _
+  _ _ _
+  _
+  _ _ re,
+  mi -- se -- %305
+  re --
+  re
+  no -- _
+  _
+  bis. %310 finis
+}
+
+
+
+
+
 % Quo -- ni -- am tu so -- lus san -- ctus, tu so -- lus Do -- mi -- nus,
 % tu so -- lus al -- tis -- si -- mus, Je -- su Chri -- ste.
 % Cum San -- cto Spi -- ri -- tu in glo -- ri -- a De -- i Pa -- tris, a -- men.

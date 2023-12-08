@@ -405,3 +405,61 @@ DomineFiliAltoLyrics = \lyricmode {
   Pa --
   tris. %235 finis
 }
+
+QuiTollisAlto = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 3/2 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    R1.*52 \noBreak %287
+    R1.\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 \mvTr e\fE^\tuttiE e2 \noBreak
+    e4e e e8 e %290
+    e2. d4~
+    d8[ e] fis2 e8[ dis]
+    e2~ e8[ d16 c] d4 \noBreak
+    e1\fermata \bar "||"
+    \time 3/4 R2. \noBreak %295
+    r4 a a
+    g!2.~
+    g4 c,8[ d e f]
+    g[ f] e2~
+    e4 d8[ e f g] %300
+    a2.~
+    a4 g4. a8
+    h2.~
+    h4 a g!
+    f2 f4 %305
+    e2.
+    e
+    dis2 e4~
+    e dis2
+    e2.\fermata \bar "||" %310 finis
+  }
+}
+
+QuiTollisAltoLyrics = \lyricmode {
+  Qui se -- %289
+  des ad dex -- te -- ram %290
+  Pa -- _
+  _ _
+  _ _
+  tris:
+  %295
+  Mi -- se --
+  re --
+  _
+  _ _
+  _ %300
+  _
+  _ _
+  _
+  _ re,
+  mi -- se -- %305
+  re --
+  re
+  no -- _
+  _
+  bis. %310 finis
+}

@@ -240,3 +240,77 @@ DomineFiliViolinoI = {
     gis\fermata \markDaCapo \bar "||" %235 finis
   }
 }
+
+QuiTollisViolinoI = {
+  \relative c' {
+    \clef treble
+    \key e \minor \time 3/2 \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    r4 h'2-!\pE h-! h4-!
+    c2-! r r
+    r4 c2-! c-! h4-!
+    gis2 r r
+    r4 a2-! a-! a4-! %240
+    a2 r r
+    r4 g2-! g-! g4-!
+    fis fis2 fis fis4
+    e2 r r
+    R1.*2 %246
+    r4 h'2-! h-! h4-!
+    h2 r r
+    r4 c2 c c4
+    a2 r r %250
+    R1.*4
+    r4 d2-! d-! d4-! %255
+    d2 r r
+    R1.*4 %260
+    r4 c2-! c-! c4-!
+    cis2 r r
+    r4 d2-! d-! d4-!
+    d2 r r
+    r4 g,2-! g-! g4-! %265
+    g4.( a8) h2 r
+    r4 c2 c c4
+    c2 r r
+    r4 h2 h h4
+    h2 r r %270
+    r4 c2-! c-! c4-!
+    c2 h r
+    R1.*3 %275
+    r4 h2-! c-! c4-!
+    ais2 r r
+    R1.*2
+    r4 h2-! h-! h4-! %280
+    c2-! r r
+    r4 c2-! c-! h4-!
+    gis2 r r
+    r4 a2-! a-! a4-!
+    a2 r r %285
+    r4 g2-! g-! g4-!
+    fis fis2 fis fis4
+    e2 r r\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 g'\fE g2 \noBreak
+    g2 g~
+    g4 a8 g f2
+    fis fis
+    gis,8 a h c a2 \noBreak
+    gis1\fermata \bar "||"
+    \time 3/4 e'4 c a \noBreak %295
+    f!2.~
+    f4 g8 f g f
+    e4 g c
+    b a8 g a g
+    f4 a d %300
+    c! d8 c d c
+    h4 d f!~
+    f e8 d e d
+    c4 d c
+    b2 a4 %305
+    gis gis gis
+    ais ais ais
+    a2 g!4
+    fis2.
+    gis\fermata \bar "||" %310 finis
+  }
+}

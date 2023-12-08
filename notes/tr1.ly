@@ -86,3 +86,20 @@ GloriaTrombaI = {
     g4 r r\fermata \bar "||" %66 finis
   }
 }
+
+QuiTollisTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/2 \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    R1.*52 \noBreak %287
+    R1.\fermata \bar "||"
+    \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 g'\fE g2 \noBreak
+    g4 r r2 %290
+    R1*3 \noBreak
+    R1\fermata \bar "||"
+    \time 3/4 R2.*15 %309
+    R2.\fermata \bar "||" %310 finis
+  }
+}

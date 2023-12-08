@@ -379,3 +379,133 @@ DomineFiliBassoLyrics = \lyricmode {
   Pa --
   tris. %235 finis
 }
+
+QuiTollisBasso = {
+  \relative c {
+    \clef bass
+    \key e \minor \time 3/2 \autoBeamOff \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    R1.*8 %243
+    \mvTr e2\pE^\soloE e1
+    dis1. %245
+    dis2 dis2. dis4
+    e2 e, r
+    R1.*2
+    fis'2( a) g4( fis) %250
+    g( fis) g2 r
+    r c a
+    fis1 fis2
+    g( c, d)
+    g,1. %255
+    R1.*2
+    r2 d'' h
+    gis1 gis2
+    a( e1) %260
+    a,1.
+    R
+    f'2 f f4 f
+    f4.( e8) f2 r
+    e e4( d) c2 %265
+    g' g, r
+    R1.
+    f'2 f4( g) a( f)
+    d4. cis8 d2 r
+    r e4 d c h %270
+    a1 a2
+    h1.
+    c2. d4 e2~
+    e dis4 cis dis h
+    e4. fis8 g4 a h2 %275
+    e,1.
+    e2. e4 e e
+    dis2.( cis4) h2
+    ais( h1)
+    e,1. %280
+    R1.*7 \noBreak %287
+    R1.\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 \mvTr c'\fE^\tuttiE c2 \noBreak
+    c4 c b b8 b %290
+    a2 d
+    c! h!
+    e f! \noBreak
+    e1\fermata \bar "||"
+    \time 3/4 R2. \noBreak %295
+    a4( f) d
+    h2.
+    c
+    cis2 cis4
+    d2 d4 %300
+    fis2 fis4
+    g2 g4
+    gis2 gis4
+    a( f!) e
+    d2 d4 %305
+    d2.
+    c
+    h~
+    h
+    e,\fermata \bar "||" %310 finis
+  }
+}
+
+QuiTollisBassoLyrics = \lyricmode {
+  Qui tol -- %244
+  lis %245
+  pec -- ca -- ta
+  mun -- di:
+
+  Mi -- se -- %250
+  re -- re,
+  mi -- se --
+  re -- re
+  no --
+  bis, %255
+
+  mi -- se -- %258
+  re -- re
+  no -- %260
+  bis.
+
+  Qui tol -- lis pec --
+  ca -- ta,
+  pec -- ca -- ta %265
+  mun -- di:
+
+  Su -- sci -- pe, __
+  su -- sci -- pe
+  de -- pre -- ca -- ti -- %270
+  o -- nem
+  no --
+  _ _ _
+  _ _ _ _
+  _ _ _ _ _ %275
+  stram,
+  de -- pre -- ca -- ti --
+  o -- nem
+  no --
+  stram. %280
+
+  Qui se -- %289
+  des ad dex -- te -- ram %290
+  Pa -- _
+  _ _
+  _ _
+  tris:
+  %295
+  Mi -- se --
+  re --
+  re,
+  mi -- se --
+  re -- re, %300
+  mi -- se --
+  re -- re,
+  mi -- se --
+  re -- re,
+  mi -- se -- %305
+  re --
+  re
+  no --
+
+  bis. %310 finis
+}

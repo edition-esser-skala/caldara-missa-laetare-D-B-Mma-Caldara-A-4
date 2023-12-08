@@ -362,70 +362,151 @@
   %     \midi { \tempo 4 = 120 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Domine Fili"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     systems-per-page = #2
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \DomineFiliViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \DomineFiliViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \DomineFiliSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \DomineFiliSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
+  %           \new Voice = "Alto" { \dynamicUp \DomineFiliAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \DomineFiliAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
+  %           \new Voice = "Tenore" { \dynamicUp \DomineFiliTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \DomineFiliTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \DomineFiliBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \DomineFiliBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \DomineFiliOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DomineFiliBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 110 }
+  %   }
+  %   \markup \null
+  % }
   \bookpart {
-    \subsection "Domine Fili"
+    \subsection "Qui tollis"
     \addTocEntry
-    \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      systems-per-page = #2
-    }
     \score { %\articulate
       <<
+        \new StaffGroup <<
+          \new Staff <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine #'(0 . 10) \QuiTollisClarinoI \QuiTollisClarinoII
+          >>
+          \new Staff \with { \smallStaffDistance } <<
+            \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
+            \partCombine #'(0 . 10) \QuiTollisTrombaI \QuiTollisTrombaII
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \QuiTollisTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \QuiTollisTromboneII
+            }
+          >>
+        >>
+        \new Staff {
+          \set Staff.instrumentName = "timp"
+          \QuiTollisTimpani
+        }
         \new StaffGroup <<
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "vl"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \DomineFiliViolinoI
+              \QuiTollisViolinoI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \DomineFiliViolinoII
+              \QuiTollisViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
             \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \DomineFiliSoprano }
+            \new Voice = "Soprano" { \dynamicUp \QuiTollisSoprano }
           }
-          \new Lyrics \lyricsto Soprano \DomineFiliSopranoLyrics
+          \new Lyrics \lyricsto Soprano \QuiTollisSopranoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
-            \new Voice = "Alto" { \dynamicUp \DomineFiliAlto }
+            \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
+            \new Voice = "Alto" { \dynamicUp \QuiTollisAlto }
           }
-          \new Lyrics \lyricsto Alto \DomineFiliAltoLyrics
+          \new Lyrics \lyricsto Alto \QuiTollisAltoLyrics
 
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
-            \new Voice = "Tenore" { \dynamicUp \DomineFiliTenore }
+            \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
+            \new Voice = "Tenore" { \dynamicUp \QuiTollisTenore }
           }
-          \new Lyrics \lyricsto Tenore \DomineFiliTenoreLyrics
+          \new Lyrics \lyricsto Tenore \QuiTollisTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \DomineFiliBasso }
+            \new Voice = "Basso" { \dynamicUp \QuiTollisBasso }
           }
-          \new Lyrics \lyricsto Basso \DomineFiliBassoLyrics
+          \new Lyrics \lyricsto Basso \QuiTollisBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DomineFiliOrgano
+            \QuiTollisOrgano
           }
         >>
-        \new FiguredBass { \DomineFiliBassFigures }
+        \new FiguredBass { \QuiTollisBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 110 }
+      \midi { \tempo 4 = 150 } % 60 – 90
     }
-    \markup \null
   }
 }

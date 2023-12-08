@@ -802,3 +802,165 @@ DomineFiliBassFigures = \figuremode {
   <8>\breve
   <_+> %235 finis
 }
+
+QuiTollisOrgano = {
+  \relative c {
+    \clef bass
+    \key e \minor \time 3/2 \tempoQuiTollis
+      \set Score.currentBarNumber = #236
+    \mvTr e2\pE-\solo e e
+    dis r r
+    dis dis dis
+    d r r
+    c c c %240
+    h r r
+    ais ais ais
+    h h h
+    e, e' e
+    dis1. %245
+    dis
+    e2 e, e'
+    d!1.
+    c2 c c
+    c1. %250
+    h
+    c
+    d
+    e2 c d
+    g, g g %255
+    gis r r
+    a a'2. g!4
+    f e d1
+    e1.
+    a,2 e' e, %260
+    a a a
+    g! r r
+    f! f f
+    f r r
+    e' e4 d c2 %265
+    g' g, r
+    c e c
+    f2. g4 a f
+    d2 d d
+    e2. d4 c h %270
+    a1.
+    h
+    c2. d4 e2~
+    e dis4 cis dis h
+    e1 h2 %275
+    e e e
+    e1.
+    dis2. cis4 h2
+    ais h1
+    e2 e e %280
+    dis r r
+    dis dis dis
+    d r r
+    c c c
+    h r r %285
+    ais ais ais
+    h h h \noBreak
+    e, r r\fermata \bar "||"
+    \key c \major \time 4/4 \tempoQuiSedes \newSpacingSection
+      r4 \mvTr c'\fE-\tuttiE c2 \noBreak
+    c b %290
+    a d
+    c! h!
+    e f! \noBreak
+    e1\fermata \bar "||"
+    \time 3/4 R2. \noBreak %295
+    a4 f d
+    h2.
+    c
+    cis
+    d %300
+    fis
+    g
+    gis
+    a4 f e
+    d2. %305
+    d
+    c
+    h~
+    h
+    e,\fermata \bar "||" %310 finis
+  }
+}
+
+QuiTollisBassFigures = \figuremode {
+  r1. %236
+  <7>
+  q
+  <4\+ 2>
+  <6> %240
+  <7 _+>
+  <7 [_+]>
+  <4>2 <_+>1
+  r1.
+  <7> %245
+  q
+  r
+  <4\+ 2>
+  <6>
+  <4 2> %250
+  \bo <[6!]>
+  <5>1 \bc <[6]>2
+  <9> <8> <7>
+  <5> <6 5>1
+  r1. %255
+  <7!>
+  \bo <[_!]>
+  \bc <[6]>2 <5 _!> <6 \t>
+  <9! _+> \bassFigureExtendersOn <8 _+> <7 _+> \bassFigureExtendersOff
+  r <4> <_+> %260
+  r1.
+  <6 4\+ _->
+  <6>
+  <4[!] 2>
+  <[6]> %265
+  <6 4>2 <5 3>1
+  r1.
+  r
+  <6 5 _!>
+  <_+> %270
+  <5>1 <6>4 <5>
+  <9! _+>2 \bassFigureExtendersOn <8 _+> <7 _+> \bassFigureExtendersOff
+  r1 <6>2
+  <2> <[6]>1
+  <9>2 <8> <[_+]> %275
+  r <6>1
+  <6\\ 4\+ 3>1.
+  <[6]>
+  <7 [_+]>2 <4> <_+>
+  r1. %280
+  <7>
+  q
+  <4\+ 2>
+  <6>
+  <7 _+> %285
+  <7 [_+]>
+  <4>2 <_+>1
+  r1.
+  r1
+  r2 <6 4 2> %290
+  <7 _+> <10! 9>4 <\t 8>
+  <4\+ 2>2 <7 [5\+ _+]>
+  <_+> <7>4 <6[!]>
+  <_+>1
+  r2. %295
+  <6>
+  <6[!] 5>
+  <9>4 <8>2
+  <7->4 <6>2
+  <9>4 <8>2 %300
+  <6 5[!]>2.
+  <9>4 <8> <7[!]>
+  <\t> <6>2
+  <9>4 <6> <6 [_!]>
+  \bo <[8] 6->2 \bc <[7] 5>4 %305
+  <[6!] 4\+ 2>2.
+  <6\\ [5!]>
+  <7[!] _+>2 <6[!] 4>4
+  <5\+ \t> <\t _+>2
+  <_+>2. %310 finis
+}

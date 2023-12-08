@@ -3,7 +3,7 @@ composer:
   first: Antonio
 title: Missa Lætare
 genre: mass
-scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (C), 2 tr (C), timp (C–G), [2 trb], 2 vl, [2 vla], b, org
+scoring: S, A, T, B (solo), S, A, T, B (coro), 2 clno (C), 2 tr (C), timp (C–G), 2 trb, 2 vl, 2 vla, b, org
 license: cc-by-sa-4.0
 sources:
   A1:
