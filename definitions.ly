@@ -22,6 +22,7 @@ tempoDomineDeus = \tempoMarkup "Allegro"
 tempoDomineFili = \tempoMarkup "[Alla breve]"
 tempoQuiTollis = \tempoMarkup "Largo"
   tempoQuiSedes = \tempoMarkup "Grave"
+tempoQuoniam = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"

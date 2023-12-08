@@ -463,3 +463,65 @@ QuiTollisAltoLyrics = \lyricmode {
   _
   bis. %310 finis
 }
+
+QuoniamAlto = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoQuoniam
+      \set Score.currentBarNumber = #311
+    R1*10 %320
+    r8 \mvTr e4\pE^\soloE dis8 e16.[ fis32 g16. a32] h8[ a]
+    g8. fis16 e4 r8 e c a
+    fis'8.([ e16)] fis4 r8 d h g
+    e'8. d16 e4 r r8 c'!
+    c([ h)] h a a8. g16 g4 %325
+    r8 e([ a)] g fis4. e8
+    d[ e16 fis] g8[ fis] e[ fis16 g] a8 g
+    fis( g4 fis8) g4 r
+    R1*3 %331
+    r8 c,4 h8 c16.[ d32 e16. f32] g8[ f]
+    e8. d16 c4 r8 c f e
+    d e16 f g8 f e8. d16 e4
+    r r8 d e[ d e f] %335
+    g[ fis] g a h8. a16 g4
+    r8 g([ f!)] e f4. e16[ d]
+    e4. a8 d,2
+    c4 r r2
+    R1 %340
+    r8 a' f d h'8.([ a16)] h4
+    r8 g e c a'8. gis16 a4
+    r2 a8[ e f cis]
+    d8.[ e16] f4~ f8[ e16 d] e8[ d]
+    c4. h16([ a)] h2 %345
+    a4 r r2
+    R1*8 %354
+    R1\fermata \bar "||" %355 finis
+  }
+}
+
+QuoniamAltoLyrics = \lyricmode {
+  Quo -- _ _ _ %321
+  _ ni -- am tu so -- lus
+  san -- ctus, tu so -- lus
+  Do -- mi -- nus, tu
+  so -- lus al -- tis -- si -- mus, %325
+  Je -- su, Je -- _
+  _ _ _ _ su
+  Chri -- ste.
+
+  Quo -- _ _ _ %332
+  _ ni -- am tu so -- lus
+  san -- ctus, tu so -- lus Do -- mi -- nus,
+  tu so -- %335
+  _ lus al -- tis -- si -- mus,
+  Je -- su, Je -- _
+  _ su Chri --
+  ste,
+  %340
+  tu so -- lus, so -- lus,
+  so -- lus al -- tis -- si -- mus,
+  Je --
+  _ _ _
+  _ su Chri -- %345
+  ste. %346 finis
+}

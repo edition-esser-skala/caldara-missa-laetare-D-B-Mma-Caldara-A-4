@@ -307,3 +307,55 @@ QuiTollisViolinoII = {
     gis\fermata \bar "||" %310 finis
   }
 }
+
+QuoniamViolinoII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \tempoQuoniam
+      \set Score.currentBarNumber = #311
+    r8 a'4\fE gis8 a16. h32 c16. d32 e8 d
+    c8. h16 a4 r2
+    r8 h g! e c'8.(\trill h16) c4
+    r8 a fis d h'8.(\trill a16) h4
+    r8 g e c a' a a a %315
+    a g16. a32 fis4 e8 e'4 d8
+    r a4 gis8 r e fis gis
+    a gis a h c h c d
+    e gis, a4 gis8 a4 gis8
+    a4 r r2 %320
+    R1
+    r4 r8 h4\pE a8 r4
+    r r8 a4 g8 r4
+    r8 a4 g8 r2
+    r r4 r8 h~ %325
+    h a r4 r r8 a~
+    a g r4 r2
+    R1
+    r8 d'\fE e fis g fis g a
+    h a16 g \appoggiatura g8 fis4 g r %330
+    r2 r8 g,\pE a h
+    c4 r r2
+    r4 r8 g'4 f8 r4
+    r r8 d4 c8 r c~
+    c h r4 r2 %335
+    r r8 g a h
+    c4 r r2
+    R1
+    r2 r8 e,\fE fis gis
+    a gis a h c4 r %340
+    r r8 a4\pE g8 r4
+    r r8 e'4 d8 r c~
+    c h r4 r2
+    R1*2 %345
+    r8 a4\fE gis8 a16. h32 c16. d32 e8 d
+    c8. h16 a4 r2
+    r8 h g! e c'8.(\trill h16) c4
+    r8 a fis d h'8.(\trill a16) h4
+    r8 g e c a' a a a %350
+    a g16. a32 fis4 e8 e'4 d8
+    r a4 gis8 r e fis gis
+    a gis a h c h c d
+    e gis, a4 gis8 a4 gis8
+    a4 r r2\fermata \bar "||" %355 finis
+  }
+}
