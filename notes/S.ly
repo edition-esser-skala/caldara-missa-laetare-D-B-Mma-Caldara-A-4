@@ -713,25 +713,71 @@ CumSanctoSopranoLyrics = \lyricmode {
   men. %427 finis
 }
 
+CredoSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCredo
+    \mvDl c'4\fE^\tuttiE h r8 e f e
+    d4 c e d8 c
+    g'([ d)] d4 c8([ h)] h4
+    R1*4 %7
+    r4 c8 c c4 c8 c
+    c8. c16 c4 c8 c c4~
+    c8 h a8. a16 h4 r %10
+    R1*7 %17
+    r4 \mvTr e4.\pE^\soloE e8 dis dis
+    e h e d c4 h8 a
+    h4. h8 a4 r %20
+    r d8 c h8. h16 e4~
+    e8[ c] d8. d16 e4 r
+    e e8 e f4 f
+    d d8 d e8. d16 e4
+    f e d8.([ cis16)] d4~ %25
+    d8 d e d c4. h16[ a]
+    h2 a4 r
+    R1*3 %30
+    r2 \mvTr c8.\fE^\tuttiE c16 d8 d
+    c c r4 r e8 e
+    d4. g8 c,4. f8
+    h,4. e8 a, a d8. c16
+    h4 c2 h4 %35
+    c r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}
+
+CredoSopranoLyrics = \lyricmode {
+  Pa -- trem o -- mni -- po --
+  ten -- tem, fa -- cto -- rem
+  coe -- li, coe -- li,
+
+  vi -- si -- bi -- li -- um %8
+  o -- mni -- um et in -- vi --
+  si -- bi -- li -- um. %10
+
+  Et ex Pa -- tre %18
+  na -- tum an -- te o -- mni -- a
+  sae -- cu -- la, %20
+  an -- te o -- mni -- a __
+  sae -- cu -- la,
+  De -- um de De -- o,
+  lu -- men de lu -- mi -- ne,
+  De -- um ve -- rum __ %25
+  de De -- o ve -- _
+  _ ro.
+
+  Ge -- ni -- tum non %31
+  fa -- ctum, con -- sub --
+  stan -- ti -- a -- lem
+  Pa -- tri, per quem o -- mni --
+  a fa -- cta %35
+  sunt. %36 finis
+}
 
 
 
 
-% ## Credo
-
-% Cre -- do in u -- num De -- um,
-% Pa -- trem o -- mni -- po -- ten -- tem,
-% fa -- cto -- rem coe -- li et ter -- rae,
-% vi -- si -- bi -- li -- um o -- mni -- um
-% et in -- vi -- si -- bi -- li -- um.
-% Et in u -- num Do -- mi -- num Je -- sum Chri -- stum,
-% Fi -- li -- um De -- i u -- ni -- ge -- ni -- tum,
-% et ex Pa -- tre na -- tum an -- te o -- mni -- a sae -- cu -- la.
-% De -- um de De -- o, lu -- men de lu -- mi -- ne,
-% De -- um ve -- rum de De -- o ve -- ro,
-% ge -- ni -- tum non fa -- ctum,
-% con -- sub -- stan -- ti -- a -- lem Pa -- tri,
-% per quem o -- mni -- a fa -- cta sunt.
 % Qui pro -- pter nos ho -- mi -- nes
 % et pro -- pter no -- stram sa -- lu -- tem
 % de -- scen -- dit de coe -- lis.

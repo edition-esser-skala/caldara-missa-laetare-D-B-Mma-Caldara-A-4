@@ -70,3 +70,26 @@ QuiTollisTromboneII = {
     h\fermata \bar "||" %310 finis
   }
 }
+
+CredoTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \major \time 4/4 \tempoCredo
+    e4\fE d r8 h c h
+    a4 c r2
+    d4 c8 h e d d4
+    R1*4 %7
+    r4 e8 e e4 e8 e
+    e8. e16 e4 e8 e e e
+    d4. d8 d4 r %10
+    R1*20 %30
+    r2 e8.\fE e16 d8 d
+    e e r4 r c8 c
+    d4 h c f8 d
+    d4 h8 c c4 a
+    g g8 g g4. g8 %35
+    g4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}

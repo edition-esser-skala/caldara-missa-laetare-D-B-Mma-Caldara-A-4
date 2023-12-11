@@ -136,3 +136,28 @@ CumSanctoClarinoII = {
     e r r\fermata \bar "|." %427 finis
   }
 }
+
+CredoClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCredo
+    e'4\fE d r2
+    R1
+    R
+    c4 r c r
+    c r d r %5
+    d r r8 g, g g
+    g g g g g g g g
+    g c e c r g c g
+    r e g e r c e c
+    r2 r8 g' d' g, %10
+    r d' g d r2
+    R1*20 %31
+    c8.\fE c16 d8 d c4 r
+    R1*2
+    r4 e d2 %35
+    c4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}

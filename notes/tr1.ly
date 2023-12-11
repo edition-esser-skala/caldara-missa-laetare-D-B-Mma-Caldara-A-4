@@ -132,3 +132,27 @@ CumSanctoTrombaI = {
     g r r\fermata \bar "|." %427 finis
   }
 }
+
+CredoTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCredo
+    g'4\fE g r2
+    R1*2
+    g4 r g r
+    R1 %5
+    r2 r8 g g g
+    g g g g g g g g
+    e4 r e r
+    \pa c8 c c c c4 \pd r
+    r2 g'4 r %10
+    g r g r
+    R1*20 %31
+    g4\fE r g r
+    R1*2
+    r4 g g4. g8 %35
+    g4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}

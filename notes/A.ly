@@ -663,3 +663,63 @@ CumSanctoAltoLyrics = \lyricmode {
   men, a --
   men. %427 finis
 }
+
+CredoAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoCredo
+    \mvDl g'4\fE^\tuttiE g r8 g f g
+    a4 g r2
+    g4 g8 g g4 g
+    R1*4 %7
+    r4 g8 g g4 g8 g
+    g8. g16 g4 g8 g a a
+    fis( g4) fis8 g4 r %10
+    R1*8 %18
+    r2 r4 \mvTr a~\pE^\soloE
+    a8 a gis gis a e a g %20
+    f4 g8 a g4. f16[ e]
+    a4. a8 gis4 r
+    a a8 a a4 a
+    h h8 h c8. g16 g4
+    r2 b4 a %25
+    gis8.([ fis16)] gis8 gis a e a4~
+    a gis a r
+    R1*3 %30
+    r2 \mvTr a8.\fE^\tuttiE a16 g!8 g
+    g g r4 r a8 a
+    a h g4. a8 f4~
+    f8 g e4. f8 d8. d16
+    d4 e( d4.) d8 %35
+    e4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}
+
+CredoAltoLyrics = \lyricmode {
+  Pa -- trem o -- mni -- po --
+  ten -- tem,
+  fa -- cto -- rem coe -- li,
+
+  vi -- si -- bi -- li -- um %8
+  o -- mni -- um et in -- vi --
+  si -- bi -- li -- um. %10
+
+  Et __ %19
+  ex Pa -- tre na -- tum an -- te %20
+  o -- mni -- a sae -- _
+  _ cu -- la,
+  De -- um de De -- o,
+  lu -- men de lu -- mi -- ne,
+  De -- um %25
+  ve -- rum de De -- o ve --
+  _ ro.
+
+  Ge -- ni -- tum non %31
+  fa -- ctum, con -- sub --
+  stan -- ti -- a -- lem
+  Pa -- tri, per quem o -- mni --
+  a fa -- cta %35
+  sunt. %36 finis
+}

@@ -660,3 +660,70 @@ CumSanctoBassoLyrics = \lyricmode {
   men, a --
   men. %427 finis
 }
+
+CredoBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoCredo
+    \mvDl c'4\fE^\tuttiE g r8 g a g
+    f4 e r2
+    h'4 a8 g c([ g)] g4
+    c2 a
+    f d %5
+    h g~
+    g1
+    c4 c'8 c c4 c,8 c
+    c'8. c16 c,4 c8 c c c
+    d4. d8 g,4 r %10
+    r2 r4 \mvTr e'8\pE^\soloE fis
+    g4 fis8([ e)] dis8. cis16 h4
+    h' a8([ h)] g8.([ fis16)] e4
+    a c!8 a fis4 fis
+    g h8 g e4 e %15
+    fis8 e dis cis h4 h'8[ a]
+    g[ fis] e4 a8[ g fis e]
+    dis4 e h4. h8
+    e4 r r2
+    R1*11 %30
+    r2 \mvTr a8.\fE^\tuttiE a16 h8 g!
+    c c, r4 r c'8 c
+    h4. g8 a4. d8
+    g,4. c8 f,4. f8
+    f4 e8 c g'4. g8 %35
+    c,4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}
+
+CredoBassoLyrics = \lyricmode {
+  Pa -- trem o -- mni -- po --
+  ten -- tem,
+  fa -- cto -- rem coe -- li,
+  et ter --
+  _ _ %5
+  _ _
+
+  rae, vi -- si -- bi -- li -- um
+  o -- mni -- um et in -- vi --
+  si -- bi -- li -- um. %10
+  Et in
+  u -- num Do -- mi -- num
+  Je -- sum Chri -- stum,
+  Fi -- li -- um De -- i,
+  Fi -- li -- um De -- i, %15
+  De -- i u -- ni -- ge -- _
+  _ _ _
+  _ _ _ ni --
+  tum.
+
+  Ge -- ni -- tum non %31
+  fa -- ctum, con -- sub --
+  stan -- ti -- a -- lem
+  Pa -- tri, per quem
+  o -- mni -- a fa -- cta %35
+  sunt. %36 finis
+}
+
+% Et in u -- num Do -- mi -- num Je -- sum Chri -- stum,
+%   Fi -- li -- um De -- i u -- ni -- ge -- ni -- tum,

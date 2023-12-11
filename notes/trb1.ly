@@ -70,3 +70,26 @@ QuiTollisTromboneI = {
     e2.\fermata \bar "||" %310 finis
   }
 }
+
+CredoTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \major \time 4/4 \tempoCredo
+    g'4\fE g r8 g f g
+    a4 g r2
+    g4 g8 g g4 g
+    R1*4 %7
+    r4 g8 g g4 g8 g
+    g8. g16 g4 g8 g a a
+    fis g4 fis8 g4 r %10
+    R1*20 %20
+    r2 a8.\fE a16 g!8 g
+    g g r4 r a8 a
+    a h g4. a8 f4~
+    f8 g e4. f8 d8. d16
+    d4 e d4. d8 %35
+    e4 r r2
+    R1
+    R\fermata \bar "||" %38 finis
+  }
+}

@@ -436,3 +436,38 @@ CumSanctoViolinoI = {
     e r r\fermata \bar "|." %427 finis
   }
 }
+
+CredoViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoCredo
+    e'4\fE d r8 e f e
+    d4 c e d8 c
+    g' d d4 c8 h h4
+    r8 e f g r c, d e
+    r f g a r f g a %5
+    r h, c d r h, c d
+    e e e e d d d d
+    e4 r8 e' g e r c
+    e c r e, g e r c'~
+    c h a4 g8 a16 h c d e fis %10
+    g4 r r2
+    R1*10 %21
+    r2 h,4\pE c8 d
+    c4 r r2
+    d4 e8 f e4 r
+    R1*2 %26
+    r2 e4\fE f8 g
+    f8. e16 f4 d e8 f
+    \appoggiatura f4 e2 c4 d8 e
+    d2~ d8 e c h16 a %30
+    h2 a16 a h c d e f g!
+    e( d) c8 r4 r a'~
+    a8 d g,4. c8 f,4~
+    f8 g e4. a8 f8. e16
+    d4 e8 d16 c d2 %35
+    c4 r d4. g8
+    c,4. f8 h, a16 g c4~
+    c h c2\fermata \bar "||" %38 finis
+  }
+}
