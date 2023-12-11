@@ -778,9 +778,7 @@ CredoSopranoLyrics = \lyricmode {
 
 
 
-% Qui pro -- pter nos ho -- mi -- nes
-% et pro -- pter no -- stram sa -- lu -- tem
-% de -- scen -- dit de coe -- lis.
+
 
 % Et in -- car -- na -- tus est de Spi -- ri -- tu San -- cto
 % ex Ma -- ri -- a Vir -- gi -- ne, et ho -- mo fa -- ctus est.

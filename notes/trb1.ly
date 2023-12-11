@@ -297,3 +297,42 @@ CredoTromboneI = {
     R\fermata \bar "||" %38 finis
   }
 }
+
+QuiPropterTromboneSolo = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 3/2 \tempoQuiPropter
+      \set Score.currentBarNumber = #39
+    a'2\fE b a4 g
+    a4. g8 f4 f g a %40
+    b2 b a
+    a g r
+    f a4 g f es
+    d2 g4 f e d
+    c2 b'1 %45
+    a4 g8 f g1
+    f1.
+    R1.*2
+    r2 r g4 f %50
+    e4 .d8 c2 r
+    r r a'4 g
+    f4. e8 d2 r
+    R1.*4 %57
+    r2 r a'4 g
+    f4. e8 d4 f b a
+    g f e d cis h %60
+    a2 a'2. g4
+    f2 e1
+    d1.
+    R1.*5 %68
+    a'2 b a
+    b a2. b4 %70
+    g1 f2
+    R1.*4 %75
+    f2 a4 g f es
+    d2 g4 f e d
+    c2 b'1
+    a4 g8 f g1
+    f1.\fermata \bar "||" %80 finis
+  }
+}

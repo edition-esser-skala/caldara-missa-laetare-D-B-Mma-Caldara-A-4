@@ -1300,3 +1300,98 @@ CredoBassFigures = \figuremode {
   <7> <6> <7>2
   <6 5>1 %38 finis
 }
+
+QuiPropterOrgano = {
+  \relative c {
+    \clef bass
+    \key f \major \time 3/2 \tempoQuiPropter
+      \set Score.currentBarNumber = #39
+    \mvTr f2\fE-\soloE d e
+    f2. a4 g f %40
+    g1 f2
+    c c' b
+    a1.
+    b4 a g2. f4
+    e2 d e %45
+    f b, c
+    f d\pE e
+    f1 e2
+    d e f
+    c1 h2\fE %50
+    c2. d4 e2\pE
+    f1 cis2\fE
+    d1 cis2\pE
+    d1 g4 a
+    b a g2 a4 g %55
+    f e d2 cis
+    d a' a,
+    d1 cis2\fE
+    d1.
+    e4 f g1~ %60
+    g2 f cis
+    d a' a,
+    d1.
+    b\pE
+    c! %65
+    c2 d c
+    d c1
+    b a2
+    f'\fE d4 e f2
+    g f d %70
+    b4 a b c d2
+    a\pE f a
+    b h1
+    c2 d e
+    f c' c, %75
+    a1.\fE
+    b2 h1
+    c2 d e
+    f c1
+    f,1.\fermata \bar "||" %80 finis
+  }
+}
+
+QuiPropterBassFigures = \figuremode {
+  r2 <6>1 %39
+  r1. %40
+  <5>2 <6>1
+  <6 4>2 \bo <[5] 3>1
+  <6> <5->2
+  r <5> <6>4 q
+  \bc <[6]>2 <6>1 %45
+  r1.
+  r2 <6>1
+  r1.
+  <6>
+  <6 4>2 \bo <[5] 3> <6> %50
+  r1 q2
+  r1 q2
+  r1 q2
+  r1 r4 \bc <[_+]>
+  <6> <6 [_!]> \bo <[6]> <5> <3+> <3!> %55
+  <6>1 q2
+  r <_+>1
+  r \bc <[6]>2
+  r1 <6>2
+  r1. %60
+  <4\+>2 <[6]> <6>
+  r \bc <[_+]>1
+  r1.
+  <6>
+  r %65
+  <6>2 q q
+  q q1
+  q q2
+  r q1
+  q1. %70
+  q
+  \bo <[6]>1 <6>4 <5->
+  r2 <6>1
+  \bc <[_!]>2 <6>1
+  r1. %75
+  \bo <[6]>1 <5->2
+  r <6>1
+  \bc <[_!]>2 <6>1
+  r1.
+  r %80 finis
+}

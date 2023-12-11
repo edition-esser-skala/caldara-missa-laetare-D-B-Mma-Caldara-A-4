@@ -723,3 +723,67 @@ CredoAltoLyrics = \lyricmode {
   a fa -- cta %35
   sunt. %36 finis
 }
+
+QuiPropterAlto = {
+  \relative c' {
+    \clef treble
+    \key f \major \time 3/2 \autoBeamOff \tempoQuiPropter
+      \set Score.currentBarNumber = #39
+    R1.*8 %46
+    \mvTr a'2\pE^\solo b a4 g
+    a4. g8 f4 f g a
+    b2 b a
+    a g r %50
+    r r c4( b)
+    a4.( g8) f2 r
+    r r a4( g)
+    f4. e8 d4 f b a
+    g f e d cis h %55
+    a2 a'2. g4
+    f2( e1)
+    d1.
+    R1.*4 %62
+    d2 e f
+    g a b
+    e,2. d4 c2 %65
+    a' b a
+    b a2. b4
+    g1 f2
+    R1.*3 %71
+    f2 a4 g f es
+    d2 g4 f e d
+    c2 b'!2. c4
+    a( g8[ f] g1) %75
+    f1.
+    R1.*3
+    R1.\fermata \bar "||" %80 finis
+  }
+}
+
+QuiPropterAltoLyrics = \lyricmode {
+  Qui pro -- pter nos %47
+  ho -- mi -- nes et pro -- pter
+  no -- stram sa --
+  lu -- tem %50
+  de --
+  scen -- dit,
+  de --
+  scen -- _ _ _ _ _
+  _ _ _ _ _ _ %55
+  _ dit de
+  coe --
+  lis.
+
+  Qui pro -- pter, %63
+  pro -- pter nos
+  ho -- mi -- nes %65
+  et pro -- pter
+  no -- stram sa --
+  lu -- tem
+
+  de -- scen -- _ _ _ %72
+  _ _ _ _ _
+  _ dit de
+  coe -- %75
+  lis. %76 finis
+}
