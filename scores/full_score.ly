@@ -16,9 +16,20 @@
   %           \set Staff.soloText = ##f
   %           \partCombine #'(0 . 10) \KyrieClarinoI \KyrieClarinoII
   %         >>
-  %         \new Staff <<
+  %         \new Staff \with { \smallStaffDistance } <<
   %           \set Staff.instrumentName = \transposedName "Tromba I, II" "C" ""
   %           \partCombine #'(0 . 10) \KyrieTrombaI \KyrieTrombaII
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "Trombone"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "I"
+  %             \KyrieTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "II"
+  %             \KyrieTromboneII
+  %           }
   %         >>
   %       >>
   %       \new Staff {
@@ -46,13 +57,13 @@
   %         \new Lyrics \lyricsto Soprano \KyrieSopranoLyrics
 
   %         \new Staff {
-  %           \incipit \markup \center-column { "Alto" "Viola I" "Trombone I" } "alto" #-20.5 #-1.8
+  %           \incipit \markup \center-column { "Alto" "Viola I" } "alto" #-18 #-1.8
   %           \new Voice = "Alto" { \dynamicUp \KyrieAlto }
   %         }
   %         \new Lyrics \lyricsto Alto \KyrieAltoLyrics
 
   %         \new Staff {
-  %           \incipit \markup \center-column { "Tenore" "Viola II" "Trombone II" } "tenor" #-20.9 #-1.8
+  %           \incipit \markup \center-column { "Tenore" "Viola II" } "tenor" #-18.4 #-1.8
   %           \new Voice = "Tenore" { \dynamicUp \KyrieTenore }
   %         }
   %         \new Lyrics \lyricsto Tenore \KyrieTenoreLyrics
@@ -141,9 +152,20 @@
   %           \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
   %           \partCombine #'(0 . 10) \KyrieFugaClarinoI \KyrieFugaClarinoII
   %         >>
-  %         \new Staff <<
+  %         \new Staff \with { \smallStaffDistance } <<
   %           \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
   %           \partCombine #'(0 . 10) \KyrieFugaTrombaI \KyrieFugaTrombaII
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \KyrieFugaTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \KyrieFugaTromboneII
+  %           }
   %         >>
   %       >>
   %       \new Staff {
@@ -171,13 +193,13 @@
   %         \new Lyrics \lyricsto Soprano \KyrieFugaSopranoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
+  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
   %           \new Voice = "Alto" { \dynamicUp \KyrieFugaAlto }
   %         }
   %         \new Lyrics \lyricsto Alto \KyrieFugaAltoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
+  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
   %           \new Voice = "Tenore" { \dynamicUp \KyrieFugaTenore }
   %         }
   %         \new Lyrics \lyricsto Tenore \KyrieFugaTenoreLyrics
@@ -212,9 +234,20 @@
   %           \set Staff.soloText = ##f
   %           \partCombine #'(0 . 10) \GloriaClarinoI \GloriaClarinoII
   %         >>
-  %         \new Staff <<
+  %         \new Staff \with { \smallStaffDistance } <<
   %           \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
   %           \partCombine #'(0 . 10) \GloriaTrombaI \GloriaTrombaII
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \GloriaTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \GloriaTromboneII
+  %           }
   %         >>
   %       >>
   %       \new Staff {
@@ -242,13 +275,13 @@
   %         \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
+  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
   %           \new Voice = "Alto" { \dynamicUp \GloriaAlto }
   %         }
   %         \new Lyrics \lyricsto Alto \GloriaAltoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
+  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
   %           \new Voice = "Tenore" { \dynamicUp \GloriaTenore }
   %         }
   %         \new Lyrics \lyricsto Tenore \GloriaTenoreLyrics
@@ -365,17 +398,21 @@
   % \bookpart {
   %   \subsection "Domine Fili"
   %   \addTocEntry
-  %   \paper {
-  %     top-system-spacing.basic-distance = #10
-  %     top-system-spacing.minimum-distance = #10
-  %     top-markup-spacing.basic-distance = #0
-  %     top-markup-spacing.minimum-distance = #0
-  %     markup-system-spacing.basic-distance = #10
-  %     markup-system-spacing.minimum-distance = #10
-  %     systems-per-page = #2
-  %   }
   %   \score { %\articulate
   %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \DomineFiliTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \DomineFiliTromboneII
+  %           }
+  %         >>
+  %       >>
   %       \new StaffGroup <<
   %         \new GrandStaff <<
   %           \set GrandStaff.instrumentName = "vl"
@@ -397,13 +434,13 @@
   %         \new Lyrics \lyricsto Soprano \DomineFiliSopranoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
+  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
   %           \new Voice = "Alto" { \dynamicUp \DomineFiliAlto }
   %         }
   %         \new Lyrics \lyricsto Alto \DomineFiliAltoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
+  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
   %           \new Voice = "Tenore" { \dynamicUp \DomineFiliTenore }
   %         }
   %         \new Lyrics \lyricsto Tenore \DomineFiliTenoreLyrics
@@ -426,7 +463,6 @@
   %     \layout { }
   %     \midi { \tempo 2 = 110 }
   %   }
-  %   \markup \null
   % }
   % \bookpart {
   %   \subsection "Qui tollis"
@@ -575,9 +611,20 @@
   %           \set Staff.soloText = \markup \remark \medium "clno 1"
   %           \partCombine #'(0 . 10) \CumSanctoClarinoI \CumSanctoClarinoII
   %         >>
-  %         \new Staff <<
+  %         \new Staff \with { \smallStaffDistance } <<
   %           \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
   %           \partCombine #'(0 . 10) \CumSanctoTrombaI \CumSanctoTrombaII
+  %         >>
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \CumSanctoTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \CumSanctoTromboneII
+  %           }
   %         >>
   %       >>
   %       \new Staff {
@@ -605,13 +652,13 @@
   %         \new Lyrics \lyricsto Soprano \CumSanctoSopranoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" "trb 1" }
+  %           \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
   %           \new Voice = "Alto" { \dynamicUp \CumSanctoAlto }
   %         }
   %         \new Lyrics \lyricsto Alto \CumSanctoAltoLyrics
 
   %         \new Staff {
-  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" "trb 2" }
+  %           \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
   %           \new Voice = "Tenore" { \dynamicUp \CumSanctoTenore }
   %         }
   %         \new Lyrics \lyricsto Tenore \CumSanctoTenoreLyrics
