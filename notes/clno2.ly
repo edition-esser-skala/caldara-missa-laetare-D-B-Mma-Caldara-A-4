@@ -161,3 +161,19 @@ CredoClarinoII = {
     R\fermata \bar "||" %38 finis
   }
 }
+
+EtIncarnatusClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    c'4\fE c8 c c4. c8
+    c4 r r e
+    e r r2
+    r4 d c r
+    R1*8 \noBreak %92
+    R1\fermata \bar "||"
+    \tempoCrucifixus R1*15 %108
+    R1\fermata \bar "||" %109 finis
+  }
+}

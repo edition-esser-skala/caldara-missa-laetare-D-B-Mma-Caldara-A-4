@@ -787,3 +787,72 @@ QuiPropterAltoLyrics = \lyricmode {
   coe -- %75
   lis. %76 finis
 }
+
+EtIncarnatusAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    \mvTr g'4\fE^\tuttiE a8 g a4. a8
+    g2 r4 g
+    g8. g16 g2 f8([ e]
+    f2.) e4
+    a2 g %85
+    f e!
+    d d4. d8
+    d8. c16 c4 r2
+    r4 a' a g
+    r g g f %90
+    r d d2~
+    d4 cis8([ h!)] cis4. cis8 \noBreak
+    d1\fermata \bar "||"
+    \tempoCrucifixus r2 r4 \mvTr h'4~\pE^\solo \noBreak
+    h8 e, a2 a4 %95
+    a2. gis4
+    a c8 a f4. f8
+    g([ d g f] e4) e
+    r a2 g4
+    r e8 a d,4 g8 g %100
+    f4 f r e8 a
+    d,4 g8 g c,4 f
+    g4. g8 g4. g8
+    g4 g8 c fis,4 h8 h
+    gis e e a d,4 g8 g %105
+    g4 fis gis8 gis a e
+    r4 h'2 a4~
+    a gis8 fis gis4 a~
+    a gis a2\fermata \bar "||" %109 finis
+  }
+}
+
+EtIncarnatusAltoLyrics = \lyricmode {
+  Et in -- car -- na -- tus %81
+  est de
+  Spi -- ri -- tu San --
+  cto
+  ex Ma -- %85
+  ri -- a,
+  Ma -- ri -- a
+  Vir -- gi -- ne,
+  et ho -- mo,
+  et ho -- mo, %90
+  et ho --
+  mo fa -- ctus
+  est.
+  E --
+  ti -- am pro %95
+  no -- bis
+  sub Pon -- ti -- o Pi --
+  la -- to,
+  pas -- sus
+  et se -- pul -- tus, se -- %100
+  pul -- tus, et se --
+  pul -- tus, se -- pul -- tus,
+  et se -- pul -- tus
+  est, et se -- pul -- tus, se --
+  pul -- tus, et se -- pul -- tus, se -- %105
+  pul -- tus, et se -- pul -- tus,
+  pas -- sus __
+  et se -- pul -- _
+  tus est. %109 finis
+}

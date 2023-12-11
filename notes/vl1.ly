@@ -471,3 +471,25 @@ CredoViolinoI = {
     c h c2\fermata \bar "||" %38 finis
   }
 }
+
+EtIncarnatusViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    e'4\fE f8 e f4. f8
+    e c e g b,-! b-! b4~
+    b a8 g a2~
+    a4 g g8 g c e
+    f4 r r2 %85
+    R1*2
+    r2 r4 e~
+    e d r d~
+    d c r a~ %90
+    a g8 f g4 d
+    e1 \noBreak
+    d\fermata \bar "||"
+    \tempoCrucifixus R1*15 %108
+    R1\fermata \bar "||" %109 finis
+  }
+}

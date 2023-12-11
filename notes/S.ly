@@ -775,16 +775,79 @@ CredoSopranoLyrics = \lyricmode {
   sunt. %36 finis
 }
 
+EtIncarnatusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    \mvTr c'4\fE^\tutti c8 c c4. c8
+    c2 r4 b
+    b a8 g a2~
+    a4 g g2
+    r4 f'2 es4~ %85
+    es d2 c4~
+    c b2 b8 b
+    b8. a16 a4 r e'!
+    e d r d
+    d c r a~ %90
+    a g8[( f] g4.) g8
+    a2. a4 \noBreak
+    a1\fermata \bar "||"
+    \tempoCrucifixus R1 \noBreak
+    r4 \mvTr e'4.\pE^\solo a,8 d4~ %95
+    d8 d c2 h4
+    r2 d4 f8 d
+    h4. h8 c4( e8[ c)]
+    a4 r r d~
+    d c r h8 e %100
+    a,4 d8 d d4 c
+    r h8 e a,4. h8
+    c[ g] c2 h4
+    c e2 d4
+    r c8 f! h,4 e8 e %105
+    e4 d r c8 f!
+    h,4 e8 e c2
+    h h4 c
+    h4. h8 a2\fermata \bar "||" %109 finis
+  }
+}
+
+EtIncarnatusSopranoLyrics = \lyricmode {
+  Et in -- car -- na -- tus %81
+  est de
+  Spi -- ri -- tu San --
+  _ cto
+  ex Ma -- %85
+  ri -- a, __
+  Ma -- ri -- a
+  Vir -- gi -- ne, et
+  ho -- mo, et
+  ho -- mo, et __ %90
+  ho -- mo
+  fa -- ctus
+  est.
+
+  E -- ti -- am __ %95
+  pro no -- bis
+  sub Pon -- ti --
+  o Pi -- la --
+  to, pas --
+  sus et se -- %100
+  pul -- tus, se -- pul -- tus,
+  et se -- pul -- _
+  _ _ tus
+  est, pas -- sus
+  et se -- pul -- tus, se -- %105
+  pul -- tus, et se --
+  pul -- tus, se -- pul --
+  tus, et se --
+  pul -- tus est. %109 finis
+
+}
 
 
 
 
-
-% Et in -- car -- na -- tus est de Spi -- ri -- tu San -- cto
-% ex Ma -- ri -- a Vir -- gi -- ne, et ho -- mo fa -- ctus est.
-
-% Cru -- ci -- fi -- xus e -- ti -- am pro no -- bis
-% sub Pon -- ti -- o Pi -- la -- to, pas -- sus et se -- pul -- tus est.
 
 % Et re -- sur -- re -- xit ter -- ti -- a di -- e
 % se -- cun -- dum Scri -- ptu -- ras,

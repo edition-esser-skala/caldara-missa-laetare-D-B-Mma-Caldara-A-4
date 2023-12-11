@@ -588,3 +588,65 @@ CredoTenoreLyrics = \lyricmode {
   o -- mni -- a fa -- cta %35
   sunt. %36 finis
 }
+
+EtIncarnatusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    \mvTr e4\fE^\tuttiE f8 e f4. f8
+    e2 r4 e
+    e e8 e c2~
+    c4 d c2
+    R1*4 %88
+    f2 g,
+    e' f, %90
+    d' b
+    e,2. e4 \noBreak
+    d1\fermata \bar "||"
+    \tempoCrucifixus \mvTr a'4\pE^\solo c e4.( d8) \noBreak
+    c4 c8. h16 a4 f'~ %95
+    f fis e2
+    R1*2
+    d4 f8 d h4. h8
+    c4 c r e~ %100
+    e d r c8 f
+    h,!4 e8 e e4 d
+    c d8([ e)] d4. d8
+    e4 r r d~
+    d c r h8 e %105
+    a,4 d8 d d4 c
+    d h c8([ d)] e e
+    fis2 e4 e
+    e4. e8 e2\fermata \bar "||" %109 finis
+  }
+}
+
+EtIncarnatusTenoreLyrics = \lyricmode {
+  Et in -- car -- na -- tus %81
+  est de
+  Spi -- ri -- tu San --
+  _ cto,
+
+  et ho -- %89
+  mo, ho -- %90
+  mo fa --
+  _ ctus
+  est.
+  Cru -- ci -- fi --
+  xus e -- ti -- am pro __ %95
+  no -- bis
+
+  sub Pon -- ti -- o Pi -- %99
+  la -- to, pas -- %100
+  sus et se --
+  pul -- tus, se -- pul -- tus,
+  et se -- pul -- tus
+  est, pas --
+  sus et se -- %105
+  pul -- tus, se -- pul -- tus,
+  et se -- pul -- tus, se --
+  pul -- tus se --
+  pul -- tus
+  est. %110 finis
+}

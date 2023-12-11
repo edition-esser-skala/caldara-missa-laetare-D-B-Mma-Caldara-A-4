@@ -300,7 +300,7 @@ CredoTromboneI = {
 
 QuiPropterTromboneSolo = {
   \relative c' {
-    \clef treble
+    \clef alto
     \key f \major \time 3/2 \tempoQuiPropter
       \set Score.currentBarNumber = #39
     a'2\fE b a4 g
@@ -334,5 +334,28 @@ QuiPropterTromboneSolo = {
     c2 b'1
     a4 g8 f g1
     f1.\fermata \bar "||" %80 finis
+  }
+}
+
+EtIncarnatusTromboneI = {
+  \relative c' {
+    \clef alto
+    \key c \major \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    g'4\fE a8 g a4. a8
+    g2 r4 g
+    g8. g16 g2 f8 e
+    f2. e4
+    f8 f d d h h c c %85
+    a a b b gis gis a a
+    fis fis g g e!4. e8
+    e2 r
+    r4 a' a g
+    r g g f %90
+    r d d2~
+    d4 cis8 h! cis4. cis8 \noBreak
+    d1\fermata \bar "||"
+    \tempoCrucifixus R1*15 %108
+    R1\fermata \bar "||" %109 finis
   }
 }

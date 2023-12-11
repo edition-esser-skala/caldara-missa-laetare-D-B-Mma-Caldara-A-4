@@ -156,3 +156,19 @@ CredoTrombaI = {
     R\fermata \bar "||" %38 finis
   }
 }
+
+EtIncarnatusTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    g'4\fE c8 g c4. c8
+    g4 r r g
+    g r r2
+    r4 g g r
+    R1*8 \noBreak %92
+    R1\fermata \bar "||"
+    \tempoCrucifixus R1*15 %108
+    R1\fermata \bar "||" %109 finis
+  }
+}

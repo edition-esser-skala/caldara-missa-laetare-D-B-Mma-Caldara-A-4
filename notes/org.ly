@@ -1395,3 +1395,67 @@ QuiPropterBassFigures = \figuremode {
   r1.
   r %80 finis
 }
+
+EtIncarnatusOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    \mvTr c1~\fE-\tuttiE
+    c2 r4 c~
+    c c f2~
+    f4 h,! c2
+    R1*3 %87
+    r2 c'
+    d, g
+    c, f %90
+    b,1
+    a \noBreak
+    d\fermata \bar "||"
+    \tempoCrucifixus \mvTr a'2\pE-\solo e4 gis \noBreak
+    a4. g8 f4. e8 %95
+    d4 dis e2
+    f4 e d2
+    g a4 c8 a
+    f2 g8 d g f
+    e4 a2 g4 %100
+    r f8 b e,4 a~
+    a g f2
+    e4 d8 c g2
+    c d
+    e4 a2 g!4 %105
+    r fis8 h e,4 a8 a
+    a4 gis a2
+    dis, e~
+    e a,\fermata \bar "||" %109 finis
+  }
+}
+
+EtIncarnatusBassFigures = \figuremode {
+  <[5 3]>4 <6 4>8 <[5] 3> <6 4>2 %81
+  <5 3>2. <7->4
+  r2 <10 9>4 \bassFigureExtendersOn <10 8>8 <10 7>
+  <10 8>4 \bassFigureExtendersOff <6 5> <5 4> <\t 3>
+  r1*4 %88
+  <9>4 <8> <9 _-> <8 \t>
+  <9> <8> <9> <8> %90
+  <7>2 <6>
+  <5 4> <\t _+>
+  <_!>1
+  r2 \bo <[_+]>4 \bc <[6]>
+  <9> <8> <7> <6> %95
+  r <7 [_+]> <6 4> <5 _+>
+  r2 <_!>
+  r1
+  <6>2 <9>4 <8>
+  <7 6> <[3]> <2> <6> %100
+  r <6> <7>2
+  <2[!]>4 <5>8 <6> <7>4 <6>8 <4>
+  <[6]>2 <4>4 <3>
+  <5> <6> <9 [6] _+> <8 6 \t>
+  <7 _+> <5>8 <6[!]> <2>4 <6> %105
+  r q <7 _+> <5>8 <6[!]>
+  <2>4 <[6]> <9> <8>
+  <6 5 [_+]>2 <[5] _+>4 <6 4>
+  <5 \t> <\t _+> <_!>2 %109 finis
+}

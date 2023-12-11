@@ -725,5 +725,67 @@ CredoBassoLyrics = \lyricmode {
   sunt. %36 finis
 }
 
-% Et in u -- num Do -- mi -- num Je -- sum Chri -- stum,
-%   Fi -- li -- um De -- i u -- ni -- ge -- ni -- tum,
+EtIncarnatusBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoEtIncarnatus
+      \set Score.currentBarNumber = #81
+    \mvTr c4\fE^\tuttiE c8 c c4. c8
+    c2 r4 c
+    c c8 c f2~
+    f4 h,! c2
+    R1*3 %87
+    r2 c'
+    d, b'
+    c, a' %90
+    b,2. b4
+    a2. a4 \noBreak
+    d1\fermata \bar "||"
+    \tempoCrucifixus r2 \mvTr e4\pE^\solo gis \noBreak
+    a4.( g8) f4 f8. e16 %95
+    d4 dis e e
+    R1
+    r2 a4 c8 a
+    f4. f8 g([ d g f])
+    e4 a2 g4 %100
+    r f8 b e,4 a8 a
+    a4 g f4. f8
+    e4 d8 c g'4. g8
+    c,4 r r2
+    r4 a'2 g!4 %105
+    r fis8 h e,4 a8 a
+    a4 gis a4. a8
+    dis,2 e~
+    e4 e a,2\fermata \bar "||" %109 finis
+  }
+}
+
+EtIncarnatusBassoLyrics = \lyricmode {
+  Et in -- car -- na -- tus %81
+  est de
+  Spi -- ri -- tu San --
+  _ cto
+
+  et %88
+  ho -- mo,
+  ho -- mo, %90
+  ho -- mo
+  fa -- ctus
+  est.
+  Cru -- ci --
+  fi -- xus e -- ti -- %95
+  am pro no -- bis
+
+  sub Pon -- ti --
+  o Pi -- la --
+  to, pas -- sus %100
+  et se -- pul -- tus, se --
+  pul -- tus, et se --
+  pul -- tus, se -- pul -- tus
+  est,
+  pas -- sus %105
+  et se -- pul -- tus, se --
+  pul -- tus, et se --
+  pul -- _
+  tus est. %109 finis
+}

@@ -763,39 +763,120 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Qui propter"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new Staff \with { \smallStaffDistance } {
+  %         \set Staff.instrumentName = \markup \center-column { "trb" "solo" }
+  %         \QuiPropterTromboneSolo
+  %       }
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \QuiPropterAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \QuiPropterAltoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \QuiPropterOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \QuiPropterBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 2 = 100 }
+  %   }
+  %   \markup \null
+  % }
   \bookpart {
-    \subsection "Qui propter"
+    \subsection "Et incarnatus est · Crucifixus"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-    }
     \score { %\articulate
       <<
-        \new Staff \with { \smallStaffDistance } {
-          \set Staff.instrumentName = \markup \center-column { "trb" "solo" }
-          \QuiPropterTromboneSolo
+        \new StaffGroup <<
+          \new Staff <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine #'(0 . 10) \EtIncarnatusClarinoI \EtIncarnatusClarinoII
+          >>
+          \new Staff \with { \smallStaffDistance } <<
+            \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
+            \partCombine #'(0 . 10) \EtIncarnatusTrombaI \EtIncarnatusTrombaII
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \EtIncarnatusTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \EtIncarnatusTromboneII
+            }
+          >>
+        >>
+        \new Staff {
+          \set Staff.instrumentName = "timp"
+          \EtIncarnatusTimpani
         }
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \EtIncarnatusViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \EtIncarnatusViolinoII
+            }
+          >>
+        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \QuiPropterAlto }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \EtIncarnatusSoprano }
           }
-          \new Lyrics \lyricsto Alto \QuiPropterAltoLyrics
+          \new Lyrics \lyricsto Soprano \EtIncarnatusSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
+            \new Voice = "Alto" { \dynamicUp \EtIncarnatusAlto }
+          }
+          \new Lyrics \lyricsto Alto \EtIncarnatusAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
+            \new Voice = "Tenore" { \dynamicUp \EtIncarnatusTenore }
+          }
+          \new Lyrics \lyricsto Tenore \EtIncarnatusTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \EtIncarnatusBasso }
+          }
+          \new Lyrics \lyricsto Basso \EtIncarnatusBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \QuiPropterOrgano
+            \EtIncarnatusOrgano
           }
         >>
-        \new FiguredBass { \QuiPropterBassFigures }
+        \new FiguredBass { \EtIncarnatusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 2 = 100 }
+      \midi { \tempo 4 = 60 }
     }
-    \markup \null
   }
 }
