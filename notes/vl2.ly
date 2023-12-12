@@ -485,3 +485,98 @@ EtIncarnatusViolinoII = {
     R1\fermata \bar "||" %109 finis
   }
 }
+
+EtResurrexitViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    R1
+    r4 r8 c'\fE a16 g f e d8 d'
+    h16 a g f e8 e' c16 b a g f8 d'16 c
+    h8 d e d e d e d
+    e e, d h' c c16 d e8 d
+    c e16 d c8 c c16 g c8 c16 g e g %115
+    c,4 r8 a' a16 g f e d8 h'
+    h16 a g f e8 c' c16 h a g fis8 d'
+    h a16 g a4 g8 g d h
+    g4 r r2
+    R1*2 %121
+    r4 r8 h'\fE a8. h16 a8 e
+    e e e e e8. d16 c4
+    r8 c' h4 r8 a g!4
+    r8 f fis fis h, c d c %125
+    h4 r r a'8 a
+    a a h h gis gis a4~
+    a gis a r8 a
+    a16 g f e d8 h' h16 a g f e8 c'
+    c16 h a g fis8 d' d16 c h c32( d) e8 d %130
+    c16 c h a h4 a r
+    R1*5 %136
+    e'8\fE d! c h a g fis e
+    dis e4 dis8 e4 r
+    R1
+    c'8\p c, e c g' g, h g %140
+    a a c a e' e h c
+    d16 c d8 d'2\fE c4~
+    c h2 a4~
+    a g fis r8 a
+    d8. d16 d8 d d16 fis e fis d fis e fis %145
+    d8. cis16 d8 a h16( g) c( a) h( g) c( a)
+    h8 h, d g h16 d c d h d c d
+    h4 r r2
+    R1*3 %151
+    r4 g'4.\fE a8 fis4~
+    fis8 g e4. d16 c h8 a16 g
+    a2 g8 g a h
+    c c c c c4\trill h16 a g f! %155
+    e8 g a h c c c c
+    h h, c d e g a h
+    c e16 d c8 h16 a g8 g e e
+    d d d d e4 r
+    R1*3 %162
+    r2 r4 r8 d\f
+    cis a r d cis a r4
+    d'8 d d d c! e, e4~ \noBreak %165
+    e4 d e2\fermata \bar "||"
+    g4 a g r8 a \noBreak
+    a4 g g f8 f
+    f4 e r r8 a
+    f e16 f d e f g e8 c r c' %170
+    h a h g a4 r8 h
+    g fis g e fis4. g8
+    e fis g2 fis4
+    g r r2
+    r r4 r8 a %175
+    g f! g e f d e d16 c
+    d2 c4 r
+    r r8 h' a g a fis
+    h,4 e a, r8 d
+    d c d c16 h e4 d %180
+    d e d r
+    r r8 c' h a h g
+    a4 r8 a g f g e
+    f e f d e4. f8
+    e2 r4 r8 d %185
+    c h c a h4 r8 g'
+    f e f d e2
+    f4 e e r8 e
+    d c d h c4 r8 c'
+    h a h g a4 r8 a %190
+    g fis g e fis4 h,
+    e g fis r8 g
+    g4 a8 fis g4 a
+    fis g8 g fis2
+    e4 r r r8 f %195
+    g f16 g e f g a f8 e16 f d e f g
+    e8 c r4 g' a
+    g r8 a a4 g
+    g f8 f f4 e
+    r r8 g a g16 a f g a h %200
+    g8 f16 g e f g a f8 e16 f d e f g
+    c,4 r8 c' h a h g
+    a4 r8 a g f g e
+    d c d4 e g
+    g r r2\fermata \bar "|." %205 finis
+  }
+}

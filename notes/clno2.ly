@@ -177,3 +177,55 @@ EtIncarnatusClarinoII = {
     R1\fermata \bar "||" %109 finis
   }
 }
+
+EtResurrexitClarinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    c'4\fE e8 d c e16 d c8 c
+    c16 g g8 r4 r2
+    R1
+    r8 d' e d c d c d
+    c g g4 e r
+    c' r e8 e e e %115
+    e4 r r2
+    R1
+    r2 r8 d d d
+    d4 r r2
+    R1*2 %121
+    r4 r8 e,\fE e e e e
+    e e e e e4 r
+    R1
+    r2 r8 e e e %125
+    e e e e e4 r
+    R1*20 %146
+    r8 d'\fE d d d d d d
+    d4 r r2
+    R1*6 %154
+    r8 e\fE e e d4 r %155
+    r2 r8 e e e
+    d4 r r2
+    r8 e e e d4 r
+    r d c r
+    R1*5 %164
+    r4 d8\fE d c4 r \noBreak %165
+    R1 \bar "||"
+    R1*7 %173
+    d4 r g, r
+    R1*2 %176
+    r2 c4 e
+    d r r2
+    R1*2 %180
+    d4 r d c
+    d r r2
+    R1*14 %196
+    r2 r4 r8 f
+    e d e c d4 r8 e
+    c4 r8 c d4 g,
+    c r r2 %200
+    R1*3
+    r2 r4 d
+    e r r2\fermata \bar "|." %205 finis
+  }
+}

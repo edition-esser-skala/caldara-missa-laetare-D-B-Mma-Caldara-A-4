@@ -789,3 +789,171 @@ EtIncarnatusBassoLyrics = \lyricmode {
   pul -- _
   tus est. %109 finis
 }
+
+EtResurrexitBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    R1*4 %113
+    r2 \mvTr c4\fE^\tuttiE c8 g'
+    c c, c c c' c, r4 %115
+    r c8. c16 d4 d8. d16
+    e4 e f8 f fis4
+    g8 g d4 g, r
+    R1*3 %121
+    r4 r8 \mvTr gis'\fE^\tuttiE a8. gis16 a8 gis
+    a gis a gis a8. a,16 a4
+    a'8 a g g f4 e
+    d dis8 dis e4. e8 %125
+    e4 r r a8 g!
+    f4 e8 d e e a4
+    d,8 d e4 a, r
+    R1*2 %130
+    r2 r4 \mvTr a'8\pE^\soloE h
+    c4 h8 a h4 e,
+    e8. dis16 dis4 e8 fis g a
+    h4 h, h'8 a g fis
+    e d! c([ h)] a4. c8 %135
+    h[ h' g e] c[ a] h4
+    e r r2
+    R1*4 %141
+    r2 \mvTr g4\fE^\tuttiE a
+    fis g e fis
+    g8([ g, h g)] d'4 r
+    R1 %145
+    r4 r8 d g8. g16 g8 g
+    g16[ h a h] g[ h a h] g4 g,
+    R1*7 %154
+    r8 \mvTr c\fE^\tuttiE e f g4 g, %155
+    r2 r8 c e f
+    g8. g,16 g4 r2
+    r8 c e f g8. g16 a8 a
+    f4 g c, r
+    r \mvTr g'\pE^\soloE e8. d16 e4 %160
+    f f8 f f4 e
+    d8 d g g c, c f f
+    b,4( c) f, r
+    R1
+    \mvDl d''8\fE^\tuttiE d h h c c c, c \noBreak %165
+    f2 e\fermata \bar "||"
+    r2 r4 r8 c'
+    h a h g a4 r8 a
+    g[ f g e] f[ d] e[ d16 c]
+    d2 c4 r %170
+    R1*3
+    g'4 a g r8 a
+    a4 g g f8 f %175
+    f4 e r r8 a
+    f[ e16 f] d[ e f g] e8 c r4
+    r r8 g' fis e fis d
+    e4 r8 e d[ c d h]
+    c[ a] h[ a16 g] a4 d %180
+    g, r g' a
+    g r8 a a4 g
+    g f!8 f f4 e8 a,
+    d[ c d h] \once \tieDashed c4~ c8 d
+    e4 e, r2 %185
+    r4 r8 a' g f g e
+    f4 r8 g c,[ h c a]
+    d4 e a, r
+    R1
+    r4 r8 g' g4 fis %190
+    fis e8 e e4 dis
+    r2 r4 e
+    g fis8 h h4 a
+    a g8 e h'([ a] h4)
+    e, r8 e f![ e16 f] d[ e f g!] %195
+    e8[ d16 e] c[ d e f] d8[ c16 d] h[ c d e]
+    c8[ h16 c] a[ h c d] h8 g r4
+    R1
+    r2 r4 c
+    e d8 e e4 d %200
+    d c8 c c4 h8 g'
+    a8. g16 a8 f g4 r8 e
+    f8.[ e16] f8[ d] e[ d e c]
+    g'[ a f g] c,4 g'
+    c, r r2\fermata \bar "|." %205 finis
+  }
+}
+
+EtResurrexitBassoLyrics = \lyricmode {
+  Et re -- sur -- %114
+  re -- xit, re -- sur -- re -- xit %115
+  ter -- ti -- a, ter -- ti --
+  a di -- e se -- cun --
+  dum Scri -- ptu -- ras.
+
+  Et i -- te -- rum ven -- %122
+  tu -- rus est cum glo -- ri -- a
+  iu -- di -- ca -- re vi -- vos,
+  vi -- vos et mor -- tu -- %125
+  os, cu -- ius
+  re -- gni non e -- rit, non
+  e -- rit fi -- nis.
+
+  Et in %131
+  Spi -- ri -- tum San -- ctum,
+  Do -- mi -- num et vi -- vi -- fi --
+  can -- tem, qui ex Pa -- tre
+  Fi -- li -- o -- que pro -- %135
+  ce -- _ _
+  dit.
+
+  Si -- mul, %142
+  si -- mul ad -- o --
+  ra -- tur
+  %145
+  et con -- glo -- ri -- fi --
+  ca -- _ _ tur.
+
+  Et u -- nam san -- ctam, %155
+  san -- ctam ca --
+  tho -- li -- cam
+  et a -- po -- sto -- li -- cam Ec -- cle --
+  si -- am.
+  Con -- fi -- te -- or %160
+  u -- num ba -- ptis -- ma
+  in re -- mis -- si -- o -- nem pec -- ca --
+  to -- rum.
+
+  Re -- sur -- re -- cti -- o -- nem mor -- %165
+  tu -- o -- rum,
+  ven --
+  tu -- ri sae -- cu -- li, a --
+  _ _ _
+  _ men, %170
+
+  et vi -- tam ven -- %174
+  tu -- ri sae -- cu -- li, %175
+  a -- men, a --
+  _ _ _ men,
+  ven -- tu -- ri sae -- cu --
+  li, a -- _
+  _ _ _ _ %180
+  men, et vi --
+  tam ven -- tu -- ri
+  sae -- cu -- li, a -- men, a --
+  _ _ men,
+  a -- men, %185
+  ven -- tu -- ri sae -- cu --
+  li, a -- _
+  _ _ men,
+
+  ven -- tu -- ri %190
+  sae -- cu -- li, a -- men,
+  et
+  vi -- tam ven -- tu -- ri
+  sae -- cu -- li, a --
+  men, a -- _ _ %195
+  _ _ _ _
+  _ _ _ men,
+
+  et
+  vi -- tam ven -- tu -- ri %200
+  sae -- cu -- li, a -- men, ven --
+  tu -- ri sae -- cu -- li, a --
+  _ _ _
+  _ men, a --
+  men. %205 finis
+}

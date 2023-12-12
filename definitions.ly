@@ -26,6 +26,7 @@ tempoCredo = \tempoMarkup "Allegro"
 tempoQuiPropter = \tempoMarkup "Andante"
 tempoEtIncarnatus = \tempoMarkup "Grave"
   tempoCrucifixus = \tempoMarkup "Largo"
+tempoEtResurrexit = \tempoMarkup "Allegro"
 
 
 \include "notes/clno1.ly"

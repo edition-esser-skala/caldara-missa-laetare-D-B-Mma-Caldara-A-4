@@ -172,3 +172,47 @@ EtIncarnatusTrombaI = {
     R1\fermata \bar "||" %109 finis
   }
 }
+
+EtResurrexitTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    g'4\fE g8 g g g g g
+    g e r4 r2
+    R1
+    r8 g g g e g e g
+    e e g g g4 r
+    g r g8 g g g %115
+    g4 r r2
+    R1
+    r2 r8 g g g
+    g4 r r2
+    R1*27 %146
+    r8 g\fE g g g g g g
+    g4 r r2
+    R1*6 %154
+    g4\fE r g r %155
+    r2 g4 r
+    g r r2
+    g4 r g r
+    r g g r
+    R1*5 %164
+    r4 g8\fE g g4 r \noBreak %165
+    R1\fermata \bar "||"
+    R1*7 %173
+    g4 r g r
+    R1*2 %176
+    r2 g4 e
+    g r r2
+    R1*2 %180
+    g4 r g \pao c,
+    g' r r2
+    R1*16 %198
+    r2 r4 g
+    g r r2 %200
+    R1*3
+    r2 r4 g
+    g r r2\fermata \bar "|." %205 finis
+  }
+}

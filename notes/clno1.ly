@@ -314,3 +314,65 @@ EtIncarnatusClarinoI = {
     R1\fermata \bar "||" %109 finis
   }
 }
+
+EtResurrexitClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    e'4\fE g8 f e g16 f e8 e
+    e16 d c8 r4 r2
+    R1
+    \pa g'16 a g8. a16[ g8.] a16 g8. a16[ g f]
+    e8 d16 c \pd d4 c r
+    e r g8 g g g %115
+    g4 r r2
+    R1
+    r2 r8 g16 a g a g a
+    g4 r r2
+    R1*2 %121
+    r4 r8 e,\fE e e e e
+    e e e e e4 r
+    R1
+    r2 r8 e e e %125
+    e e e e e4 r
+    R1*20 %146
+    r8 g'\fE g g g16 h a h g h a h
+    g4 r r2
+    R1*6 %154
+    r8 g\fE g a g4 r %155
+    r2 r8 g g a
+    g4 r r2
+    r8 g g a g4 r
+    r g e r
+    R1*5 %165
+    r4 g16\fE a g f e4 r \noBreak %165
+    R1\fermata \bar "||"
+    R1*7 %173
+    g4 \pa r8 f e d e c \pd
+    d c d e c d16 e f8 g16 a %175
+    d,4 r r2
+    r g4 g
+    g r r2
+    R1*2 %180
+    g4 r g fis
+    g \pa r8 f f4 e \pd
+    e f8 d d4 c
+    R1*4 %187
+    r2 r4 r8 e
+    f e16 f d e f g e8 d16 e c d e f
+    d4 r r2 %190
+    R1*4
+    r2 r4 r8 f %195
+    g f16 g e f g a f8 e16 f d e f g
+    e8 c r4 g' a
+    \pa g r8 a a4 g
+    g f8 f \pd f4 e
+    g r8 e f e f d %200
+    e4 r8 c d c d g,
+    c4 r8 f f4 e
+    e d8 d d4 c
+    d8 c d4 e g
+    g r r2\fermata \bar "|." %205
+  }
+}

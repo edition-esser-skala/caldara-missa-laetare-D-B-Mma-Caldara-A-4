@@ -856,3 +856,165 @@ EtIncarnatusAltoLyrics = \lyricmode {
   et se -- pul -- _
   tus est. %109 finis
 }
+
+EtResurrexitAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoEtResurrexit
+      \set Score.currentBarNumber = #110
+    R1*4 %113
+    r2 \mvTr g'4\fE^\tuttiE g8 g
+    g g g g g g r4 %115
+    r e8. e16 f4 f8. f16
+    g4 g a8 a a4
+    g8 g g([ fis)] g4 r
+    R1*3 %121
+    r4 r8 \mvTr h\fE^\tuttiE a8. h16 a8 h
+    a h a h a8. a16 a4
+    a8 a h h a4 g!
+    f fis8 fis e4. e8 %125
+    e4 r r a8 a
+    a4 h8 h gis gis a4~
+    a gis a r
+    R1*13 %141
+    r2 r4 \mvTr a~\fE^\tuttiE
+    a g2 a8 fis
+    d2 d4 r
+    R1 %145
+    r4 r8 fis g8. g16 g8 g
+    g2 g4 r
+    r \mvTr h4.\pE^\soloE c8 a4~
+    a8 h g4. a8 fis4~
+    fis8 g e4 a8([ e fis)] g %150
+    fis4( g2 fis4)
+    g r r2
+    R1*2
+    r8 \mvTr g\fE^\tuttiE g a g4 g %155
+    r2 r8 g g a
+    g8. g16 g4 r2
+    r8 g g a g8. g16 e8 e
+    a4 g g r
+    R1*3 %162
+    r2 r4 \mvTr a8\fE^\tutti a
+    a2 a
+    a8 a g g g g e4~ \noBreak %165
+    e8 f d4 e2\fermata \bar "||"
+    g4 a g r8 a \noBreak
+    a4 g g f8 f
+    f4 e r r8 a
+    f[ e16 f] d[ e f g] e8 c r c' %170
+    h a h g a4 r8 h
+    g[ fis g e] fis4. g8
+    e[ fis] g2 fis4
+    g r r2
+    r r4 r8 a %175
+    g[ f! g e] f[ d] e[ d16 c]
+    d2 c4 r
+    r r8 h' a g a fis
+    h,4 e a, r8 d
+    d c d c16 h e4 d %180
+    d e d r
+    r r8 c' h a h g
+    a4 r8 a g[ f g e]
+    f[ e f d] e4. f8
+    e2 r4 r8 d %185
+    c h c a h4 r8 g'
+    f[ e f d] e2
+    f4 e e r8 e
+    d c d h c4 r8 c'_(
+    h[ a h g]) a4 r8 a %190
+    g[ fis g e] fis4 h,
+    e g fis r8 g
+    g4 a8 fis g4 a
+    fis g8 g fis2
+    e4 r r r8 f %195
+    g[ f16 g] e[ f g a] f8[ e16 f] d[ e f g]
+    e8 c r4 g' a
+    g r8 a a4 g
+    g f8 f f4 e
+    r r8 g a[ g16 a] f[ g a h] %200
+    g8[ f16 g] e[ f g a] f8[ e16 f] d[ e f g]
+    c,4 r8 c' h a h g
+    a4 r8 a( g[ f g e]
+    d) c d4 e g
+    g r r2\fermata \bar "|." %205 finis
+  }
+}
+
+EtResurrexitAltoLyrics = \lyricmode {
+  Et re -- sur -- %114
+  re -- xit, re -- sur -- re -- xit %115
+  ter -- ti -- a, ter -- ti --
+  a di -- e se -- cun --
+  dum Scri -- ptu -- ras.
+
+  Et i -- te -- rum ven -- %122
+  tu -- rus est cum glo -- ri -- a
+  iu -- di -- ca -- re vi -- vos,
+  vi -- vos et mor -- tu -- %125
+  os, cu -- ius
+  re -- gni non e -- rit fi --
+  _ nis.
+
+  Si -- %142
+  mul ad -- o --
+  ra -- tur
+  %145
+  et con -- glo -- ri -- fi --
+  ca -- tur:
+  qui lo -- cu --
+  tus est, lo -- cu --
+  tus est per __ Pro -- %150
+  phe --
+  tas.
+
+  Et u -- nam san -- ctam, %155
+  san -- ctam ca --
+  tho -- li -- cam
+  et a -- po -- sto -- li -- cam Ec -- cle --
+  si -- am.
+
+  Et ex -- %163
+  pe -- cto
+  re -- sur -- re -- cti -- o -- nem mor -- %165
+  tu -- o -- rum,
+  et vi -- tam ven --
+  tu -- ri sae -- cu -- li,
+  a -- men, a --
+  _ _ _ men, ven -- %170
+  tu -- ri sae -- cu -- li, a --
+  _ _ _
+  _ _ _
+  men,
+  a -- %175
+  _ _ _
+  _  men,
+  ven -- tu -- ri sae -- cu --
+  li, a -- men, ven --
+  tu -- ri sae -- cu -- li, a -- men, %180
+  et vi -- tam
+  ven -- tu -- ri sae -- cu --
+  li, a -- _
+  _ _ _
+  men, ven -- %185
+  tu -- ri sae -- cu -- li, a --
+  _ _
+  _ _ men, ven --
+  tu -- ri sae -- cu -- li, a --
+  men, a -- %190
+  _ _ men,
+  et vi -- tam ven --
+  tu -- ri, ven -- tu -- ri
+  sae -- cu -- li, a --
+  men, a -- %195
+  _ _ _ _
+  _ men, et vi --
+  tam ven -- tu -- ri
+  sae -- cu -- li, a -- men,
+  a -- _ _ %200
+  _ _ _ _
+  men, ven -- tu -- ri sae -- cu --
+  li, a --
+  men, a -- men, a --
+  men. %205 finis
+}
