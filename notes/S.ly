@@ -1009,16 +1009,81 @@ EtResurrexitSopranoLyrics = \lyricmode {
   men. %205
 }
 
+SanctusSoprano = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoSanctus
+    \mvDl c'4\fE^\tuttiE d r
+    c c r
+    h h r
+    R2.*4 %7
+    \mvTr g4\fE^\tutti h d
+    g8([ fis16 e)] d4. c8
+    h([ a)] g4 r %10
+    g8[ a h c d e]
+    f!4. f8 f4
+    f e r
+    R2. \noBreak
+    R\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      \mvTr c1\fE^\tuttiE d \noBreak
+    c2 f,1 e2
+    d e1 f2
+    g a1 h2
+    c1 h2 a4 g %20
+    fis2 g1 fis2
+    g1 r
+    r2 g4 a h a g f!
+    e2 e r a~
+    a h1 c2~ %25
+    c d1 c2
+    h1 a2 r
+    r1 c
+    d c2 d~
+    d c h4 c d2~ %30
+    d c4 b a1~
+    a\breve
+    g\fermata \bar "||" %33 finis
+  }
+}
+
+SanctusSopranoLyrics = \lyricmode {
+  San -- ctus,
+  san -- ctus,
+  san -- ctus.
+
+  Ple -- ni sunt %8
+  coe -- li et
+  ter -- ra %10
+  glo --
+  _ ri -- a
+  tu -- a.
+
+  O -- san -- %16
+  na in ex --
+  cel -- _ _
+  _ _ _
+  _ _ _ _ %20
+  _ _ _
+  sis,
+  in ex -- cel -- sis, in ex --
+  cel -- sis, o --
+  san -- na __ %25
+  in ex --
+  cel -- sis,
+  o --
+  san -- na in __
+  ex -- cel -- _ _ %30
+  _ _ _
+
+  sis. %33 finis
+}
 
 
 
 
 
-% ## Sanctus
-
-% San -- ctus Do -- mi -- nus De -- us Sa -- ba -- oth.
-% Ple -- ni sunt coe -- li et ter -- ra glo -- ri -- a tu -- a.
-% O -- san -- na in ex -- cel -- sis.
 
 
 % ## Benedictus

@@ -1018,3 +1018,72 @@ EtResurrexitAltoLyrics = \lyricmode {
   men, a -- men, a --
   men. %205 finis
 }
+
+SanctusAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \autoBeamOff \tempoSanctus
+    \mvDl g'4\fE^\tuttiE g r
+    g g r
+    g g r
+    R2.*5 %8
+    \mvTr d4\fE^\tuttiE g fis
+    g4. f8 e4 %10
+    e d r
+    f8([ g a h c)] h16 a
+    a4 g r
+    R2. \noBreak
+    R\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      r1 \mvTr g\fE^\tuttiE \noBreak
+    a g2 c,~
+    c h a1
+    h2 c d4 e f g
+    a1 g4 f e2 %20
+    d\breve
+    d2 d4 e fis e d c
+    h2 c r1
+    r r2 c
+    f d g e %25
+    a h4 a gis2 a~
+    a gis a r
+    R\breve
+    g!1 a
+    g g2. f4 %30
+    e f g1 f4 e
+    f\breve
+    e\fermata \bar "||" %33 finis
+  }
+}
+
+SanctusAltoLyrics = \lyricmode {
+  San -- ctus,
+  san -- ctus,
+  san -- ctus.
+
+  Ple -- ni sunt %9
+  coe -- li et %10
+  ter -- ra
+  glo -- ri -- a
+  tu -- a.
+
+  O -- %16
+  san -- na in __
+  ex -- cel --
+  _ _ _ _ _ _
+  _ _ _ _ %20
+  _
+  sis, in ex -- cel -- sis, in ex --
+  cel -- sis,
+  o --
+  san -- na in ex -- %25
+  cel -- _ _ _ _
+  _ sis,
+
+  o -- san --
+  na in ex -- %30
+  cel -- _ _ _ _
+  _
+  sis. %33 finis
+}

@@ -376,3 +376,29 @@ EtResurrexitClarinoI = {
     g r r2\fermata \bar "|." %205
   }
 }
+
+SanctusClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoSanctus
+    g''8.\fE f16 g4 r
+    g8. f16 g4 r
+    g8. f16 g4 r
+    R2.*5 %8
+    g4\fE r r
+    g r r %10
+    g r r
+    R2.
+    \pa r8 c, e g e c \pd
+    g g c e c g \noBreak
+    e4 r r\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve*13 %28
+    g'1\fE a
+    g g2. f4 %30
+    e f g1 f4 e
+    f g a1 a2
+    g\breve\fermata \bar "||" %33 finis
+  }
+}

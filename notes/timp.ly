@@ -216,3 +216,28 @@ EtResurrexitTimpani = {
     c r r2\fermata \bar "|." %205 finis
   }
 }
+
+SanctusTimpani = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoSanctus
+    c4\fE g r
+    c c r
+    g g r
+    R2.*5 %8
+    g4\fE r r
+    g r r %10
+    g r r
+    R2.
+    r4 c c
+    c8 c c c c c \noBreak
+    c4 r r\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve*14 %29
+    r1 g2\fE g %30
+    c1 c
+    c2 c c1
+    c\breve\fermata \bar "||" %33 finis
+  }
+}

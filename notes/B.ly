@@ -957,3 +957,77 @@ EtResurrexitBassoLyrics = \lyricmode {
   _ men, a --
   men. %205 finis
 }
+
+SanctusBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \autoBeamOff \tempoSanctus
+    \mvDl c'4\fE^\tuttiE h r
+    c c, r
+    g' g,r
+    \mvTr g'\pE^\soloE c8([ h)] a([ g)]
+    fis[ e] d4. c'8 %5
+    h[ a g fis e d]
+    e c d4. d8
+    g,4 r r
+    \mvTr g\fE^\tuttiE h d
+    g4.( a16[ h)] c8 c, %10
+    g'4 g, r
+    d'8([ e f g)] a h
+    c4 c, r
+    R2.
+    R\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve*2
+    \mvTr g'1\fE^\tuttiE a
+    g2 c,1 h2
+    a1 h2 c %20
+    d\breve
+    g,1 r
+    r2 e'4 f! g f e d
+    c2 c c f
+    d g e a %25
+    f4 e d2 e1
+    e a
+    h a2 a4 a
+    h a g!1 f2
+    e2. f4 g1 %30
+    c,4 d e2 f1~
+    f2 f f1
+    c\breve\fermata \bar "||" %33 finis
+  }
+}
+
+SanctusBassoLyrics = \lyricmode {
+  San -- ctus,
+  san -- ctus,
+  san -- ctus
+  Do -- mi -- nus
+  De -- _ _ %5
+  _
+  _ us Sa -- ba --
+  oth.
+  Ple -- ni sunt
+  coe -- li et %10
+  ter -- ra
+  glo -- ri -- a
+  tu -- a.
+
+  O -- san -- %18
+  na in ex --
+  cel -- _ _ %20
+  _
+  sis,
+  in ex -- cel -- sis, in ex --
+  cel -- sis, o -- san --
+  na in ex -- cel -- %25
+  _ _ _ _
+  sis, o --
+  san -- na in ex --
+  cel -- _ _ _
+  _ _ _ %30
+  _ _ sis, in __
+  ex -- cel --
+  sis. %33 finis
+}

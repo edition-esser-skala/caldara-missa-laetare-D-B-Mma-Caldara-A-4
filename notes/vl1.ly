@@ -586,3 +586,43 @@ EtResurrexitViolinoI = {
     e r r2\fermata \bar "|." %205 finis
   }
 }
+
+SanctusViolinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoSanctus
+    e'4\fE d8 e16 f g8 h,
+    c c, e' f16 g a8 c,
+    h8. a16 g8 d h d
+    g,4 r r
+    R2.*3 %7
+    g'4\fE h d
+    g8 fis16 e d4. c8
+    h a g4 r %10
+    g8 a h c d e
+    f!4. f8 f4
+    f e8 e16 f g8 a16 h
+    c8 e,16 f g8 a16 h c8 e,16 f \noBreak
+    g8 a16 h c8 c, r4\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      c1\fE d \noBreak
+    c2 f,1 e2
+    d e1 f2
+    g a1 h2
+    c1 h2 a4 g %20
+    fis2 g1 fis2
+    g1 r
+    r2 g4 a h a g f!
+    e2 e r a~
+    a h1 c2~ %25
+    c d1 c2
+    h1 a2 r
+    r1 c
+    d c2 d~
+    d c h4 c d2~ %30
+    d c4 b a1~
+    a\breve
+    g\fermata \bar "||" %33 finis
+  }
+}

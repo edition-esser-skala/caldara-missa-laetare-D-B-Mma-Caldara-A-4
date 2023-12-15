@@ -1660,3 +1660,86 @@ EtResurrexitBassFigures = \figuremode {
   r <6 5>2.
   r1 %205 finis
 }
+
+SanctusOrgano = {
+  \relative c {
+    \clef bass
+    \key c \major \time 3/4 \tempoSanctus
+    \mvTr c'4\fE-\tuttiE h r
+    c c, r
+    g' g, r
+    \mvTr g'\pE-\solo e c
+    d4. e8 fis d %5
+    g a h4 h,
+    c d d,
+    g r r
+    \mvTr g\fE-\tutti h d
+    g4. a16 h c8 c, %10
+    g'4 g, r
+    d'8 e f g a h
+    c4 c, c-\soloE
+    c r r
+    c r r\fermata \bar "||" %15
+    \clef treble \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+    << {
+      c''1 d \noBreak
+      c2 f,
+    } \\ {
+      \mvTr r1\fE-\tuttiE g
+      a
+    } >> \clef "treble_8" c,
+    \clef bass g a
+    g2 c,1 h2
+    a1 h2 c %20
+    d\breve
+    g,2 \clef "treble_8" h'4 c d c h a
+    g2 \clef bass e4 f! g f e d
+    c1 c2 f
+    d g e a %25
+    f4 e d2 e1~
+    e a
+    h a
+    h4 a g!1 f2
+    e2. f4 g1 %30
+    c,4 d e2 f1~
+    f\breve
+    c\fermata \bar "||" %33 finis
+  }
+}
+
+SanctusBassFigures = \figuremode {
+  r4 <[6]>2
+  r2.
+  r
+  r4 <6> q
+  <_+>2. %5
+  r
+  r4 \bo <[_+]>2
+  r2.
+  r2 \bc q4
+  r2. %10
+  <6 4>4 <[5] 3>2
+  <_!>2.
+  <6 4>4 <[5] 3>2
+  r2.
+  r %15
+  r\breve
+  r1 <5 4>2 <\t 3>
+  <5 4> <\t 3> <5> <6>
+  <7> <6> <2> <[6]>
+  <5> <6> q q4 \bo <[5]> %20
+  \bc <[5] _+>2 <6 4> <5 \t> <\t _+>
+  r1 <[_+]>
+  r2 <6>1.
+  r\breve
+  r %25
+  r2 <6> \bo <[7 _+]> \bc <[6 4]>
+  <5 \t> <\t _+>1.
+  r\breve
+  <6[!]>2 <[3]> <2> <6>
+  <7> <6>1. %30
+  <9>2 \bo <[6]>4 \bc <[5-]> <9>2 <8>4 <7>
+  <8>\breve
+  r %33 finis
+}

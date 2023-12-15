@@ -810,3 +810,71 @@ EtResurrexitTenoreLyrics = \lyricmode {
   a -- men, a --
   men. %205 finis
 }
+
+SanctusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 3/4 \autoBeamOff \tempoSanctus
+    \mvDl e4\fE^\tuttiE d r
+    e e r
+    d d r
+    R2.*5 %8
+    \mvTr h4\fE^\tuttiE d d
+    d e8([ d)] c4 %10
+    c h r
+    a a8([ g)] f4
+    c' c r
+    R2.\noBreak
+    R\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve \noBreak
+    r1 \mvTr c\fE^\tuttiE
+    d c2 f,~
+    f e d1
+    e2 f g4 d' c h %20
+    a2 h a1
+    h2 h4 c d c h a
+    g2 g r1
+    r2 g c a
+    d h e c %25
+    f1 e~
+    e e2 r
+    d1 e
+    d e2 f
+    h,( e d) g, %30
+    g g a4( b) c2
+    c c c1
+    c\breve\fermata \bar "||" %33 finis
+  }
+}
+
+SanctusTenoreLyrics = \lyricmode {
+  San -- ctus,
+  san -- ctus,
+  san -- ctus.
+
+  Ple -- ni sunt %9
+  coe -- li __ et %10
+  ter -- ra
+  glo -- ri -- a
+  tu -- a.
+
+  O -- %17
+  san -- na in __
+  ex -- cel --
+  _ _ _ _ _ _ %20
+  _ _ _
+  sis, in ex -- cel -- sis, in ex --
+  cel -- sis,
+  o -- san -- na
+  in ex -- cel -- _ %25
+  _ _
+  sis,
+  o -- san --
+  na in ex --
+  cel -- sis, %30
+  in ex -- cel -- sis,
+  in ex -- cel --
+  sis. %33 finis
+}

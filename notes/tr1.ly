@@ -216,3 +216,28 @@ EtResurrexitTrombaI = {
     g r r2\fermata \bar "|." %205 finis
   }
 }
+
+SanctusTrombaI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 3/4 \tempoSanctus
+    g'4\fE g r
+    g g r
+    g g r
+    R2.*5 %8
+    g4\fE r r
+    g r r %10
+    g r r
+    R2.
+    r4 g8 c g e
+    \pa c c e g e c \pd \noBreak
+    g'4 r r\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve*14 %29
+    r1 g2\fE g %30
+    g \pa c, c1
+    c\breve \pd
+    e\fermata \bar "||" %33 finis
+  }
+}

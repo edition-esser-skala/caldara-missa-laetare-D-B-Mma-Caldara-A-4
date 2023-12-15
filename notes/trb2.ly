@@ -399,3 +399,41 @@ EtResurrexitTromboneII = {
     c r r2\fermata \bar "|." %205 finis
   }
 }
+
+SanctusTromboneII = {
+  \relative c' {
+    \clef tenor
+    \key c \major \time 3/4 \tempoSanctus
+    e4\fE d r
+    e e r
+    d d r
+    R2.*5 %8
+    h4\fE d d
+    d e8 d c4 %10
+    c h r
+    a a8 g f4
+    c' c r
+    R2.\noBreak
+    R\fermata \bar "||" %15
+    \time 4/2 \tempoOsanna \newSpacingSection
+      \set Staff.timeSignatureFraction = 2/2
+      R\breve \noBreak
+    r1 c\fE
+    d c2 f,~
+    f e d1
+    e2 f g4 d' c h %20
+    a2 h a1
+    h2 h4 c d c h a
+    g2 g r1
+    r2 g c a
+    d h e c %25
+    f1 e~
+    e e2 r
+    d1 e
+    d e2 f
+    h, e d g, %30
+    g g a4 b c2
+    c c c1
+    c\breve\fermata \bar "||" %33 finis
+  }
+}
