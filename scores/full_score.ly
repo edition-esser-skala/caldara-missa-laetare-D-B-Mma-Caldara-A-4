@@ -1043,56 +1043,138 @@
   %     \midi { \tempo 4 = 80 } % 240
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Benedictus"
+  %   \addTocEntry
+  %   \paper {
+  %     top-system-spacing.basic-distance = #10
+  %     top-system-spacing.minimum-distance = #10
+  %     top-markup-spacing.basic-distance = #0
+  %     top-markup-spacing.minimum-distance = #0
+  %     markup-system-spacing.basic-distance = #10
+  %     markup-system-spacing.minimum-distance = #10
+  %     system-system-spacing.basic-distance = #17
+  %     system-system-spacing.minimum-distance = #17
+  %     systems-per-page = #3
+  %   }
+  %   \score { %\articulate
+  %     <<
+  %       \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
+  %           \BenedictusViolinoIeII
+  %         }
+  %       >>
+  %       \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 1"
+  %           \new Voice = "SopranoI" { \dynamicUp \BenedictusSopranoI }
+  %         }
+  %         \new Lyrics \lyricsto SopranoI \BenedictusSopranoILyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 2"
+  %           \new Voice = "SopranoII" { \dynamicUp \BenedictusSopranoII }
+  %         }
+  %         \new Lyrics \lyricsto SopranoII \BenedictusSopranoIILyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 3"
+  %           \new Voice = "SopranoIII" { \dynamicUp \BenedictusSopranoIII }
+  %         }
+  %         \new Lyrics \lyricsto SopranoIII \BenedictusSopranoIIILyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S 4"
+  %           \new Voice = "SopranoIV" { \dynamicUp \BenedictusSopranoIV }
+  %         }
+  %         \new Lyrics \lyricsto SopranoIV \BenedictusSopranoIVLyrics
+  %       >>
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 70 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Benedictus"
+    \section "5" "Agnus Dei"
     \addTocEntry
-    \paper {
-      top-system-spacing.basic-distance = #10
-      top-system-spacing.minimum-distance = #10
-      top-markup-spacing.basic-distance = #0
-      top-markup-spacing.minimum-distance = #0
-      markup-system-spacing.basic-distance = #10
-      markup-system-spacing.minimum-distance = #10
-      system-system-spacing.basic-distance = #17
-      system-system-spacing.minimum-distance = #17
-      systems-per-page = #3
-    }
     \score { %\articulate
       <<
-        \new StaffGroup \with { \setGroupDistance #11 #11 } <<
+        \new StaffGroup <<
+          \new Staff <<
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \set Staff.soloIIText = \markup \remark \medium "clno 2"
+            \partCombine #'(0 . 10) \AgnusClarinoI \AgnusClarinoII
+          >>
+          \new Staff \with { \smallStaffDistance } <<
+            \set Staff.instrumentName = \markup \center-column { "tr" "1, 2" }
+            \partCombine #'(0 . 10) \AgnusTrombaI \AgnusTrombaII
+          >>
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AgnusTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AgnusTromboneII
+            }
+          >>
+        >>
+        \new Staff {
+          \set Staff.instrumentName = "timp"
+          \AgnusTimpani
+        }
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \AgnusViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \AgnusViolinoII
+            }
+          >>
+        >>
+        \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "vl" "1, 2" }
-            \BenedictusViolinoIeII
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \AgnusSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \AgnusSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "A" "vla 1" }
+            \new Voice = "Alto" { \dynamicUp \AgnusAlto }
+          }
+          \new Lyrics \lyricsto Alto \AgnusAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "T" "vla 2" }
+            \new Voice = "Tenore" { \dynamicUp \AgnusTenore }
+          }
+          \new Lyrics \lyricsto Tenore \AgnusTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \AgnusBasso }
+          }
+          \new Lyrics \lyricsto Basso \AgnusBassoLyrics
+        >>
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
+            % \transpose c c,
+            \AgnusOrgano
           }
         >>
-        \new ChoirStaff \with { \setGroupDistance #12 #13 } <<
-          \new Staff {
-            \set Staff.instrumentName = "S 1"
-            \new Voice = "SopranoI" { \dynamicUp \BenedictusSopranoI }
-          }
-          \new Lyrics \lyricsto SopranoI \BenedictusSopranoILyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "S 2"
-            \new Voice = "SopranoII" { \dynamicUp \BenedictusSopranoII }
-          }
-          \new Lyrics \lyricsto SopranoII \BenedictusSopranoIILyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "S 3"
-            \new Voice = "SopranoIII" { \dynamicUp \BenedictusSopranoIII }
-          }
-          \new Lyrics \lyricsto SopranoIII \BenedictusSopranoIIILyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "S 4"
-            \new Voice = "SopranoIV" { \dynamicUp \BenedictusSopranoIV }
-          }
-          \new Lyrics \lyricsto SopranoIV \BenedictusSopranoIVLyrics
-        >>
+        \new FiguredBass { \AgnusBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 70 }
+      \midi { \tempo 4 = 70 } % 110
     }
   }
 }

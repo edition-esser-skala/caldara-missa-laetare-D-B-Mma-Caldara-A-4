@@ -1087,3 +1087,97 @@ SanctusAltoLyrics = \lyricmode {
   _
   sis. %33 finis
 }
+
+AgnusAlto = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \autoBeamOff \tempoAgnus
+    r4 \mvTr g'2\fE^\tuttiE a4
+    fis g r g
+    g a r8 g g g
+    g2 g
+    \mvTr a8([\pE^\soloE g)] g([ f)] f([ e)] e4 %5
+    a8 g g a fis4 g~
+    g fis g \mvTr g8\fE^\tuttiE g
+    g4 g8 g g4 g
+    r8 h h h a4 gis
+    R1*3 %12
+    r4 \mvTr e8\fE^\tuttiE e d4 d8 d
+    d d16 d d8 d e e16 e e8 e \noBreak
+    e4 d r2\fermata \bar "||" %15
+    \tempoDona R1*7 %22
+    r2 g4. g8
+    e4 e f8[ c] f4~
+    f8[ e16 d] e8[ d16 c] d2 %25
+    c8 c[ d e] r g[ a h]
+    r e,[ d c] d[ e16 fis] g4~
+    g fis g r8 f?
+    g[ a] r g a[ h] r a
+    h c r4 a4. a8 %30
+    gis4 gis a8[ e] a[ f16 e]
+    f4. e16[ d] e2~
+    e r8 e[ fis e]
+    h1
+    h4 r8 d! e[ fis] r e %35
+    fis[ gis] r e f?4 e
+    e a2 g4
+    f2 e4 r
+    g4. g8 e4 e
+    f8[ c] f4. e16[ d] e8[ d16 c] %40
+    d2 r8 c[ d e]
+    r g[ a h] r e,[ d c]
+    d[ e16 fis] g2 fis4
+    g r8 c h[ a] r h
+    a[ g] r a g[ f!] r g %45
+    e4. d16[ c] d2
+    e8 c'[ b a] r b[ a g]
+    r a[ g f] r g[ f e]
+    \tempoDonaB f1
+    e\fermata \bar "|." %50 finis
+  }
+}
+
+AgnusAltoLyrics = \lyricmode {
+  A -- gnus
+  De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di:
+  Mi -- se -- re -- re, %5
+  mi -- se -- re -- re no -- _
+  _ bis. A -- gnus
+  De -- i, qui tol -- lis
+  pec -- ca -- ta mun -- di:
+
+  A -- gnus De -- i, qui %13
+  tol -- lis pec -- ca -- ta mun -- di, pec -- ca -- ta
+  mun -- di: %15
+
+  Do -- na %23
+  no -- bis pa -- _
+  _ _ %25
+  cem, pa -- _
+  _ _ _
+  _ cem, pa --
+  _ _ _ _
+  _ cem, do -- na %30
+  no -- bis pa -- _
+  _ _ cem, __
+  pa --
+  _
+  cem, pa -- _ _ %35
+  _ _ _ _
+  cem, pa -- _
+  _ cem,
+  do -- na no -- bis
+  pa -- _ _ _ %40
+  cem, pa --
+  _ _
+  _ _ _
+  cem, pa -- _ _
+  _ _ _ _ %45
+  _ _ _
+  cem, pa -- _
+  _ _
+  _
+  cem. %50 finis
+}

@@ -148,7 +148,7 @@ KyrieFugaBasso = {
     g2 g
     c c~
     c1
-    f2. f4
+    \tempoKyrieFugaB f2. f4
     c1\fermata \bar "|." %120 finis
   }
 }
@@ -1030,4 +1030,109 @@ SanctusBassoLyrics = \lyricmode {
   _ _ sis, in __
   ex -- cel --
   sis. %33 finis
+}
+
+AgnusBasso = {
+  \relative c {
+    \clef bass
+    \key c \major \time 4/4 \autoBeamOff \tempoAgnus
+    r4 \mvTr c2\fE^\tuttiE c4
+    c h r b
+    b a r8 h? h h
+    c2 g
+    R1*2 %6
+    r2 r4 \mvTr g'8\fE^\tuttiE g
+    c4 g8 g c4 g
+    r8 gis gis gis a4 e
+    \mvTr a8([\pE^\soloE h)] c([ a)] d,[ e] f[ e16 d] %10
+    a'8 e a g f([ e)] d4
+    e( dis e2)
+    a,4 \mvTr a'8\fE^\tuttiE a fis4 fis8 fis
+    g! g16 g g8 g e e16 d e8 c \noBreak
+    g'4 g, r2\fermata \bar "||" %15
+    R1*2
+    r2 g'4. g8
+    e4 e f8[ c] f4~
+    f8[ e16 d] e8[ d16 c] d2 %20
+    c8 c[ d e] r g[ a h]
+    r e,[ d c] d[ e16 fis] g4~
+    g fis g8 e[ f g]
+    r a[ h c] r f,[ e d]
+    e4. a8 f4 g %25
+    c, r g'4. g8
+    e4 e fis h,8[ e]
+    c[ a] d4 g, r8 d'
+    e[ f!] r e f[ g] r f
+    g[ a] r g f2 %30
+    e r
+    r a4. a8
+    gis4 gis a8[ e] a4~
+    a8[ g16 fis] g8[ fis16 e] h2
+    e8 e[ fis g] r fis[ gis a] %35
+    r e[ f c] d4 e
+    a, a e'4. c8
+    a4 h c2
+    g r
+    R1 %40
+    r2 c4. c8
+    h4 h c8[ g] c4~
+    c8[ h16 a] h8[ a16 g] a2
+    g1~
+    g~ %45
+    g
+    c2 c~
+    c1
+    \tempoDonaB f
+    c\fermata \bar "|." %50 finis
+  }
+}
+
+AgnusBassoLyrics = \lyricmode {
+  A -- gnus
+  De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di:
+
+  A -- gnus %7
+  De -- i, qui tol -- lis
+  pec -- ca -- ta mun -- di:
+  Mi -- se -- re -- _ %10
+  _ re, mi -- se -- re -- re
+  no --
+  bis. A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta mun -- di, pec -- ca -- ta
+  mun -- di: %15
+
+  Do -- na %18
+  no -- bis pa -- _
+  _ _ %20
+  cem, pa -- _
+  _ _ _
+  _ cem, pa --
+  _ _
+  _ _ _ _ %25
+  cem, do -- na
+  no -- bis pa -- _
+  _ _ cem, pa --
+  _ _ _ _
+  _ _ _ %30
+  cem,
+  do -- na
+  no -- bis pa -- _
+  _ _
+  cem, pa -- _ %35
+  _ _ _
+  cem, pa -- _ _
+  _ _ _
+  cem,
+  %40
+  do -- na
+  no -- bis pa -- _
+  _ _
+  _
+
+  cem, pa -- %47
+
+  _
+  cem. %50 finis
 }

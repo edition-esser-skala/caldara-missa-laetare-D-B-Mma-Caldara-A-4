@@ -402,3 +402,41 @@ SanctusClarinoI = {
     g\breve\fermata \bar "||" %33 finis
   }
 }
+
+AgnusClarinoI = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoAgnus
+    r4 g''2\fE a4
+    fis g r2
+    r r8 f f f
+    e2 g
+    R1*2 %6
+    r2 r4 g8\fE g
+    g4 g8 g g4 g
+    R1*5 %13
+    r8 g\fE g g g g g g \noBreak
+    g4 g r2\fermata \bar "||" %15
+    \tempoDona R1*10 %25
+    r8 g f e g4. g8
+    g g f e \pa d e16 fis g4~
+    g \pd fis g \pa r8 f?
+    g a r g a h r a
+    h c r e, e d16 c d4 \pd %30
+    R1*6 %36
+    r2 r4 g
+    f4. g16 f e2
+    d r
+    R1 %50
+    g4. g8 g4 g
+    g8 g a h r \pa e, d c
+    d e16 fis g2 fis4 \pd
+    g8 g f e r \pa f e d
+    e4 r r8 f e d %455
+    e4. d16 c d2
+    c4 \pd r c, r
+    c r c r
+    \tempoDonaB c c c2
+    c1\fermata \bar "|." %50 finis
+  }
+}

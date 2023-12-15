@@ -620,3 +620,52 @@ SanctusViolinoII = {
     e\fermata \bar "||" %33 finis
   }
 }
+
+AgnusViolinoII = {
+  \relative c' {
+    \clef treble
+    \key c \major \time 4/4 \tempoAgnus
+    r4 e'2\fE e4
+    d2 r4 d
+    c2 r8 d d d
+    c2 h
+    c8(\p h) h( a) a( g) g4 %5
+    d8 d d d d d cis cis
+    d d d d g,4 h'!8\f h
+    c4 h8 h c4 h
+    r8 h h h a4 gis
+    R1*3 %12
+    r4 c8\fE c c4 c8 c
+    h h h h16 h c8 c c c \noBreak
+    c4\trill h r2\fermata \bar "||" %15
+    \tempoDona R1*7 %22
+    r2 g4. g8
+    e4 e f8 c f4~
+    f8 e16 d e8 d16 c d2 %25
+    c8 c d e r g a h
+    r e, d c d e16 fis g4~
+    g fis g r8 f?
+    g a r g a h r a
+    h c r4 a4. a8 %30
+    gis4 gis a8 e a f16 e
+    f4. e16 d e2~
+    e r8 e fis e
+    h1
+    h4 r8 d! e fis r e %35
+    fis gis r e f?4 e
+    e a2 g4
+    f2 e4 r
+    g4. g8 e4 e
+    f8 c f4. e16 d e8 d16 c %40
+    d2 r8 c d e
+    r g a h r e, d c
+    d e16 fis g2 fis4
+    g r8 c h a r h
+    a g r a g f! r g %45
+    e4. d16 c d2
+    e8 c' b a r b a g
+    r a g f r g f e
+    \tempoDonaB f1
+    e\fermata \bar "|." %50 finis
+  }
+}

@@ -878,3 +878,109 @@ SanctusTenoreLyrics = \lyricmode {
   in ex -- cel --
   sis. %33 finis
 }
+
+AgnusTenore = {
+  \relative c' {
+    \clef "treble_8"
+    \key c \major \time 4/4 \autoBeamOff \tempoAgnus
+    r4 \mvTr e2\fE^\tuttiE e4
+    d d r d
+    c c r8 d d d
+    c2 h!
+    R1*2 %6
+    r2 r4 \mvTr d8\fE^\tuttiE d
+    e4 d8 d c4 h
+    r8 e e e e4 e
+    r \mvTr e2\pE^\soloE d4~
+    d c2 b8([ a)]
+    gis4( a2 gis4)
+    a \mvTr c8\fE^\tuttiE c c4 c8 c
+    h h16 h h8 h c c16 c c8 c \noBreak
+    c4 h r2\fermata \bar "||"
+    \tempoDona c4. c8 h4 h \noBreak
+    c8[ g] c4. h16[ a] h8[ a16 g]
+    a2 g8 g[ a h]
+    r c[ d e] r a,[ g f]
+    g[ a16 h] c2 h4 %20
+    c8 e,[ f g] r h[ c d]
+    r g,[ fis e] fis d'4 e8
+    c4 d h r
+    R1*2 %25
+    c4. c8 h4 h
+    c8[ g] c4. h16[ a] h8[ a16 g]
+    a2 g8 h[ c d]
+    r c[ d e] r d[ e f]
+    r e[ f g] c,4 a %30
+    h2 r
+    R1
+    e4. e8 cis4 cis
+    dis8[( h] e2 dis4)
+    e r8 h c![ d] r c %35
+    d[ e] r c h2
+    a4 c h4. e8
+    c4 h8[ a] g4 e'
+    d2 r
+    R1 %40
+    g,4. g8 e4 e
+    g8[ d] g2 a4
+    fis8[ g16 a] g8 e'4( d8 c4)
+    d8 e8[ d c] r d[ c h]
+    r c[ h a] r f'![ e d] %45
+    g,1
+    g4 r8 f' e[ d] r e
+    d[ c] r d c[ b] c4
+    \tempoDonaB c1
+    c\fermata \bar "|." %50 finis
+  }
+}
+
+AgnusTenoreLyrics = \lyricmode {
+  A -- gnus
+  De -- i, qui
+  tol -- lis pec -- ca -- ta
+  mun -- di:
+
+  A -- gnus %7
+  De -- i, qui tol -- lis
+  pec -- ca -- ta mun -- di:
+  Mi -- se -- %10
+  re -- re __
+  no --
+  bis. A -- gnus De -- i, qui
+  tol -- lis pec -- ca -- ta mun -- di, pec -- ca -- ta
+  mun -- di: %15
+  Do -- na no -- bis
+  pa -- _ _ _
+  _ cem, pa --
+  _ _
+  _ _ _ %20
+  cem, pa -- _
+  _ cem, pa -- _
+  _ _ cem,
+
+  do -- na no -- bis %26
+  pa -- _ _ _
+  _ cem, pa --
+  _ _
+  _ _ _ %30
+  cem,
+
+  do -- na no -- bis
+  pa --
+  cem, pa -- _ _ %35
+  _ _ _
+  cem, pa -- _ _
+  _ _ _ _
+  cem,
+  %40
+  do -- na no -- bis
+  pa -- _ _
+  _ cem, pa --
+  cem, pa -- _
+  _ _ %45
+  _
+  cem, pa -- _ _
+  _ _ _ _
+  _
+  cem. %50 finis
+}
