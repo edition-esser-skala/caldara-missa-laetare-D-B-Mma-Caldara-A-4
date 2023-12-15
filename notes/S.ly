@@ -1080,16 +1080,146 @@ SanctusSopranoLyrics = \lyricmode {
   sis. %33 finis
 }
 
+BenedictusSopranoI = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #34
+    r4 e'8 e f2
+    gis,4 a d8([ c d c)] %35
+    h4 e2 d4~
+    d8 d c4 h4. h8
+    a4 e'2 d4~
+    d8 d c4 b8([ a)] b([ a)]
+    gis4 r f'2 %40
+    e8. e16 a,2 gis8. gis16
+    a4 a8 a d,2
+    e4 f d2
+    e4 cis d b'8 a
+    gis4( a d,) e %45
+    a, c'2 h4~
+    h8 h a4 f'2
+    e4 a,2 d8([ c)]
+    h8 e e e16 e f4 e
+    e1\fermata \markOsannaUtSupra \bar "||" %50 finis
+  }
+}
 
+BenedictusSopranoILyrics = \lyricmode {
+  Be -- ne -- di -- %34
+  ctus, qui ve -- %35
+  nit in no --
+  mi -- ne Do -- mi --
+  ni, in no --
+  mi -- ne Do -- mi --
+  ni, in %40
+  no -- mi -- ne Do -- mi --
+  ni, be -- ne -- di --
+  ctus, qui ve --
+  nit in no -- mi -- ne
+  Do -- mi -- %45
+  ni, in no --
+  mi -- ne Do --
+  _ _ mi --
+  ni, in no -- mi -- ne Do -- mi --
+  ni. %50 finis
+}
 
+BenedictusSopranoII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #34
+    R1*4 %37
+    r4 e'8 e f2
+    gis,4 a d8([ c d c)]
+    h4 e2 d4~ %40
+    d8 d c4 h4. h8
+    a4 e'2 d4~
+    d8 d c4 b8([ a)] b([ a)]
+    gis4 r f'2
+    e8. e16 a,2 gis8. gis16 %45
+    a4 a8 a d,2
+    e4 f d2
+    e4 cis d b'8 a
+    gis4( a d,) e
+    a,1\fermata \markOsannaUtSupra \bar "||" %50 finis
+  }
+}
 
+BenedictusSopranoIILyrics = \lyricmode {
+  Be -- ne -- di -- %38
+  ctus, qui ve --
+  nit in no -- %40
+  mi -- ne Do -- mi --
+  ni, in no --
+  mi -- ne Do -- mi --
+  ni, in
+  no -- mi -- ne Do -- mi -- %45
+  ni, be -- ne -- di --
+  ctus, qui ve --
+  nit in no -- mi -- ne
+  Do -- mi --
+  ni. %50 finis
+}
+
+BenedictusSopranoIII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #34
+    R1*8 %41
+    r4 e'8 e f2
+    gis,4 a d8([ c d c)]
+    h4 e2 d4~
+    d8 d c4 h4. h8 %45
+    a4 e'2 d4~
+    d8 d c4 b8([ a)] b([ a)]
+    gis4 r f'2
+    e8. e16 a,2 gis8. gis16
+    a1\fermata \markOsannaUtSupra \bar "||" %50 finis
+  }
+}
+
+BenedictusSopranoIIILyrics = \lyricmode {
+  Be -- ne -- di -- %42
+  ctus, qui ve --
+  nit in no --
+  mi -- ne Do -- mi -- %45
+  ni, in no --
+  mi -- ne Do -- mi --
+  ni, in
+  no -- mi -- ne Do -- mi --
+  ni. %50 finis
+}
+
+BenedictusSopranoIV = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \autoBeamOff \tempoBenedictus
+      \set Score.currentBarNumber = #34
+    R1*12 %45
+    r4 e'8 e f2
+    gis,4 a d8([ c d c)]
+    h4 e2 d4~
+    d8 d c4 h4. h8
+    a1\fermata \markOsannaUtSupra \bar "||" %50 finis
+  }
+}
+
+BenedictusSopranoIVLyrics = \lyricmode {
+  Be -- ne -- di -- %46
+  ctus, qui ve --
+  nit in no --
+  mi -- ne Do -- mi --
+  ni. %50 finis
+}
 
 
 
 % ## Benedictus
 
 % Be -- ne -- di -- ctus, qui ve -- nit in no -- mi -- ne Do -- mi -- ni.
-% O -- san -- na in ex -- cel -- sis.
 
 
 % ## Agnus Dei

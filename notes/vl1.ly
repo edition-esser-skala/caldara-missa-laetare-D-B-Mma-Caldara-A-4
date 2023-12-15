@@ -626,3 +626,28 @@ SanctusViolinoI = {
     g\fermata \bar "||" %33 finis
   }
 }
+
+BenedictusViolinoIeII = {
+  \relative c' {
+    \clef treble
+    \key a \minor \time 4/4 \tempoBenedictus
+      \set Score.currentBarNumber = #34
+    a'8 a a a d, d d d
+    e e f f d d d d %35
+    d d c c f f f f
+    e e a a a a gis gis
+    a a, c a d d d d
+    e e f f d d d d
+    d d c c d d d16 e f g %40
+    a8 a, c a e' d e e
+    a, h c a d e f d
+    e e f f d d d d
+    e e cis cis d d b' a
+    gis gis a a d, d e e %45
+    a, a c a d d d d
+    e e f f d d d d
+    e e cis cis d d b' a
+    gis gis a a d,4 e
+    a,1\fermata \markOsannaUtSupra \bar "||" %50 finis
+  }
+}
