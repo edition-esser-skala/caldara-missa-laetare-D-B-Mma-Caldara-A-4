@@ -1,32 +1,23 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "trb 2")
 \include "score_settings/one-staff.ly"
 
 \book {
   \bookpart {
     \section "1" "Kyrie"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2.5\cm systems-per-page = #6 }
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \KyrieViolinoI
+          \set Staff.instrumentName = "Trombone II"
+          \KyrieTromboneII
         }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Christe"
-    \addTocEntry
-    \paper { page-count = #1 }
-    \score {
-      <<
-        \new Staff { \ChristeViolinoI }
-      >>
-    }
+    \tacet "subsection" "Christe"
   }
   \bookpart {
     \subsection "Kyrie"
@@ -34,7 +25,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \KyrieFugaViolinoI }
+        \new Staff { \KyrieFugaTromboneII }
       >>
     }
   }
@@ -43,20 +34,10 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaTromboneII }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Gratias agimus tibi"
-    \addTocEntry
-    \paper { page-count = #1 systems-per-page = #8 }
-    \score {
-      <<
-        \new Staff { \GratiasViolinoI }
-      >>
-    }
-    \noPageBreak \tacet "subsection" "Domine Deus"
+    \tacet "subsection" "Gratias agimus tibi · Domine Deus"
   }
   \bookpart {
     \subsection "Domine Fili"
@@ -64,7 +45,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \DomineFiliViolinoI }
+        \new Staff { \DomineFiliTromboneII }
       >>
     }
   }
@@ -73,35 +54,27 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuiTollisViolinoI }
+        \new Staff { \QuiTollisTromboneII }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Quoniam"
-    \addTocEntry
-    \score {
-      <<
-        \new Staff { \QuoniamViolinoI }
-      >>
-    }
+    \tacet "subsection" "Quoniam"
   }
   \bookpart {
     \subsection "Cum Sancto Spiritu"
     \addTocEntry
     \score {
       <<
-        \new Staff { \CumSanctoViolinoI }
+        \new Staff { \CumSanctoTromboneII }
       >>
     }
   }
   \bookpart {
     \section "3" "Credo"
     \addTocEntry
-    \paper { systems-per-page = #7 }
+    \paper { systems-per-page = #5 }
     \score {
       <<
-        \new Staff { \CredoViolinoI }
+        \new Staff { \CredoTromboneII }
       >>
     }
     \tacet "subsection" "Qui propter"
@@ -112,7 +85,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \EtIncarnatusViolinoI }
+        \new Staff { \EtIncarnatusTromboneII }
       >>
     }
   }
@@ -121,7 +94,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtResurrexitViolinoI }
+        \new Staff { \EtResurrexitTromboneII }
       >>
     }
   }
@@ -131,26 +104,18 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusTromboneII }
       >>
     }
-  }
-  \bookpart {
-    \subsection "Benedictus"
-    \addTocEntry
-    \paper { systems-per-page = #4 }
-    \score {
-      <<
-        \new Staff { \BenedictusViolinoIeII }
-      >>
-    }
+    \tacet "subsection" "Benedictus"
+    \markup { \vspace #3 \fontsize #3 \fill-line { "" "Osanna ut supra" "" } }
   }
   \bookpart {
     \section "5" "Agnus Dei"
     \addTocEntry
     \score {
       <<
-        \new Staff { \AgnusViolinoI }
+        \new Staff { \AgnusTromboneII }
       >>
     }
   }

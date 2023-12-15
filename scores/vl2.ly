@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \include "../definitions.ly"
-#(define option-instrument-name "vl 1")
+#(define option-instrument-name "vl 2")
 \include "score_settings/one-staff.ly"
 
 \book {
@@ -12,8 +12,8 @@
     \score {
       <<
         \new Staff {
-          \set Staff.instrumentName = "Violino I"
-          \KyrieViolinoI
+          \set Staff.instrumentName = "Violino II"
+          \KyrieViolinoII
         }
       >>
     }
@@ -24,7 +24,7 @@
     \paper { page-count = #1 }
     \score {
       <<
-        \new Staff { \ChristeViolinoI }
+        \new Staff { \ChristeViolinoII }
       >>
     }
   }
@@ -34,7 +34,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \KyrieFugaViolinoI }
+        \new Staff { \KyrieFugaViolinoII }
       >>
     }
   }
@@ -43,7 +43,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \GloriaViolinoI }
+        \new Staff { \GloriaViolinoII }
       >>
     }
   }
@@ -53,7 +53,7 @@
     \paper { page-count = #1 systems-per-page = #8 }
     \score {
       <<
-        \new Staff { \GratiasViolinoI }
+        \new Staff { \GratiasViolinoII }
       >>
     }
     \noPageBreak \tacet "subsection" "Domine Deus"
@@ -64,7 +64,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \DomineFiliViolinoI }
+        \new Staff { \DomineFiliViolinoII }
       >>
     }
   }
@@ -73,7 +73,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuiTollisViolinoI }
+        \new Staff { \QuiTollisViolinoII }
       >>
     }
   }
@@ -82,7 +82,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \QuoniamViolinoI }
+        \new Staff { \QuoniamViolinoII }
       >>
     }
   }
@@ -91,7 +91,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \CumSanctoViolinoI }
+        \new Staff { \CumSanctoViolinoII }
       >>
     }
   }
@@ -101,7 +101,7 @@
     \paper { systems-per-page = #7 }
     \score {
       <<
-        \new Staff { \CredoViolinoI }
+        \new Staff { \CredoViolinoII }
       >>
     }
     \tacet "subsection" "Qui propter"
@@ -112,7 +112,7 @@
     \paper { systems-per-page = #3 }
     \score {
       <<
-        \new Staff { \EtIncarnatusViolinoI }
+        \new Staff { \EtIncarnatusViolinoII }
       >>
     }
   }
@@ -121,7 +121,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \EtResurrexitViolinoI }
+        \new Staff { \EtResurrexitViolinoII }
       >>
     }
   }
@@ -131,7 +131,7 @@
     \paper { systems-per-page = #6 }
     \score {
       <<
-        \new Staff { \SanctusViolinoI }
+        \new Staff { \SanctusViolinoII }
       >>
     }
   }
@@ -150,7 +150,7 @@
     \addTocEntry
     \score {
       <<
-        \new Staff { \AgnusViolinoI }
+        \new Staff { \AgnusViolinoII }
       >>
     }
   }
